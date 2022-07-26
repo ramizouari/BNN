@@ -1,0 +1,82 @@
+import tensorflow as tf
+import larq as lq
+import load
+import layers
+
+
+if __name__=="__main__":
+    data_format="channels_last"
+    
+    X_train,y_train=load.load_cifar("dataset/cifar-10","data*",data_format=data_format)
+    y_train=tf.one_hot(y_train,10)
+    X_test,y_test=load.load_cifar("dataset/cifar-10","test_batch",data_format=data_format)
+    
+    # All quantized layers except the first will use the same options
+    
+    kwargs = dict(input_quantizer="ste_sign",
+                  kernel_quantizer="ste_sign",
+                  kernel_constraint="weight_clip",
+                  use_bias=False)
+    
+    Conv2D=lq.layers.QuantConv2D
+    Dense=lq.layers.QuantDense
+    
+    model = tf.keras.models.Sequential([
+        tf.keras.layers.RandomCrop(width=28,height=28),
+        tf.keras.layers.GaussianNoise(stddev=5),
+        layers.ImageNormalisationLayer(),
+        # In the first layer we only quantize the weights and not the input
+        lq.layers.QuantConv2D(128, 3,
+                              kernel_quantizer="ste_sign",
+                              kernel_constraint="weight_clip",
+                              use_bias=False,
+                              input_shape=(32, 32, 3)),
+        tf.keras.layers.BatchNormalization(momentum=0.999, scale=False),
+    
+        Conv2D(128, 3, padding="same", **kwargs),
+        tf.keras.layers.MaxPool2D(pool_size=(2, 2), strides=(2, 2)),
+        tf.keras.layers.BatchNormalization(momentum=0.999, scale=False),
+       # tf.keras.layers.Dropout(0.3),
+    
+        Conv2D(256, 3, padding="same", **kwargs),
+        tf.keras.layers.BatchNormalization(momentum=0.999, scale=False),
+    
+        Conv2D(256, 3, padding="same", **kwargs),
+        tf.keras.layers.MaxPool2D(pool_size=(2, 2), strides=(2, 2)),
+        tf.keras.layers.BatchNormalization(momentum=0.999, scale=False),
+        #tf.keras.layers.Dropout(0.3),
+        Conv2D(512, 3, padding="same", **kwargs),
+        tf.keras.layers.BatchNormalization(momentum=0.999, scale=False),
+    
+        Conv2D(512, 3, padding="same", **kwargs),
+        tf.keras.layers.MaxPool2D(pool_size=(2, 2), strides=(2, 2)),
+        tf.keras.layers.BatchNormalization(momentum=0.999, scale=False),
+        tf.keras.layers.Flatten(),
+    
+        Dense(1024, **kwargs),
+        tf.keras.layers.BatchNormalization(momentum=0.999, scale=False),
+    
+        Dense(1024, **kwargs),
+        tf.keras.layers.BatchNormalization(momentum=0.999, scale=False),
+    
+        Dense(10, **kwargs),
+        tf.keras.layers.BatchNormalization(momentum=0.999, scale=False),
+        tf.keras.layers.Activation("softmax")
+    ])
+    
+    
+    model.compile(
+        tf.keras.optimizers.Adam(lr=0.01, decay=0.0001),
+        loss="categorical_crossentropy",
+        metrics=["accuracy"],
+    )
+    
+    
+    trained_model = model.fit(
+        X_train, 
+        y_train,
+        batch_size=96, 
+        epochs=100,
+        validation_data=(X_test, tf.one_hot(y_test, 10)),
+        shuffle=True
+    )
