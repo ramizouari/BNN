@@ -10,26 +10,30 @@ import tensorflow as tf
 import larq as lq
 import load
 import layers
+import quantizers
+import numpy as np
 
 
 if __name__=="__main__":
     data_format="channels_last"
     
     (X_train,y_train),(X_test,y_test)=tf.keras.datasets.mnist.load_data()
+    X_train=X_train.astype(dtype=np.float32)
     y_train=tf.one_hot(y_train,10)
     
     # All quantized layers except the first will use the same options
     
     kwargs = dict(input_quantizer="ste_sign",
-                  kernel_quantizer="ste_sign",
+                  kernel_quantizer=quantizers.ShiftedSteSign(trainable=True,mu=0),
                   kernel_constraint="weight_clip",
-                  use_bias=False,
-                  alpha_trainable=True)
+                  use_bias=False
+                  )
     
-    Dense=layers.ScaledQuantDense
+    Dense=layers.ABCDense
     
     model = tf.keras.models.Sequential([
         tf.keras.layers.Flatten(),
+        tf.keras.layers.GaussianNoise(stddev=4),
         layers.ImageNormalisationLayer(),
         tf.keras.layers.BatchNormalization(momentum=0.999,scale=False),
         Dense(1024,activation="relu", **kwargs),

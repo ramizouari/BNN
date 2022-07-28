@@ -1,6 +1,7 @@
 import tensorflow
 import larq
 import numpy
+import quantizers
 
 """
     Convention: To avoid any unintentional naming conflict, we will add the prefix "db_" to every 
@@ -174,17 +175,35 @@ class ScaledQuantConv3D(larq.layers.QuantConv3D):
 
 
 class ABCDense(tensorflow.keras.layers.Layer):
-    def __init__(self,units,kernel_estimators,activation_estimators,kernel_initializer="random_uniform",
-                 activation_initialize="random_uniform",*args,**kwargs):
-        super(tensorflow.keras.layers.Layer,self).__init__(*args,**kwargs)
+    def __init__(self,units,kernel_estimators=3,activation_estimators=3,kernel_initializer="random_uniform",
+                 activation_initialize="random_uniform",
+                 kernel_quantizer=quantizers.ShiftedSteSign(),
+                 input_quantizer=quantizers.ShiftedSteSign(),
+                 kernel_constraint="weight_clip",activation=None,
+                 use_bias=False,*args,**kwargs):
+        super(ABCDense,self).__init__(*args,**kwargs)
         self.kernel_estimators=kernel_estimators
         self.activation_estimators=activation_estimators
         self.units=units
+        self.estimators=[ScaledQuantDense(units,kernel_quantizer=kernel_quantizer,
+                                       input_quantizer=input_quantizer,activation=activation,
+                                       kernel_constraint=kernel_constraint,
+                                       use_bias=use_bias,alpha_trainable=True) for i in range(kernel_estimators)]
     pass
     
     def build(self,input_shape):
         #self.kernels=tensorflow.Variable()
+        super(ABCDense,self).build(input_shape)
+        for estimator in self.estimators:
+            estimator.build(input_shape)
         pass
+    
+    def call(self,inputs,training=False):
+        output=0
+        for estimator in self.estimators:
+            output+=estimator.call(inputs,training)
+        return output
+            
 
 
 class ABCConv2D(tensorflow.keras.layers.Layer):
