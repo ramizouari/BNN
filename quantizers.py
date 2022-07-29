@@ -21,6 +21,9 @@ class ShiftedQuantizer(larq.quantizers.Quantizer):
             self.mu=tensorflow.Variable(initializer(shape=()),trainable=self.trainable)
         else:
             self.mu=tensorflow.Variable(float(mu))
+            
+    def build(self,inputs_shape):
+        super(ShiftedQuantizer,self).build(inputs_shape)
     
     def call(self,inputs):
         return super(ShiftedQuantizer,self).call(tensorflow.add(inputs,self.mu))

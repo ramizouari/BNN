@@ -30,17 +30,21 @@ if __name__=="__main__":
                   )
     
     Dense=layers.ABCDense
+    Conv2D=layers.ABCConv2D
+    X_train=X_train.reshape((-1,28,28,1))
+    
+    X_test=X_test.reshape((-1,28,28,1))
     
     model = tf.keras.models.Sequential([
-        tf.keras.layers.Flatten(),
+        #tf.keras.layers.Flatten(),
         tf.keras.layers.GaussianNoise(stddev=4),
         layers.ImageNormalisationLayer(),
         tf.keras.layers.BatchNormalization(momentum=0.999,scale=False),
-        Dense(1024,activation="relu", **kwargs),
+        Conv2D(128,5,activation="relu", **kwargs),
         tf.keras.layers.BatchNormalization(momentum=0.999,scale=False),
-        Dense(1024,activation="relu", **kwargs),
+        Conv2D(128,5,activation="relu", **kwargs),
         tf.keras.layers.BatchNormalization(momentum=0.999,scale=False),
-        
+        tf.keras.layers.Flatten(),
         Dense(10, **kwargs),
         tf.keras.layers.Activation("softmax")
     ])
@@ -56,7 +60,7 @@ if __name__=="__main__":
     trained_model = model.fit(
         X_train, 
         y_train,
-        batch_size=96, 
+        batch_size=128, 
         epochs=30,
         validation_data=(X_test, tf.one_hot(y_test, 10)),
         shuffle=True

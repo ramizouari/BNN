@@ -15,7 +15,7 @@ This is a simple normalisation layer for image data
 It will divide the pixel intensity of each channel by the max intensity
 """
 class ImageNormalisationLayer(tensorflow.keras.layers.Layer):
-    def __init__(self,max_intensity=255):
+    def __init__(self,max_intensity=255.):
         super(ImageNormalisationLayer, self).__init__()
         self.max_intensity=max_intensity
         
@@ -30,13 +30,9 @@ class ImageNormalisationLayer(tensorflow.keras.layers.Layer):
 """
 
 class ScaledQuantDense(larq.layers.QuantDense):
-    def __init__(self,units,alpha_trainable=False,train_K=False,*args,**kwargs):
-        if "activation" in kwargs:
-            activation=kwargs["activation"]
-            self.db_activation=activation
-        else:
-            self.db_activation=None
-        super(ScaledQuantDense,self).__init__(units,*args,**{k:kwargs[k] for k in kwargs if k!="activation"})
+    def __init__(self,units,alpha_trainable=False,train_K=False,activation=None,*args,**kwargs):
+        self.db_activation=tensorflow.keras.activations.get(activation)
+        super(ScaledQuantDense,self).__init__(units,*args,**kwargs)
         self.alpha_trainable=alpha_trainable
         self.train_K=train_K
 
@@ -59,7 +55,7 @@ class ScaledQuantDense(larq.layers.QuantDense):
         #Calculates the correction tensor
         K=tensorflow.tensordot(beta,alpha,axes=0)
         #Apply the correction tensor to the result point-wise
-        return tensorflow.multiply(Z, K)
+        return self.db_activation(tensorflow.multiply(Z, K))
     def get_config(self):
         config=super(ScaledQuantDense,self).get_config()
         config.update({"alpha_trainable":self.alpha_trainable})
@@ -73,9 +69,10 @@ class ScaledQuantDense(larq.layers.QuantDense):
 
 
 class ScaledQuantConv2D(larq.layers.QuantConv2D):
-    def __init__(self,filters,kernel_size,alpha_trainable=False,*args,**kwargs):
+    def __init__(self,filters,kernel_size,alpha_trainable=False,activation=None,*args,**kwargs):
         super(ScaledQuantConv2D,self).__init__(filters,kernel_size,*args,**kwargs)
         self.alpha_trainable=alpha_trainable
+        self.db_activation=tensorflow.keras.activations.get(activation)
 
     def build(self,input_shape):
         super(ScaledQuantConv2D,self).build(input_shape)
@@ -105,7 +102,7 @@ class ScaledQuantConv2D(larq.layers.QuantConv2D):
         #print(f"a:{alpha.shape}\t b:{beta.shape}")
         K=tensorflow.tensordot(beta,alpha,axes=0)
         R=tensorflow.multiply(Z, K)
-        return R if not self.db_activation else self.db_activation(R)
+        return self.db_activation(R)
     def get_config(self):
         config=super(ScaledQuantConv2D,self).get_config()
         config.update({"alpha_trainable":self.alpha_trainable})
@@ -173,15 +170,54 @@ class ScaledQuantConv3D(larq.layers.QuantConv3D):
         return super(ScaledQuantConv3D,self).get_config()
 
 
+class ABCBase(tensorflow.keras.layers.Layer):
+    def __init__(self,estimators,*args,**kwargs):
+        super(ABCBase,self).__init__(*args,**kwargs)
+        self.kernel_estimators=len(estimators)
+        self.estimators=estimators
+    pass
+    
+    def build(self,input_shape):
+        #self.kernels=tensorflow.Variable()
+        super(ABCBase,self).build(input_shape)
+        for estimator in self.estimators:
+            estimator.build(input_shape)
+        pass
+    
+    def call(self,inputs,training=False):
+        output=0
+        for estimator in self.estimators:
+            output+=estimator.call(inputs,training)
+        return output
+            
 
-class ABCDense(tensorflow.keras.layers.Layer):
+class ABCDense(ABCBase):
     def __init__(self,units,kernel_estimators=3,activation_estimators=3,kernel_initializer="random_uniform",
                  activation_initialize="random_uniform",
                  kernel_quantizer=quantizers.ShiftedSteSign(),
                  input_quantizer=quantizers.ShiftedSteSign(),
                  kernel_constraint="weight_clip",activation=None,
                  use_bias=False,*args,**kwargs):
-        super(ABCDense,self).__init__(*args,**kwargs)
+        estimators=[ScaledQuantDense(units,kernel_quantizer=kernel_quantizer,
+                                       input_quantizer=input_quantizer,activation=activation,
+                                       kernel_constraint=kernel_constraint,
+                                       use_bias=use_bias,alpha_trainable=True) for i in range(kernel_estimators)]
+        super(ABCDense,self).__init__(estimators,*args,**kwargs)
+        self.kernel_estimators=kernel_estimators
+        self.activation_estimators=activation_estimators
+        self.units=units
+    pass
+    
+            
+
+class _ABCDense(tensorflow.keras.layers.Layer):
+    def __init__(self,units,kernel_estimators=3,activation_estimators=3,kernel_initializer="random_uniform",
+                 activation_initialize="random_uniform",
+                 kernel_quantizer=quantizers.ShiftedSteSign(),
+                 input_quantizer=quantizers.ShiftedSteSign(),
+                 kernel_constraint="weight_clip",activation=None,
+                 use_bias=False,*args,**kwargs):
+        super(_ABCDense,self).__init__(*args,**kwargs)
         self.kernel_estimators=kernel_estimators
         self.activation_estimators=activation_estimators
         self.units=units
@@ -193,7 +229,7 @@ class ABCDense(tensorflow.keras.layers.Layer):
     
     def build(self,input_shape):
         #self.kernels=tensorflow.Variable()
-        super(ABCDense,self).build(input_shape)
+        super(_ABCDense,self).build(input_shape)
         for estimator in self.estimators:
             estimator.build(input_shape)
         pass
@@ -206,6 +242,25 @@ class ABCDense(tensorflow.keras.layers.Layer):
             
 
 
-class ABCConv2D(tensorflow.keras.layers.Layer):
+class ABCConv2D(ABCBase):
+    def __init__(self,filters,kernel_size,kernel_estimators=3,activation_estimators=3,kernel_initializer="random_uniform",
+                 activation_initialize="random_uniform",
+                 kernel_quantizer=None,
+                 input_quantizer=None,
+                 kernel_constraint="weight_clip",activation=None,
+                 use_bias=False,conv2d_kwargs=dict(),*args,**kwargs):
+        if kernel_quantizer is None:
+            kernel_quantizer=quantizers.ShiftedSteSign()
+        if input_quantizer is None:
+            input_quantizer=quantizers.ShiftedSteSign()
+        estimators=[ScaledQuantConv2D(filters,kernel_size,kernel_quantizer=kernel_quantizer,
+                                       input_quantizer=input_quantizer,activation=activation,
+                                       kernel_constraint=kernel_constraint,
+                                       use_bias=use_bias,alpha_trainable=True,**conv2d_kwargs) for i in range(kernel_estimators)]
+        super(ABCConv2D,self).__init__(estimators,*args,**kwargs)
+        self.kernel_estimators=kernel_estimators
+        self.activation_estimators=activation_estimators
+        self.kernel_size=kernel_size
+        self.filters=filters
     pass
 
