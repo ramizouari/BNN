@@ -1,1 +1,1 @@
-BinaryFlow/quantizers.py
+binaryflow/quantizers.py

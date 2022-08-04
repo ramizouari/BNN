@@ -14,7 +14,7 @@ from .. import quantizers
 
 
 
-class ABCBase(tensorflow.keras.layers.Layer):
+class ABCBase(tensorflow.keras.Model):
     """
     This is the base class of ABCNetworks
     It contains the functions shared by any ABCNet
@@ -32,23 +32,23 @@ class ABCBase(tensorflow.keras.layers.Layer):
     </ul>
     """
     def __init__(self,estimators,*args,**kwargs):
-        super(ABCBase,self).__init__(*args,**kwargs)
+        super(ABCBase,self).__init__()
         self.kernel_estimators=len(estimators)
         self.estimators=estimators
+        self.accumulator=tensorflow.keras.layers.Add(name="accumulator")
     pass
     
     def build(self,input_shape):
         #self.kernels=tensorflow.Variable()
-        super(ABCBase,self).build(input_shape)
         for estimator in self.estimators:
             estimator.build(input_shape)
-        pass
-    
+        self.inputs=tensorflow.keras.layers.Input(shape=(input_shape[1:]))
+        self.outputs=self.call(self.inputs)
+        
+        
     def call(self,inputs,training=False):
-        output=0
-        for estimator in self.estimators:
-            output+=estimator.call(inputs,training)
-        return output
+        return self.accumulator([estimator(inputs) for estimator in self.estimators])
+    
     
     @staticmethod
     def get_quantizers(kernel_estimators,kernel_quantizers,input_quantizers,kernel_params,input_params):

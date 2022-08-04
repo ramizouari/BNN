@@ -33,7 +33,7 @@ class ShiftedQuantizer(larq.quantizers.Quantizer):
             initializer=tensorflow.keras.initializers.RandomUniform() if mu_initializer is None else mu_initializer
             self.mu=tensorflow.Variable(initializer(shape=()),trainable=trainable)
         else:
-            self.mu=tensorflow.Variable(float(mu))
+            self.mu=tensorflow.Variable(float(mu),trainable=trainable)
             
     def build(self,inputs_shape):
         super(ShiftedQuantizer,self).build(inputs_shape)
@@ -62,13 +62,13 @@ class ShiftedSteSign(ShiftedQuantizer):
 
 
 class StochasticSteSign(larq.quantizers.SteSign):
-    def __ini__(self,
+    def __init__(self,
                 distribution:tensorflow_probability.distributions.Distribution=tensorflow_probability.distributions.Uniform(-1,1),
                 *args,**kwargs):
         self.distribution=distribution
         super(StochasticSteSign,self).__init__(*args,**kwargs)
         
     def call(self,inputs):
-        return super(StochasticSteSign,self).call(tensorflow.substract(inputs,self.distribution.sample(inputs.shape)))
+        return super(StochasticSteSign,self).call(tensorflow.subtract(inputs,self.distribution.sample([1]+inputs.shape[1:])))
 
 #%%

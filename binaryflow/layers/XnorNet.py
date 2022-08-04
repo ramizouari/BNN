@@ -23,21 +23,19 @@ class ScaledQuantDense(larq.layers.QuantDense):
     def build(self,input_shape):
         super(ScaledQuantDense,self).build(input_shape)
         self.db_dimension=input_shape[-1]
-        if self.alpha_trainable:
-            self.alpha=tensorflow.Variable(tensorflow.divide(tensorflow.norm(self.kernel,axis=0,ord=1),self.db_dimension),
-                               trainable=True)
+        self.alpha=tensorflow.Variable(tensorflow.divide(tensorflow.norm(self.kernel,axis=0,ord=1),self.db_dimension),
+                               trainable=self.alpha_trainable)
 
     def call(self,inputs,training=False):
+        if not self.alpha_trainable and training:
+            self.alpha.assign(tensorflow.divide(tensorflow.norm(self.kernel,axis=0,ord=1),self.db_dimension))
         #Result of Quantified dense layer
         Z=super(ScaledQuantDense, self).call(inputs)
         #Calculates the scale factor of the convolution kernel
-        alpha= self.alpha if self.alpha_trainable else \
-            tensorflow.divide(tensorflow.norm(self.kernel,axis=0,ord=1),self.db_dimension)
-        
         #Calculates the scale factor of the input
         beta=tensorflow.divide(tensorflow.norm(inputs,axis=-1,ord=1),self.db_dimension)
         #Calculates the correction tensor
-        K=tensorflow.tensordot(beta,alpha,axes=0)
+        K=tensorflow.tensordot(beta,self.alpha,axes=0)
         #Apply the correction tensor to the result point-wise
         return self.db_activation(tensorflow.multiply(Z, K))
     def get_config(self):
@@ -53,8 +51,9 @@ class ScaledQuantDense(larq.layers.QuantDense):
 """    
     
 class ScaledQuantConv1D(larq.layers.QuantConv1D):
-    def __init__(self,*args,**kwargs):
+    def __init__(self,alpha_trainable=False,*args,**kwargs):
         super(ScaledQuantConv1D,self).__init__(*args,**kwargs)
+        self.alpha_trainable=alpha_trainable
 
     def build(self,input_shape):
         super(ScaledQuantConv1D,self).build(input_shape)
@@ -62,19 +61,20 @@ class ScaledQuantConv1D(larq.layers.QuantConv1D):
         self.db_series_span=input_shape[1]
         self.db_series_channels=input_shape[2]
         self.db_ones_tensor=numpy.ones(list(self.kernel_size)+[input_shape[-1],1])
-
+        self.alpha=tensorflow.Variable(tensorflow.divide(tensorflow.reduce_sum(tensorflow.abs(self.kernel),axis=(0,1)),self.db_dimension),self.alpha_trainable)
     def call(self,inputs,training=False):
+        if not self.alpha_trainable and training:
+            self.alpha.assign(tensorflow.divide(
+                tensorflow.reduce_sum(tensorflow.abs(self.kernel),axis=(0,1)),self.db_dimension))
         #Result of Binarised dense layer
         Z=super(ScaledQuantConv1D, self).call(inputs)
-        alpha=tensorflow.divide(
-            tensorflow.reduce_sum(tensorflow.abs(self.kernel),axis=(0,1)),self.db_dimension)
         I=tensorflow.abs(inputs)
         beta=tensorflow.divide(tensorflow.nn.conv1d(
             I,self.db_ones_tensor,self.strides,self.padding.upper()),
             self.db_dimension)
         beta=beta[...,0]
         #Adding scale factors
-        K=tensorflow.tensordot(beta,alpha,axes=0)
+        K=tensorflow.tensordot(beta,self.alpha,axes=0)
         return tensorflow.multiply(Z, K)
     def get_config(self):
         return super(ScaledQuantConv1D,self).get_config()
@@ -99,18 +99,18 @@ class ScaledQuantConv2D(larq.layers.QuantConv2D):
         self.db_img_channels=input_shape[3]
         self.db_dimension=numpy.prod(self.kernel_size)*self.db_img_channels
         self.db_ones_tensor=numpy.ones(list(self.kernel_size)+[input_shape[-1],1])
-        if self.alpha_trainable:
-            self.alpha=tensorflow.Variable(tensorflow.divide(
+        self.alpha=tensorflow.Variable(tensorflow.divide(
                     tensorflow.reduce_sum(tensorflow.abs(self.kernel),axis=(0,1,2)),self.db_dimension),
-                                   trainable=True)
+                                   trainable=self.alpha_trainable)
 
     def call(self,inputs,training=False):
         #Result of Binarised dense layer
         Z=super(ScaledQuantConv2D, self).call(inputs)
         #print(f"x:{self.kernel.shape}\t y:{inputs.shape}")
-        alpha=self.alpha if self.alpha_trainable else \
-            tensorflow.divide(
-                tensorflow.reduce_sum(tensorflow.abs(self.kernel),axis=(0,1,2)),self.db_dimension)
+        if training and not self.alpha_trainable:
+            self.alpha.assign(tensorflow.divide(
+                tensorflow.reduce_sum(tensorflow.abs(self.kernel),axis=(0,1,2)),self.db_dimension))
+
         I=tensorflow.abs(inputs)
         beta=tensorflow.divide(tensorflow.nn.conv2d(
             I,self.db_ones_tensor,self.strides,self.padding.upper()),
@@ -118,7 +118,7 @@ class ScaledQuantConv2D(larq.layers.QuantConv2D):
         beta=beta[...,0]
         #Adding scale factors
         #print(f"a:{alpha.shape}\t b:{beta.shape}")
-        K=tensorflow.tensordot(beta,alpha,axes=0)
+        K=tensorflow.tensordot(beta,self.alpha,axes=0)
         R=tensorflow.multiply(Z, K)
         return self.db_activation(R)
     def get_config(self):
@@ -156,3 +156,5 @@ class ScaledQuantConv3D(larq.layers.QuantConv3D):
     def get_config(self):
         return super(ScaledQuantConv3D,self).get_config()
 
+
+#%%
