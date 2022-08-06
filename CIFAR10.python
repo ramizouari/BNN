@@ -2,7 +2,7 @@ import tensorflow as tf
 import larq as lq
 import load
 import layers
-
+import quantizers
 
 if __name__=="__main__":
     data_format="channels_last"
@@ -13,12 +13,12 @@ if __name__=="__main__":
     
     # All quantized layers except the first will use the same options
     
-    kwargs = dict(input_quantizer="ste_sign",
-                  kernel_quantizer="ste_sign",
+    kwargs = dict(input_quantizers=quantizers.ShiftedSteSign,
+                  kernel_quantizers=quantizers.ShiftedSteSign,
                   kernel_constraint="weight_clip",
                   use_bias=False)
     
-    Dense=layers.ScaledQuantDense
+    Dense=layers.ABCDense
     Conv2D=layers.ABCConv2D
     
     model = tf.keras.models.Sequential([
@@ -33,22 +33,22 @@ if __name__=="__main__":
                               input_shape=(32, 32, 3)),
         tf.keras.layers.BatchNormalization(momentum=0.999, scale=False),
     
-        Conv2D(128, 3, conv2d_kwargs={"padding":"same"}, **kwargs),
+        Conv2D(128, 3, conv_kwargs={"padding":"same"}, **kwargs),
         tf.keras.layers.MaxPool2D(pool_size=(2, 2), strides=(2, 2)),
         tf.keras.layers.BatchNormalization(momentum=0.999, scale=False),
        # tf.keras.layers.Dropout(0.3),
     
-        Conv2D(256, 3, conv2d_kwargs={"padding":"same"}, **kwargs),
+        Conv2D(256, 3, conv_kwargs={"padding":"same"}, **kwargs),
         tf.keras.layers.BatchNormalization(momentum=0.999, scale=False),
     
-        Conv2D(256, 3, conv2d_kwargs={"padding":"same"}, **kwargs),
+        Conv2D(256, 3, conv_kwargs={"padding":"same"}, **kwargs),
         tf.keras.layers.MaxPool2D(pool_size=(2, 2), strides=(2, 2)),
         tf.keras.layers.BatchNormalization(momentum=0.999, scale=False),
         #tf.keras.layers.Dropout(0.3),
-        Conv2D(512, 3, conv2d_kwargs={"padding":"same"}, **kwargs),
+        Conv2D(512, 3, conv_kwargs={"padding":"same"}, **kwargs),
         tf.keras.layers.BatchNormalization(momentum=0.999, scale=False),
     
-        Conv2D(512, 3, conv2d_kwargs={"padding":"same"}, **kwargs),
+        Conv2D(512, 3, conv_kwargs={"padding":"same"}, **kwargs),
         tf.keras.layers.MaxPool2D(pool_size=(2, 2), strides=(2, 2)),
         tf.keras.layers.BatchNormalization(momentum=0.999, scale=False),
         tf.keras.layers.Flatten(),

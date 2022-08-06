@@ -1,0 +1,87 @@
+Summary of MNIST results with model BinaryNet
++sequential_1 stats---------------------------------------------------------------------------+
+| Layer                        Input prec.     Outputs  # 1-bit  # 32-bit  Memory  1-bit MACs |
+|                                    (bit)                  x 1       x 1    (kB)             |
++---------------------------------------------------------------------------------------------+
+| flatten_6                              -   (-1, 784)        0         0       0           0 |
+| image_normalization_layer_6            -   (-1, 784)        0         0       0           ? |
+| batch_normalization_8                  -   (-1, 784)        0      1568    6.12           0 |
+| quant_dense_3                          1  (-1, 1024)   802816         0   98.00      802816 |
+| batch_normalization_9                  -  (-1, 1024)        0      2048    8.00           0 |
+| quant_dense_4                          1  (-1, 1024)  1048576         0  128.00     1048576 |
+| batch_normalization_10                 -  (-1, 1024)        0      2048    8.00           0 |
+| quant_dense_5                          1    (-1, 10)    10240         0    1.25       10240 |
+| activation_1                           -    (-1, 10)        0         0       0           ? |
++---------------------------------------------------------------------------------------------+
+| Total                                                 1861632      5664  249.38     1861632 |
++---------------------------------------------------------------------------------------------+
++sequential_1 summary--------------------------+
+| Total params                      1.87 M     |
+| Trainable params                  1.86 M     |
+| Non-trainable params              5.66 k     |
+| Model size                        249.38 KiB |
+| Model size (8-bit FP weights)     232.78 KiB |
+| Float-32 Equivalent               7.12 MiB   |
+| Compression Ratio of Memory       0.03       |
+| Number of MACs                    1.86 M     |
+| Ratio of MACs that are binarized  1.0000     |
++----------------------------------------------+
+-------------------------------------------
+Summary of MNIST results with model XnorNet
++sequential_2 stats----------------------------------------------------------------------------------------+
+| Layer                        Input prec.     Outputs  # 1-bit  # 32-bit  Memory  1-bit MACs  32-bit MACs |
+|                                    (bit)                  x 1       x 1    (kB)                          |
++----------------------------------------------------------------------------------------------------------+
+| flatten_7                              -   (-1, 784)        0         0       0           0            0 |
+| image_normalization_layer_7            -   (-1, 784)        0         0       0           ?            ? |
+| batch_normalization_11                 -   (-1, 784)        0      1568    6.12           0            0 |
+| scaled_quant_dense                     1  (-1, 1024)   802816      1024  102.00      802816         1024 |
+| batch_normalization_12                 -  (-1, 1024)        0      2048    8.00           0            0 |
+| scaled_quant_dense_1                   1  (-1, 1024)  1048576      1024  132.00     1048576         1024 |
+| batch_normalization_13                 -  (-1, 1024)        0      2048    8.00           0            0 |
+| scaled_quant_dense_2                   1    (-1, 10)    10240        10    1.29       10240           10 |
+| activation_2                           -    (-1, 10)        0         0       0           ?            ? |
++----------------------------------------------------------------------------------------------------------+
+| Total                                                 1861632      7722  257.41     1861632         2058 |
++----------------------------------------------------------------------------------------------------------+
++sequential_2 summary--------------------------+
+| Total params                      1.87 M     |
+| Trainable params                  1.86 M     |
+| Non-trainable params              7.72 k     |
+| Model size                        257.41 KiB |
+| Model size (8-bit FP weights)     234.79 KiB |
+| Float-32 Equivalent               7.13 MiB   |
+| Compression Ratio of Memory       0.04       |
+| Number of MACs                    1.86 M     |
+| Ratio of MACs that are binarized  0.9989     |
++----------------------------------------------+
+-------------------------------------------
+Summary of MNIST results with model ABCNet
++sequential_3 stats----------------------------------------------------------------------------------------+
+| Layer                        Input prec.     Outputs  # 1-bit  # 32-bit  Memory  1-bit MACs  32-bit MACs |
+|                                    (bit)                  x 1       x 1    (kB)                          |
++----------------------------------------------------------------------------------------------------------+
+| flatten_8                              -   (-1, 784)        0         0       0           0            0 |
+| image_normalization_layer_8            -   (-1, 784)        0         0       0           ?            ? |
+| batch_normalization_14                 -   (-1, 784)        0      1568    6.12           0            0 |
+| abc_dense                              1  (-1, 1024)  2408448      3072  306.00     2408448         3072 |
+| batch_normalization_15                 -    multiple        0      2048    8.00           ?            ? |
+| abc_dense_1                            1  (-1, 1024)  3145728      3072  396.00     3145728         3072 |
+| batch_normalization_16                 -    multiple        0      2048    8.00           ?            ? |
+| abc_dense_2                            1    (-1, 10)    30720        30    3.87       30720           30 |
+| activation_3                           -    multiple        0         0       0           ?            ? |
++----------------------------------------------------------------------------------------------------------+
+| Total                                                 5584896     11838  727.99     5584896         6174 |
++----------------------------------------------------------------------------------------------------------+
++sequential_3 summary--------------------------+
+| Total params                      5.6 M      |
+| Trainable params                  5.59 M     |
+| Non-trainable params              5.66 k     |
+| Model size                        727.99 KiB |
+| Model size (8-bit FP weights)     693.31 KiB |
+| Float-32 Equivalent               21.35 MiB  |
+| Compression Ratio of Memory       0.03       |
+| Number of MACs                    5.59 M     |
+| Ratio of MACs that are binarized  0.9989     |
++----------------------------------------------+
+-------------------------------------------

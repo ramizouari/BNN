@@ -7,10 +7,10 @@ Created on Mon Jul 25 13:50:55 2022
 """
 
 import tensorflow as tf
-import larq as lq
-import load
-import layers
-import quantizers
+import binaryflow
+from binaryflow.layers import ABCNet
+from binaryflow.layers.normalization import ImageNormalizationLayer
+from binaryflow import quantizers
 import numpy as np
 
 
@@ -23,28 +23,26 @@ if __name__=="__main__":
     
     # All quantized layers except the first will use the same options
     
-    kwargs = dict(input_quantizer="ste_sign",
-                  kernel_quantizer=quantizers.ShiftedSteSign(trainable=True,mu=0),
+    kwargs = dict(
+                  kernel_quantizers=quantizers.ShiftedSteSign,
+                  input_quantizers=quantizers.ShiftedSteSign,
                   kernel_constraint="weight_clip",
+                  kernel_params={"mu_initializer":tf.keras.initializers.RandomNormal(0,0.05)},
                   use_bias=False
                   )
     
-    Dense=layers.ABCDense
-    Conv2D=layers.ABCConv2D
-    X_train=X_train.reshape((-1,28,28,1))
-    
-    X_test=X_test.reshape((-1,28,28,1))
-    
+    Dense=ABCNet.ABCDense
+    Conv2D=ABCNet.ABCConv2D
+
     model = tf.keras.models.Sequential([
-        #tf.keras.layers.Flatten(),
-        tf.keras.layers.GaussianNoise(stddev=4),
-        layers.ImageNormalisationLayer(),
-        tf.keras.layers.BatchNormalization(momentum=0.999,scale=False),
-        Conv2D(128,5,activation="relu", **kwargs),
-        tf.keras.layers.BatchNormalization(momentum=0.999,scale=False),
-        Conv2D(128,5,activation="relu", **kwargs),
-        tf.keras.layers.BatchNormalization(momentum=0.999,scale=False),
         tf.keras.layers.Flatten(),
+        tf.keras.layers.GaussianNoise(stddev=4),
+        ImageNormalizationLayer(),
+        tf.keras.layers.BatchNormalization(momentum=0.999,scale=False),
+        Dense(1024,activation="relu", **kwargs),
+        tf.keras.layers.BatchNormalization(momentum=0.999,scale=False),
+        Dense(1024,activation="relu", **kwargs),
+        tf.keras.layers.BatchNormalization(momentum=0.999,scale=False),
         Dense(10, **kwargs),
         tf.keras.layers.Activation("softmax")
     ])
