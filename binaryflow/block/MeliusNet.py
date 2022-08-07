@@ -39,6 +39,11 @@ class Improvement(tensorflow.keras.layers.Layer):
 
 
 
-class Melius(tensorflow.keras.Sequential):
+class MeliusDense(tensorflow.keras.Model):
     def __init__(self,increase,improvement,*args,**kwargs):
+        super(MeliusDense,self).__init__()
+        self.increase=increase
+        self.improvement=improvement
         pass
+    
+    def buil

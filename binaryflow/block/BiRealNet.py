@@ -50,9 +50,45 @@ class BiRealConv2D(BiRealBase):
     def __init__(self,kernel,estimator_type=larq.layers.QuantConv2D,*args,**kwargs):
         super(BiRealConv2D, self).__init__(estimator_type,*args,**kwargs)
         self.kernel_shape=kernel
+        
+    @staticmethod
+    def WithBatchNorm(estimator_type=larq.layers.QuantDense,*args,**kwargs):
+        return BiRealConv2D(estimator_type,layers=[
+            tensorflow.kerasl.layers.BatchNormalization()],*args,**kwargs)
     
     def build(self,input_shape):
         self.add(self.estimator_type(input_shape[-1],self.kernel_shape,*self.estimator_metadata["args"],
                                            **self.estimator_metadata["kwargs"]))
         pass
-     
+
+        
+class BiRealConv3D(BiRealBase):
+    def __init__(self,kernel,estimator_type=larq.layers.QuantConv3D,*args,**kwargs):
+        super(BiRealConv3D, self).__init__(estimator_type,*args,**kwargs)
+        self.kernel_shape=kernel
+        
+    @staticmethod
+    def WithBatchNorm(estimator_type=larq.layers.QuantDense,*args,**kwargs):
+        return BiRealConv3D(estimator_type,layers=[
+            tensorflow.kerasl.layers.BatchNormalization()],*args,**kwargs)
+    
+    def build(self,input_shape):
+        self.add(self.estimator_type(input_shape[-1],self.kernel_shape,*self.estimator_metadata["args"],
+                                           **self.estimator_metadata["kwargs"]))
+        pass
+    
+    
+class BiRealConv1D(BiRealBase):
+    def __init__(self,kernel,estimator_type=larq.layers.QuantConv1D,*args,**kwargs):
+        super(BiRealConv3D, self).__init__(estimator_type,*args,**kwargs)
+        self.kernel_shape=kernel
+        
+    @staticmethod
+    def WithBatchNorm(estimator_type=larq.layers.QuantDense,*args,**kwargs):
+        return BiRealConv1D(estimator_type,layers=[
+            tensorflow.kerasl.layers.BatchNormalization()],*args,**kwargs)
+    
+    def build(self,input_shape):
+        self.add(self.estimator_type(input_shape[-1],self.kernel_shape,*self.estimator_metadata["args"],
+                                           **self.estimator_metadata["kwargs"]))
+        pass

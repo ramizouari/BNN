@@ -71,4 +71,15 @@ class StochasticSteSign(larq.quantizers.SteSign):
     def call(self,inputs):
         return super(StochasticSteSign,self).call(tensorflow.subtract(inputs,self.distribution.sample([1]+inputs.shape[1:])))
 
+class NormalStochasticSteSign(StochasticSteSign):
+    def __init__(self,stddev):
+        super(NormallyStochasticSteSign,self).__init__(distribution=tensorflow_probability.distributions.Normal(0,stddev))
+
+class UniformStochasticSteSign(StochasticSteSign):
+    def __init__(self,a=-1.,b=1.):
+        super(UniformStochasticSteSign,self).__init__(distribution=tensorflow_probability.distributions.Uniform(a,b))
+        
+class LaplaceStochasticSteSign(StochasticSteSign):
+    def __init__(self,scale=0.5):
+        super(LaplaceStochasticSteSign,self).__init__(distribution=tensorflow_probability.distributions.Laplace(0,scale))
 #%%

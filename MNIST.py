@@ -35,9 +35,11 @@ if __name__=="__main__":
     Conv2D=ABCNet.ABCConv2D
 
     model = tf.keras.models.Sequential([
-        tf.keras.layers.Flatten(),
         tf.keras.layers.GaussianNoise(stddev=4),
         ImageNormalizationLayer(),
+                
+        tf.keras.layers.Flatten(),
+
         tf.keras.layers.BatchNormalization(momentum=0.999,scale=False),
         Dense(1024,activation="relu", **kwargs),
         tf.keras.layers.BatchNormalization(momentum=0.999,scale=False),
