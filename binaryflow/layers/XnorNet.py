@@ -70,8 +70,8 @@ class ScaledQuantDense(larq.layers.QuantDense):
 """    
     
 class ScaledQuantConv1D(larq.layers.QuantConv1D):
-    def __init__(self,alpha_trainable=False,*args,**kwargs):
-        super(ScaledQuantConv1D,self).__init__(*args,**kwargs)
+    def __init__(self,filters,kernel_size,alpha_trainable=False,*args,**kwargs):
+        super(ScaledQuantConv1D,self).__init__(filters,kernel_size,*args,**kwargs)
         self.alpha_trainable=alpha_trainable
 
     def build(self,input_shape):
@@ -79,7 +79,7 @@ class ScaledQuantConv1D(larq.layers.QuantConv1D):
         self.db_dimension=numpy.prod(input_shape[1:])
         self.db_series_span=input_shape[1]
         self.db_series_channels=input_shape[2]
-        self.db_ones_tensor=numpy.ones(list(self.kernel_size)+[input_shape[-1],1])
+        self.db_ones_tensor=tensorflow.ones(shape=list(self.kernel_size)+[input_shape[-1],1])
         self.alpha=tensorflow.Variable(tensorflow.divide(tensorflow.reduce_sum(tensorflow.abs(self.kernel),axis=(0,1)),self.db_dimension),self.alpha_trainable)
     def call(self,inputs,training=False):
         if not self.alpha_trainable and training:
@@ -213,8 +213,8 @@ class ScaledQuantPlusDense(larq.layers.QuantDense):
 
 
 class ScaledQuantPlusConv2D(larq.layers.QuantConv2D):
-    def __init__(self,filters,kernel,mode=1,scale_initializer="he_normal",activation=None,*args,**kwargs):
-        super(ScaledQuantPlusConv2D,self).__init__(filters,kernel,*args,**kwargs)
+    def __init__(self,filters,kernel_size,mode=1,scale_initializer="he_normal",activation=None,*args,**kwargs):
+        super(ScaledQuantPlusConv2D,self).__init__(filters,kernel_size,*args,**kwargs)
         self.db_activation=tensorflow.keras.activations.get(activation)
         self.mode=mode
         self.scale_initializer=tensorflow.keras.initializers.get(scale_initializer)
@@ -249,6 +249,40 @@ class ScaledQuantPlusConv2D(larq.layers.QuantConv2D):
         return self.db_activation(R)
     def get_config(self):
         config=super(ScaledQuantPlusConv2D,self).get_config()
+        config.update({"alpha_trainable":self.alpha_trainable})
+        return config
+    
+class ScaledQuantPlusConv1D(larq.layers.QuantConv1D):
+    def __init__(self,filters,kernel_size,mode=1,scale_initializer="he_normal",activation=None,*args,**kwargs):
+        super(ScaledQuantPlusConv1D,self).__init__(filters,kernel_size,*args,**kwargs)
+        self.db_activation=tensorflow.keras.activations.get(activation)
+        self.mode=mode
+        self.scale_initializer=tensorflow.keras.initializers.get(scale_initializer)
+
+    def build(self,input_shape):
+        super(ScaledQuantPlusConv1D,self).build(input_shape)
+        output_shape=self.compute_output_shape(input_shape)
+        if self.mode==1:
+            self.alpha=tensorflow.Variable(self.scale_initializer(shape=(self.filters,)))
+        elif self.mode==2:
+            self.alpha=tensorflow.Variable(self.scale_initializer(shape=output_shape[1:]))
+        elif self.mode==3:
+            self.beta=tensorflow.Variable(self.scale_initializer(shape=output_shape[1]))
+            self.alpha=tensorflow.Variable(self.scale_initializer(shape=(self.filters,)))
+        else:
+            raise RuntimeError(f"Unknown mode {self.mode}")
+
+    def call(self,inputs,training=False):
+        #Result of Binarised dense layer
+        Z=super(ScaledQuantPlusConv1D, self).call(inputs)
+        if self.mode<=2:
+            K=self.alpha
+        elif self.mode==3:
+            K=tensorflow.tensordot(self.beta,self.alpha,axes=0)
+        R=tensorflow.multiply(Z, K)
+        return self.db_activation(R)
+    def get_config(self):
+        config=super(ScaledQuantPlusConv1D,self).get_config()
         config.update({"alpha_trainable":self.alpha_trainable})
         return config
     

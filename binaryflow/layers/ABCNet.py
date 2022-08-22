@@ -35,19 +35,18 @@ class ABCBase(tensorflow.keras.Model):
         super(ABCBase,self).__init__()
         self.kernel_estimators=len(estimators)
         self.estimators=estimators
-        self.accumulator=tensorflow.keras.layers.Add(name="accumulator")
     pass
     
     def build(self,input_shape):
         #self.kernels=tensorflow.Variable()
         for estimator in self.estimators:
             estimator.build(input_shape)
-        self.inputs=tensorflow.keras.layers.Input(shape=(input_shape[1:]))
-        self.outputs=self.call(self.inputs)
+        #self.inputs=tensorflow.keras.layers.Input(shape=(input_shape[1:]))
+        #self.outputs=self.call(self.inputs)
         
         
     def call(self,inputs,training=False):
-        return self.accumulator([estimator(inputs) for estimator in self.estimators])
+        return tensorflow.add_n([estimator(inputs) for estimator in self.estimators])
     
     
     @staticmethod

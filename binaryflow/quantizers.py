@@ -61,6 +61,23 @@ class ShiftedSteSign(ShiftedQuantizer):
 
 
 
+class StochasticQuantizer(larq.quantizers.Quantizer):
+    def __init__(self,quantizer,distribution:tensorflow_probability.distributions.Distribution=tensorflow_probability.distributions.Uniform(-1,1),*args,**kwargs):
+        super(StochasticQuantizer,self).super(*args,**kwargs)
+        self.distribution=distribution
+        if isinstance(quantizer,type):
+            self.quantizer=quantizer()
+        else:
+            self.quantizer=quantizer
+        self.precision=self.quantizer.precision
+    def build(self,inputs_shape):
+        super(StochasticQuantizer,self).build(inputs_shape)
+        self.quantizer.build(inputs_shape)
+    
+    def call(self,inputs):
+        super(StochasticQuantizer,self).call(inputs)
+        return self.quantizer(tensorflow.add(inputs,self.distribution.sample([1]+inputs.shape[1:])))
+        
 class StochasticSteSign(larq.quantizers.SteSign):
     def __init__(self,
                 distribution:tensorflow_probability.distributions.Distribution=tensorflow_probability.distributions.Uniform(-1,1),
@@ -82,4 +99,5 @@ class UniformStochasticSteSign(StochasticSteSign):
 class LaplaceStochasticSteSign(StochasticSteSign):
     def __init__(self,scale=0.5):
         super(LaplaceStochasticSteSign,self).__init__(distribution=tensorflow_probability.distributions.Laplace(0,scale))
+
 #%%
