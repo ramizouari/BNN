@@ -1,0 +1,84 @@
+This is BibTeX, Version 0.99d (TeX Live 2021)
+Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
+The top-level auxiliary file: main.aux
+The style file: biblatex.bst
+Illegal, another \bibstyle command---line 25 of file main.aux
+ : \bibstyle
+ :          {apacite}
+I'm skipping whatever remains of this command
+White space in argument---line 188 of file main.aux
+ : \citation{En
+ :              effet}
+I'm skipping whatever remains of this command
+White space in argument---line 191 of file main.aux
+ : \citation{sa
+ :              performance à ImageNet avec l'architecture ResNet est $27\%$}
+I'm skipping whatever remains of this command
+Reallocated glb_str_ptr (elt_size=4) to 20 items from 10.
+Reallocated global_strs (elt_size=200001) to 20 items from 10.
+Reallocated glb_str_end (elt_size=4) to 20 items from 10.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated wiz_functions (elt_size=4) to 6000 items from 3000.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Database file #1: main-blx.bib
+Database file #2: biblio.bib
+I was expecting a `,' or a `}'---line 68 of file biblio.bib
+ :  
+ :  title={Go Player Finally Defeats Google’s AlphaGo After 3 Losses},
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+Reallocated field_info (elt_size=4) to 10040 items from 5000.
+Biblatex version: 3.17
+Reallocated wiz_functions (elt_size=4) to 9000 items from 6000.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+You've used 36 entries,
+            6399 wiz_defined-function locations,
+            1413 strings with 14916 characters,
+and the built_in function-call counts, 219655 in all, are:
+= -- 16324
+> -- 3485
+< -- 984
++ -- 6187
+- -- 1299
+* -- 15060
+:= -- 23949
+add.period$ -- 0
+call.type$ -- 36
+change.case$ -- 444
+chr.to.int$ -- 55
+cite$ -- 70
+duplicate$ -- 24767
+empty$ -- 19627
+format.name$ -- 2127
+if$ -- 44622
+int.to.chr$ -- 0
+int.to.str$ -- 81
+missing$ -- 0
+newline$ -- 1056
+num.names$ -- 1510
+pop$ -- 12362
+preamble$ -- 1
+purify$ -- 598
+quote$ -- 0
+skip$ -- 6141
+stack$ -- 0
+substring$ -- 27719
+swap$ -- 4860
+text.length$ -- 916
+text.prefix$ -- 35
+top$ -- 1
+type$ -- 1212
+warning$ -- 0
+while$ -- 3106
+width$ -- 0
+write$ -- 1021
+(There were 4 error messages)

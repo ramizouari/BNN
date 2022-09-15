@@ -90,7 +90,7 @@ class StochasticSteSign(larq.quantizers.SteSign):
 
 class NormalStochasticSteSign(StochasticSteSign):
     def __init__(self,stddev):
-        super(NormallyStochasticSteSign,self).__init__(distribution=tensorflow_probability.distributions.Normal(0,stddev))
+        super(NormalStochasticSteSign,self).__init__(distribution=tensorflow_probability.distributions.Normal(0,stddev))
 
 class UniformStochasticSteSign(StochasticSteSign):
     def __init__(self,a=-1.,b=1.):

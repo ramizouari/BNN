@@ -1,0 +1,121 @@
+%% Creator: Inkscape 1.2.1 (9c6d41e410, 2022-07-14), www.inkscape.org
+%% PDF/EPS/PS + LaTeX output extension by Johan Engelen, 2010
+%% Accompanies image file 'MNIST-Topology.pdf' (pdf, eps, ps)
+%%
+%% To include the image in your LaTeX document, write
+%%   \input{<filename>.pdf_tex}
+%%  instead of
+%%   \includegraphics{<filename>.pdf}
+%% To scale the image, write
+%%   \def\svgwidth{<desired width>}
+%%   \input{<filename>.pdf_tex}
+%%  instead of
+%%   \includegraphics[width=<desired width>]{<filename>.pdf}
+%%
+%% Images with a different path to the parent latex file can
+%% be accessed with the `import' package (which may need to be
+%% installed) using
+%%   \usepackage{import}
+%% in the preamble, and then including the image with
+%%   \import{<path to file>}{<filename>.pdf_tex}
+%% Alternatively, one can specify
+%%   \graphicspath{{<path to file>/}}
+%% 
+%% For more information, please see info/svg-inkscape on CTAN:
+%%   http://tug.ctan.org/tex-archive/info/svg-inkscape
+%%
+\begingroup%
+  \makeatletter%
+  \providecommand\color[2][]{%
+    \errmessage{(Inkscape) Color is used for the text in Inkscape, but the package 'color.sty' is not loaded}%
+    \renewcommand\color[2][]{}%
+  }%
+  \providecommand\transparent[1]{%
+    \errmessage{(Inkscape) Transparency is used (non-zero) for the text in Inkscape, but the package 'transparent.sty' is not loaded}%
+    \renewcommand\transparent[1]{}%
+  }%
+  \providecommand\rotatebox[2]{#2}%
+  \newcommand*\fsize{\dimexpr\f@size pt\relax}%
+  \newcommand*\lineheight[1]{\fontsize{\fsize}{#1\fsize}\selectfont}%
+  \ifx\svgwidth\undefined%
+    \setlength{\unitlength}{725.939055bp}%
+    \ifx\svgscale\undefined%
+      \relax%
+    \else%
+      \setlength{\unitlength}{\unitlength * \real{\svgscale}}%
+    \fi%
+  \else%
+    \setlength{\unitlength}{\svgwidth}%
+  \fi%
+  \global\let\svgwidth\undefined%
+  \global\let\svgscale\undefined%
+  \makeatother%
+  \begin{picture}(1,0.38500647)%
+    \lineheight{1}%
+    \setlength\tabcolsep{0pt}%
+    \put(0,0){\includegraphics[width=\unitlength,page=1]{MNIST-Topology.pdf}}%
+    \put(0.05123351,0.19970856){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}?×32×32\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=2]{MNIST-Topology.pdf}}%
+    \put(0.00671544,0.20089474){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}input\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=3]{MNIST-Topology.pdf}}%
+    \put(0.88459865,0.2147433){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}?×10\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=4]{MNIST-Topology.pdf}}%
+    \put(0.93068246,0.21533971){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}Probabilities\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=5]{MNIST-Topology.pdf}}%
+    \put(0.33341921,0.29347818){\color[rgb]{1,1,1}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}BatchNormalization\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=6]{MNIST-Topology.pdf}}%
+    \put(0.33341921,0.27384843){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}\textbf{beta}〈784〉\end{tabular}}}}%
+    \put(0.33341921,0.2614507){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}\textbf{moving_mean}〈784〉\end{tabular}}}}%
+    \put(0.33341921,0.24905296){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}\textbf{moving_variance}〈784〉\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=7]{MNIST-Topology.pdf}}%
+    \put(0.33804325,0.15543554){\color[rgb]{1,1,1}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}ScaledQuantDense\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=8]{MNIST-Topology.pdf}}%
+    \put(0.33804325,0.13580579){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}\textbf{kernel}〈784×1024〉\end{tabular}}}}%
+    \put(0.33804325,0.12340805){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}\textbf{Variable}〈1024〉\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=9]{MNIST-Topology.pdf}}%
+    \put(0.52088174,0.29042321){\color[rgb]{1,1,1}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}BatchNormalization\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=10]{MNIST-Topology.pdf}}%
+    \put(0.52088174,0.27079346){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}\textbf{beta}〈1024〉\end{tabular}}}}%
+    \put(0.52088174,0.25839573){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}\textbf{moving_mean}〈1024〉\end{tabular}}}}%
+    \put(0.52088174,0.24599799){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}\textbf{moving_variance}〈1024〉\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=11]{MNIST-Topology.pdf}}%
+    \put(0.52978766,0.15357338){\color[rgb]{1,1,1}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}ScaledQuantDense\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=12]{MNIST-Topology.pdf}}%
+    \put(0.52978766,0.13394363){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}\textbf{kernel}〈1024×1024〉\end{tabular}}}}%
+    \put(0.52978766,0.12154589){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}\textbf{Variable}〈1024〉\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=13]{MNIST-Topology.pdf}}%
+    \put(0.15495254,0.23503073){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}?×784\end{tabular}}}}%
+    \put(0.34946908,0.19626954){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}?×1024\end{tabular}}}}%
+    \put(0.53953638,0.19488561){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}?×1024\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=14]{MNIST-Topology.pdf}}%
+    \put(0.73951791,0.24291727){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}?×10\end{tabular}}}}%
+    \put(0.7433088,0.16567746){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}?×10\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=15]{MNIST-Topology.pdf}}%
+    \put(0.1637529,0.26948457){\color[rgb]{1,1,1}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}InputLayer\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=16]{MNIST-Topology.pdf}}%
+    \put(0.13056241,0.14007368){\color[rgb]{1,1,1}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}ImageNormalisationLayer\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=17]{MNIST-Topology.pdf}}%
+    \put(0.17403899,0.2041211){\color[rgb]{1,1,1}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}Flatten\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=18]{MNIST-Topology.pdf}}%
+    \put(0.20074685,0.0617513){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}Normalisation \\Block\end{tabular}}}}%
+    \put(0.38458719,0.04609671){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}Dense Block\end{tabular}}}}%
+    \put(0.57790377,0.04706229){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}Dense Block\end{tabular}}}}%
+    \put(0.77090822,0.05006811){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}Prediction Block\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=19]{MNIST-Topology.pdf}}%
+    \put(0.71208374,0.29924403){\color[rgb]{1,1,1}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}BatchNormalization\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=20]{MNIST-Topology.pdf}}%
+    \put(0.71208374,0.27961429){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}\textbf{beta}〈1024〉\end{tabular}}}}%
+    \put(0.71208374,0.26721655){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}\textbf{moving_mean}〈1024〉\end{tabular}}}}%
+    \put(0.71208374,0.25481882){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}\textbf{moving_variance}〈1024〉\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=21]{MNIST-Topology.pdf}}%
+    \put(0.7212809,0.21018422){\color[rgb]{1,1,1}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}ScaledQuantDense\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=22]{MNIST-Topology.pdf}}%
+    \put(0.7212809,0.19055448){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}\textbf{kernel}〈1024×10〉\end{tabular}}}}%
+    \put(0.7212809,0.17815674){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}\textbf{Variable}〈10〉\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=23]{MNIST-Topology.pdf}}%
+    \put(0.74398446,0.13285195){\color[rgb]{1,1,1}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}Activation\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=24]{MNIST-Topology.pdf}}%
+    \put(0.74398446,0.11115591){\color[rgb]{1,1,1}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}Softmax\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=25]{MNIST-Topology.pdf}}%
+  \end{picture}%
+\endgroup%

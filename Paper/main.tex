@@ -1,0 +1,151 @@
+% This is the main file to setup the document.
+% Document organization and appearance settings are all done here
+% Each chapter is a separate tex file, all linked together here
+
+
+%---------------------------- Preamble ------------------------------
+
+% Document type and font --
+\documentclass[11pt]{report} % form of the document
+\usepackage[utf8]{inputenc} %utf-8 encoding for ASCII symbols
+\usepackage{xcolor}
+\usepackage{afterpage}
+\usepackage{rotating}
+
+% Algorithms
+\usepackage{algorithm}
+\usepackage{algpseudocode}
+
+%Tables
+\usepackage{tabularx}
+\usepackage{tablefootnote}
+
+% Document Diagrams
+\usepackage{pgf-umlcd}
+
+% figures should not bypass sections
+\usepackage[section]{placeins}
+
+% inserting a blank page __
+\newcommand\blankpage{%
+    \null
+    \thispagestyle{empty}%
+    \addtocounter{page}{-1}%
+    \newpage}
+    
+% insert packages here --
+
+\usepackage{graphicx} %for handling images
+\usepackage[english]{babel} 
+%\usepackage{bbold}
+\usepackage{dsfont}
+\usepackage{amsmath}  %for math symbols$
+\usepackage{amssymb}
+\usepackage{mathabx} % font for math symbols
+\usepackage{fancyhdr} %constructing headers and footers
+\usepackage{titlesec} %title styles
+\usepackage{breakcites} %to avoid citations extending into the margin
+\usepackage{csquotes} %in-line and display quotations
+\usepackage[margin=1in]{geometry}  %to reduce margins to 1 inch 
+\usepackage{sidecap} %to enable side captions on figures
+\usepackage{setspace} %to enable double spacing   
+\usepackage{float}
+\usepackage{footnote}
+\usepackage[notransparent]{svg}
+\usepackage{mathrsfs}
+\usepackage{pgf-umlcd}
+
+
+\newcommand{\overbar}[1]{\mkern 1.5mu\overline{\mkern-1.5mu#1\mkern-1.5mu}\mkern 1.5mu}
+
+
+
+\DeclareMathOperator{\Adj}{Adj}
+\DeclareMathOperator*{\argmin}{\arg\!\min}
+\DeclareMathOperator*{\argmax}{\arg\!\max}
+\DeclareMathOperator{\sign}{sign}
+\DeclareMathOperator{\hardtanh}{hardtanh}
+\DeclareMathOperator{\clipfn}{clip}
+\DeclareMathOperator{\mat}{mat}
+\DeclareMathOperator{\rank}{rank}
+\DeclareMathOperator{\End}{End}
+\newtheorem{definition}{Définition}
+\newtheorem{remark}{Remarque}
+\newtheorem{proof}{Preuve}
+\newtheorem{lemma}{Lemme}
+
+% header and footer
+\pagestyle{fancy}
+\fancyhf{}
+\chead{RN quantifié pour un contexte deep learning embarqué}
+\renewcommand{\footrulewidth}{0.4pt}
+\cfoot{Rami ZOUARI  \\ INSAT, Tunisia }
+
+
+% linked table of contents
+\usepackage{hyperref}  
+\hypersetup{
+    colorlinks,
+    citecolor=black,
+    filecolor=black,
+    linkcolor=black,
+    urlcolor=black
+}
+
+% Glossaries and acronyms list
+%\usepackage[acronym]{glossaries}
+%\makeglossaries
+%\loadglsentries{glossary}
+
+% Bibliography --
+
+\bibliographystyle{apacite}
+\usepackage[backend=bibtex]{biblatex}      %use the biblatex package
+\usepackage[nottoc,numbib]{tocbibind}
+%\addbibresource{biblio.bib}   %path to the bib file
+\bibliography{biblio}
+
+% Set path to images
+\graphicspath{ {images/} }  
+\singlespacing  %making text double spaces
+
+
+% End of preamble
+%----------------------------- Document -----------------------------
+
+\begin{document}
+
+% Making title page
+\input{chapters/titlepage}
+\newpage
+\input{chapters/abstract}
+\input{chapters/acknowledgment}
+          
+
+% Roman page numbering to start from abstract onwards
+
+% Main matter starts here --
+% Inserting individual chapters. Mention chapter titles here and simple link the chapter's tex file
+
+\hypersetup{linkcolor=black}
+\tableofcontents
+\listoffigures
+\listoftables
+\input{chapters/Introduction}
+\input{chapters/chapter01}
+\input{chapters/chapter02} 
+\input{chapters/chapter03}
+\input{chapters/chapter04}
+\input{chapters/chapter05}
+\input{chapters/chapter06}
+\input{chapters/conclusion}
+\nocite{*}
+
+\printbibliography
+
+\addcontentsline{toc}{chapter}{Bibliography}
+
+
+\end{document}
+
+% End of document

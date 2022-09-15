@@ -1,0 +1,245 @@
+[codecarbon INFO @ 17:29:49] [setup] RAM Tracking...
+[codecarbon INFO @ 17:29:49] [setup] GPU Tracking...
+[codecarbon INFO @ 17:29:49] Tracking Nvidia GPU via pynvml
+[codecarbon INFO @ 17:29:49] [setup] CPU Tracking...
+[codecarbon ERROR @ 17:29:49] Unable to read Intel RAPL files for CPU power, we will use a constant for your CPU power. Please view https://github.com/mlco2/codecarbon/issues/244 for workarounds : [Errno 13] Permission denied: '/sys/class/powercap/intel-rapl/intel-rapl:0/energy_uj'
+[codecarbon INFO @ 17:29:49] Tracking Intel CPU via RAPL interface
+[codecarbon ERROR @ 17:29:49] Unable to read Intel RAPL files for CPU power, we will use a constant for your CPU power. Please view https://github.com/mlco2/codecarbon/issues/244 for workarounds : [Errno 13] Permission denied: '/sys/class/powercap/intel-rapl/intel-rapl:0/energy_uj'
+[codecarbon INFO @ 17:29:49] >>> Tracker's metadata:
+[codecarbon INFO @ 17:29:49]   Platform system: Linux-5.18.19-200.fc36.x86_64-x86_64-with-glibc2.35
+[codecarbon INFO @ 17:29:49]   Python version: 3.9.13
+[codecarbon INFO @ 17:29:49]   Available RAM : 31.216 GB
+[codecarbon INFO @ 17:29:49]   CPU count: 16
+[codecarbon INFO @ 17:29:49]   CPU model: AMD Ryzen 7 4800H with Radeon Graphics
+[codecarbon INFO @ 17:29:49]   GPU count: 1
+[codecarbon INFO @ 17:29:49]   GPU model: 1 x NVIDIA GeForce GTX 1660 Ti
+
+Epoch 1/90
+
+/home/ramizouari/anaconda3/envs/tensorflow_2_9/lib/python3.9/site-packages/keras/optimizers/optimizer_v2/adam.py:110: UserWarning: The `lr` argument is deprecated, use `learning_rate` instead.
+  super(Adam, self).__init__(name, **kwargs)
+
+53/53 [==============================] - 2s 19ms/step - loss: 0.8200 - accuracy: 0.7785 - val_loss: 36.3318 - val_accuracy: 0.2911
+Epoch 2/90
+53/53 [==============================] - 1s 18ms/step - loss: 0.1647 - accuracy: 0.9513 - val_loss: 21.5451 - val_accuracy: 0.3924
+Epoch 3/90
+53/53 [==============================] - 1s 18ms/step - loss: 0.0810 - accuracy: 0.9756 - val_loss: 8.7362 - val_accuracy: 0.4880
+Epoch 4/90
+53/53 [==============================] - 1s 18ms/step - loss: 0.0714 - accuracy: 0.9819 - val_loss: 5.8788 - val_accuracy: 0.5320
+Epoch 5/90
+53/53 [==============================] - 1s 19ms/step - loss: 0.0609 - accuracy: 0.9830 - val_loss: 3.3584 - val_accuracy: 0.6333
+Epoch 6/90
+53/53 [==============================] - 1s 17ms/step - loss: 0.0613 - accuracy: 0.9810 - val_loss: 1.4903 - val_accuracy: 0.7044
+Epoch 7/90
+53/53 [==============================] - 1s 17ms/step - loss: 0.0394 - accuracy: 0.9901 - val_loss: 0.7975 - val_accuracy: 0.7933
+Epoch 8/90
+53/53 [==============================] - 1s 19ms/step - loss: 0.0321 - accuracy: 0.9919 - val_loss: 1.9622 - val_accuracy: 0.6191
+Epoch 9/90
+53/53 [==============================] - 1s 19ms/step - loss: 0.0317 - accuracy: 0.9921 - val_loss: 5.5940 - val_accuracy: 0.3564
+Epoch 10/90
+53/53 [==============================] - 1s 17ms/step - loss: 0.0271 - accuracy: 0.9929 - val_loss: 3.2829 - val_accuracy: 0.4916
+Epoch 11/90
+53/53 [==============================] - 1s 18ms/step - loss: 0.0258 - accuracy: 0.9920 - val_loss: 3.2142 - val_accuracy: 0.5062
+Epoch 12/90
+53/53 [==============================] - 1s 17ms/step - loss: 0.0397 - accuracy: 0.9896 - val_loss: 2.1803 - val_accuracy: 0.6320
+Epoch 13/90
+53/53 [==============================] - 1s 18ms/step - loss: 0.0959 - accuracy: 0.9761 - val_loss: 2.5123 - val_accuracy: 0.5333
+Epoch 14/90
+53/53 [==============================] - 1s 19ms/step - loss: 0.0692 - accuracy: 0.9793 - val_loss: 8.4639 - val_accuracy: 0.3413
+Epoch 15/90
+52/53 [============================>.] - ETA: 0s - loss: 0.0535 - accuracy: 0.9850
+
+[codecarbon INFO @ 17:30:05] Energy consumed for RAM : 0.000049 kWh. RAM Power : 11.706069946289062 W
+[codecarbon INFO @ 17:30:05] Energy consumed for all GPUs : 0.000248 kWh. All GPUs Power : 59.487 W
+[codecarbon INFO @ 17:30:05] Energy consumed for all CPUs : 0.000000 kWh. All CPUs Power : 0.0 W
+[codecarbon INFO @ 17:30:05] 0.000297 kWh of electricity used since the begining.
+
+53/53 [==============================] - 1s 19ms/step - loss: 0.0569 - accuracy: 0.9841 - val_loss: 6.7333 - val_accuracy: 0.3684
+Epoch 16/90
+53/53 [==============================] - 1s 19ms/step - loss: 0.0453 - accuracy: 0.9874 - val_loss: 4.5166 - val_accuracy: 0.4400
+Epoch 17/90
+53/53 [==============================] - 1s 18ms/step - loss: 0.0271 - accuracy: 0.9920 - val_loss: 4.5881 - val_accuracy: 0.4698
+Epoch 18/90
+53/53 [==============================] - 1s 19ms/step - loss: 0.0259 - accuracy: 0.9929 - val_loss: 3.4850 - val_accuracy: 0.5916
+Epoch 19/90
+53/53 [==============================] - 1s 18ms/step - loss: 0.0180 - accuracy: 0.9951 - val_loss: 4.2694 - val_accuracy: 0.5369
+Epoch 20/90
+53/53 [==============================] - 1s 19ms/step - loss: 0.0171 - accuracy: 0.9950 - val_loss: 5.0927 - val_accuracy: 0.5271
+Epoch 21/90
+53/53 [==============================] - 1s 19ms/step - loss: 0.0190 - accuracy: 0.9951 - val_loss: 5.4067 - val_accuracy: 0.4369
+Epoch 22/90
+53/53 [==============================] - 1s 17ms/step - loss: 0.0121 - accuracy: 0.9963 - val_loss: 6.4780 - val_accuracy: 0.4449
+Epoch 23/90
+53/53 [==============================] - 1s 18ms/step - loss: 0.0184 - accuracy: 0.9954 - val_loss: 7.9143 - val_accuracy: 0.3098
+Epoch 24/90
+53/53 [==============================] - 1s 18ms/step - loss: 0.0142 - accuracy: 0.9959 - val_loss: 6.6668 - val_accuracy: 0.3040
+Epoch 25/90
+53/53 [==============================] - 1s 19ms/step - loss: 0.0139 - accuracy: 0.9959 - val_loss: 6.5101 - val_accuracy: 0.3542
+Epoch 26/90
+53/53 [==============================] - 1s 18ms/step - loss: 0.0123 - accuracy: 0.9960 - val_loss: 6.8284 - val_accuracy: 0.2924
+Epoch 27/90
+53/53 [==============================] - 1s 17ms/step - loss: 0.0167 - accuracy: 0.9950 - val_loss: 6.1744 - val_accuracy: 0.4471
+Epoch 28/90
+53/53 [==============================] - 1s 17ms/step - loss: 0.0171 - accuracy: 0.9953 - val_loss: 5.4406 - val_accuracy: 0.3129
+Epoch 29/90
+53/53 [==============================] - 1s 17ms/step - loss: 0.0187 - accuracy: 0.9944 - val_loss: 6.4388 - val_accuracy: 0.3582
+Epoch 30/90
+53/53 [==============================] - 1s 18ms/step - loss: 0.0362 - accuracy: 0.9924 - val_loss: 11.2354 - val_accuracy: 0.2387
+Epoch 31/90
+33/53 [=================>............] - ETA: 0s - loss: 0.0619 - accuracy: 0.9820
+
+[codecarbon INFO @ 17:30:20] Energy consumed for RAM : 0.000098 kWh. RAM Power : 11.706069946289062 W
+[codecarbon INFO @ 17:30:20] Energy consumed for all GPUs : 0.000568 kWh. All GPUs Power : 76.872 W
+[codecarbon INFO @ 17:30:20] Energy consumed for all CPUs : 0.000000 kWh. All CPUs Power : 0.0 W
+
+37/53 [===================>..........] - ETA: 0s - loss: 0.0651 - accuracy: 0.9814
+
+[codecarbon INFO @ 17:30:20] 0.000666 kWh of electricity used since the begining.
+
+53/53 [==============================] - 1s 18ms/step - loss: 0.0653 - accuracy: 0.9813 - val_loss: 2.5648 - val_accuracy: 0.6396
+Epoch 32/90
+53/53 [==============================] - 1s 18ms/step - loss: 0.1004 - accuracy: 0.9736 - val_loss: 2.9898 - val_accuracy: 0.6929
+Epoch 33/90
+53/53 [==============================] - 1s 18ms/step - loss: 0.0908 - accuracy: 0.9800 - val_loss: 11.0106 - val_accuracy: 0.4551
+Epoch 34/90
+53/53 [==============================] - 1s 18ms/step - loss: 0.0613 - accuracy: 0.9853 - val_loss: 32.3875 - val_accuracy: 0.1844
+Epoch 35/90
+53/53 [==============================] - 1s 18ms/step - loss: 0.0499 - accuracy: 0.9870 - val_loss: 5.9184 - val_accuracy: 0.4733
+Epoch 36/90
+53/53 [==============================] - 1s 17ms/step - loss: 0.0264 - accuracy: 0.9932 - val_loss: 2.3878 - val_accuracy: 0.7196
+Epoch 37/90
+53/53 [==============================] - 1s 18ms/step - loss: 0.0258 - accuracy: 0.9935 - val_loss: 1.3164 - val_accuracy: 0.7796
+Epoch 38/90
+53/53 [==============================] - 1s 18ms/step - loss: 0.0305 - accuracy: 0.9921 - val_loss: 38.7212 - val_accuracy: 0.2302
+Epoch 39/90
+53/53 [==============================] - 1s 18ms/step - loss: 0.0403 - accuracy: 0.9905 - val_loss: 43.9064 - val_accuracy: 0.2102
+Epoch 40/90
+53/53 [==============================] - 1s 18ms/step - loss: 0.0292 - accuracy: 0.9927 - val_loss: 8.3803 - val_accuracy: 0.5191
+Epoch 41/90
+53/53 [==============================] - 1s 17ms/step - loss: 0.0165 - accuracy: 0.9963 - val_loss: 3.3431 - val_accuracy: 0.6587
+Epoch 42/90
+53/53 [==============================] - 1s 18ms/step - loss: 0.0148 - accuracy: 0.9961 - val_loss: 1.6678 - val_accuracy: 0.7360
+Epoch 43/90
+53/53 [==============================] - 1s 18ms/step - loss: 0.0138 - accuracy: 0.9957 - val_loss: 1.4049 - val_accuracy: 0.7498
+Epoch 44/90
+53/53 [==============================] - 1s 17ms/step - loss: 0.0120 - accuracy: 0.9960 - val_loss: 1.8865 - val_accuracy: 0.7031
+Epoch 45/90
+53/53 [==============================] - 1s 18ms/step - loss: 0.0168 - accuracy: 0.9954 - val_loss: 0.8769 - val_accuracy: 0.8582
+Epoch 46/90
+53/53 [==============================] - 1s 18ms/step - loss: 0.0132 - accuracy: 0.9950 - val_loss: 0.4046 - val_accuracy: 0.9058
+Epoch 47/90
+29/53 [===============>..............] - ETA: 0s - loss: 0.0099 - accuracy: 0.9968
+
+[codecarbon INFO @ 17:30:35] Energy consumed for RAM : 0.000146 kWh. RAM Power : 11.706069946289062 W
+[codecarbon INFO @ 17:30:35] Energy consumed for all GPUs : 0.000883 kWh. All GPUs Power : 75.718 W
+[codecarbon INFO @ 17:30:35] Energy consumed for all CPUs : 0.000000 kWh. All CPUs Power : 0.0 W
+[codecarbon INFO @ 17:30:35] 0.001030 kWh of electricity used since the begining.
+
+53/53 [==============================] - 1s 19ms/step - loss: 0.0128 - accuracy: 0.9964 - val_loss: 0.5404 - val_accuracy: 0.8858
+Epoch 48/90
+53/53 [==============================] - 1s 18ms/step - loss: 0.0124 - accuracy: 0.9970 - val_loss: 0.8471 - val_accuracy: 0.8511
+Epoch 49/90
+53/53 [==============================] - 1s 18ms/step - loss: 0.0129 - accuracy: 0.9966 - val_loss: 2.0409 - val_accuracy: 0.6898
+Epoch 50/90
+53/53 [==============================] - 1s 19ms/step - loss: 0.0103 - accuracy: 0.9969 - val_loss: 2.0156 - val_accuracy: 0.7053
+Epoch 51/90
+53/53 [==============================] - 1s 18ms/step - loss: 0.0113 - accuracy: 0.9967 - val_loss: 1.9941 - val_accuracy: 0.7004
+Epoch 52/90
+53/53 [==============================] - 1s 18ms/step - loss: 0.0094 - accuracy: 0.9978 - val_loss: 1.7459 - val_accuracy: 0.7284
+Epoch 53/90
+53/53 [==============================] - 1s 19ms/step - loss: 0.0128 - accuracy: 0.9964 - val_loss: 1.6361 - val_accuracy: 0.7333
+Epoch 54/90
+53/53 [==============================] - 1s 19ms/step - loss: 0.0104 - accuracy: 0.9967 - val_loss: 2.4238 - val_accuracy: 0.6720
+Epoch 55/90
+53/53 [==============================] - 1s 19ms/step - loss: 0.0092 - accuracy: 0.9973 - val_loss: 3.3285 - val_accuracy: 0.6049
+Epoch 56/90
+53/53 [==============================] - 1s 18ms/step - loss: 0.0121 - accuracy: 0.9967 - val_loss: 2.9585 - val_accuracy: 0.6267
+Epoch 57/90
+53/53 [==============================] - 1s 18ms/step - loss: 0.0091 - accuracy: 0.9970 - val_loss: 1.8627 - val_accuracy: 0.7160
+Epoch 58/90
+53/53 [==============================] - 1s 18ms/step - loss: 0.0081 - accuracy: 0.9973 - val_loss: 2.1909 - val_accuracy: 0.6764
+Epoch 59/90
+53/53 [==============================] - 1s 18ms/step - loss: 0.0108 - accuracy: 0.9976 - val_loss: 2.3672 - val_accuracy: 0.6667
+Epoch 60/90
+53/53 [==============================] - 1s 18ms/step - loss: 0.0109 - accuracy: 0.9972 - val_loss: 4.0696 - val_accuracy: 0.5569
+Epoch 61/90
+53/53 [==============================] - 1s 18ms/step - loss: 0.0171 - accuracy: 0.9956 - val_loss: 8.1764 - val_accuracy: 0.4724
+Epoch 62/90
+53/53 [==============================] - ETA: 0s - loss: 0.0173 - accuracy: 0.9956
+
+[codecarbon INFO @ 17:30:50] Energy consumed for RAM : 0.000195 kWh. RAM Power : 11.706069946289062 W
+[codecarbon INFO @ 17:30:50] Energy consumed for all GPUs : 0.001151 kWh. All GPUs Power : 64.226 W
+[codecarbon INFO @ 17:30:50] Energy consumed for all CPUs : 0.000000 kWh. All CPUs Power : 0.0 W
+[codecarbon INFO @ 17:30:50] 0.001346 kWh of electricity used since the begining.
+
+53/53 [==============================] - 1s 18ms/step - loss: 0.0173 - accuracy: 0.9956 - val_loss: 2.5465 - val_accuracy: 0.6680
+Epoch 63/90
+53/53 [==============================] - 1s 18ms/step - loss: 0.0275 - accuracy: 0.9930 - val_loss: 0.8830 - val_accuracy: 0.8476
+Epoch 64/90
+53/53 [==============================] - 1s 18ms/step - loss: 0.0269 - accuracy: 0.9927 - val_loss: 0.8889 - val_accuracy: 0.8787
+Epoch 65/90
+53/53 [==============================] - 1s 18ms/step - loss: 0.0305 - accuracy: 0.9921 - val_loss: 2.3030 - val_accuracy: 0.7511
+Epoch 66/90
+53/53 [==============================] - 1s 18ms/step - loss: 0.0411 - accuracy: 0.9893 - val_loss: 5.5828 - val_accuracy: 0.6764
+Epoch 67/90
+53/53 [==============================] - 1s 19ms/step - loss: 0.0399 - accuracy: 0.9884 - val_loss: 4.8320 - val_accuracy: 0.7276
+Epoch 68/90
+53/53 [==============================] - 1s 18ms/step - loss: 0.0343 - accuracy: 0.9910 - val_loss: 12.2269 - val_accuracy: 0.5591
+Epoch 69/90
+53/53 [==============================] - 1s 17ms/step - loss: 0.0259 - accuracy: 0.9924 - val_loss: 25.8331 - val_accuracy: 0.4471
+Epoch 70/90
+53/53 [==============================] - 1s 19ms/step - loss: 0.0516 - accuracy: 0.9890 - val_loss: 2.5026 - val_accuracy: 0.8382
+Epoch 71/90
+53/53 [==============================] - 1s 18ms/step - loss: 0.0295 - accuracy: 0.9914 - val_loss: 7.6486 - val_accuracy: 0.6724
+Epoch 72/90
+53/53 [==============================] - 1s 19ms/step - loss: 0.0375 - accuracy: 0.9904 - val_loss: 0.9847 - val_accuracy: 0.9080
+Epoch 73/90
+53/53 [==============================] - 1s 18ms/step - loss: 0.0307 - accuracy: 0.9930 - val_loss: 12.4852 - val_accuracy: 0.5991
+Epoch 74/90
+53/53 [==============================] - 1s 19ms/step - loss: 0.0182 - accuracy: 0.9951 - val_loss: 1.0132 - val_accuracy: 0.9311
+Epoch 75/90
+53/53 [==============================] - 1s 18ms/step - loss: 0.0169 - accuracy: 0.9950 - val_loss: 0.5496 - val_accuracy: 0.9458
+Epoch 76/90
+53/53 [==============================] - 1s 19ms/step - loss: 0.0176 - accuracy: 0.9954 - val_loss: 0.5103 - val_accuracy: 0.9529
+Epoch 77/90
+53/53 [==============================] - 1s 19ms/step - loss: 0.0125 - accuracy: 0.9963 - val_loss: 0.5951 - val_accuracy: 0.9351
+Epoch 78/90
+21/53 [==========>...................] - ETA: 0s - loss: 0.0136 - accuracy: 0.9955
+
+[codecarbon INFO @ 17:31:05] Energy consumed for RAM : 0.000244 kWh. RAM Power : 11.706069946289062 W
+[codecarbon INFO @ 17:31:05] Energy consumed for all GPUs : 0.001481 kWh. All GPUs Power : 79.369 W
+[codecarbon INFO @ 17:31:05] Energy consumed for all CPUs : 0.000000 kWh. All CPUs Power : 0.0 W
+[codecarbon INFO @ 17:31:05] 0.001725 kWh of electricity used since the begining.
+
+53/53 [==============================] - 1s 18ms/step - loss: 0.0130 - accuracy: 0.9963 - val_loss: 0.8563 - val_accuracy: 0.9133
+Epoch 79/90
+53/53 [==============================] - 1s 18ms/step - loss: 0.0114 - accuracy: 0.9969 - val_loss: 0.3980 - val_accuracy: 0.9551
+Epoch 80/90
+53/53 [==============================] - 1s 19ms/step - loss: 0.0151 - accuracy: 0.9961 - val_loss: 0.7013 - val_accuracy: 0.9369
+Epoch 81/90
+53/53 [==============================] - 1s 18ms/step - loss: 0.0139 - accuracy: 0.9961 - val_loss: 0.3994 - val_accuracy: 0.9591
+Epoch 82/90
+53/53 [==============================] - 1s 19ms/step - loss: 0.0119 - accuracy: 0.9970 - val_loss: 0.3726 - val_accuracy: 0.9627
+Epoch 83/90
+53/53 [==============================] - 1s 18ms/step - loss: 0.0093 - accuracy: 0.9976 - val_loss: 0.3636 - val_accuracy: 0.9591
+Epoch 84/90
+53/53 [==============================] - 1s 18ms/step - loss: 0.0121 - accuracy: 0.9967 - val_loss: 0.4324 - val_accuracy: 0.9511
+Epoch 85/90
+53/53 [==============================] - 1s 19ms/step - loss: 0.0098 - accuracy: 0.9976 - val_loss: 0.3764 - val_accuracy: 0.9489
+Epoch 86/90
+53/53 [==============================] - 1s 18ms/step - loss: 0.0090 - accuracy: 0.9972 - val_loss: 0.3103 - val_accuracy: 0.9582
+Epoch 87/90
+53/53 [==============================] - 1s 17ms/step - loss: 0.0083 - accuracy: 0.9972 - val_loss: 0.4164 - val_accuracy: 0.9444
+Epoch 88/90
+53/53 [==============================] - 1s 19ms/step - loss: 0.0084 - accuracy: 0.9976 - val_loss: 0.4968 - val_accuracy: 0.9413
+Epoch 89/90
+53/53 [==============================] - 1s 19ms/step - loss: 0.0066 - accuracy: 0.9981 - val_loss: 0.3932 - val_accuracy: 0.9502
+Epoch 90/90
+53/53 [==============================] - 1s 18ms/step - loss: 0.0092 - accuracy: 0.9973 - val_loss: 0.4668 - val_accuracy: 0.9413
+
+[codecarbon INFO @ 17:31:17] Energy consumed for RAM : 0.000283 kWh. RAM Power : 11.706069946289062 W
+[codecarbon INFO @ 17:31:17] Energy consumed for all GPUs : 0.001714 kWh. All GPUs Power : 68.872 W
+[codecarbon INFO @ 17:31:17] Energy consumed for all CPUs : 0.000000 kWh. All CPUs Power : 0.0 W
+[codecarbon INFO @ 17:31:17] 0.001998 kWh of electricity used since the begining.
+
+0.0012288300666537424

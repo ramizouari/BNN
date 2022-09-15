@@ -1,0 +1,38 @@
+\babel@toc {english}{}
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {1.1}{\ignorespaces Lee Sedol analysant le tablier après sa première victoire du match}}{10}{figure.1.1}%
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {2.1}{\ignorespaces Un exemple d'une binarisation et sa dérivée}}{20}{figure.2.1}%
+\contentsline {figure}{\numberline {2.2}{\ignorespaces Table de multiplication en utilisant XNOR}}{21}{figure.2.2}%
+\contentsline {figure}{\numberline {2.3}{\ignorespaces Calcul du produit scalaires}}{23}{figure.2.3}%
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {3.1}{\ignorespaces Exemple d'un BinaryConnect à une seule couche cachée}}{29}{figure.3.1}%
+\contentsline {figure}{\numberline {3.2}{\ignorespaces Estimateur direct du gradient}}{30}{figure.3.2}%
+\contentsline {figure}{\numberline {3.3}{\ignorespaces Utilisation de facteurs $\alpha $ et $\beta $ dans une couche denseUtilisation de facteurs $\alpha $ et $\beta $ dans une couche dense}}{36}{figure.3.3}%
+\contentsline {figure}{\numberline {3.4}{\ignorespaces Utilisation de facteurs $\alpha $ et $\beta $ dans une couche convolutionnelle}}{38}{figure.3.4}%
+\contentsline {figure}{\numberline {3.5}{\ignorespaces Exemple d'un ABCNet à une seule couche}}{41}{figure.3.5}%
+\contentsline {figure}{\numberline {3.6}{\ignorespaces Exemple d'une liaison résiduale d'un BiRealNet}}{45}{figure.3.6}%
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {4.1}{\ignorespaces Structure de la bibliothèque}}{49}{figure.4.1}%
+\contentsline {figure}{\numberline {4.2}{\ignorespaces Le contenu de \texttt {layers}}}{50}{figure.4.2}%
+\contentsline {figure}{\numberline {4.3}{\ignorespaces BinaryNet}}{52}{figure.4.3}%
+\contentsline {figure}{\numberline {4.4}{\ignorespaces XnorNet}}{53}{figure.4.4}%
+\contentsline {figure}{\numberline {4.5}{\ignorespaces ABCNet}}{54}{figure.4.5}%
+\contentsline {figure}{\numberline {4.6}{\ignorespaces Le contenu de \texttt {blocs}, et de \texttt {BiRealNet}}}{55}{figure.4.6}%
+\contentsline {figure}{\numberline {4.7}{\ignorespaces Traçage des fonction Signe et Heaviside}}{56}{figure.4.7}%
+\contentsline {figure}{\numberline {4.8}{\ignorespaces Traçage de la fonction signe décalée à gauche par $\mu $}}{57}{figure.4.8}%
+\contentsline {figure}{\numberline {4.9}{\ignorespaces Traçage de la fonction signe stochastique}}{57}{figure.4.9}%
+\contentsline {figure}{\numberline {4.10}{\ignorespaces Diagramme de classe global du module \texttt {binaryflow.quantizers}}}{58}{figure.4.10}%
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {5.1}{\ignorespaces Méthodologie CRISP-DM}}{61}{figure.5.1}%
+\contentsline {figure}{\numberline {5.2}{\ignorespaces Courbe de chaque modèle}}{63}{figure.5.2}%
+\contentsline {figure}{\numberline {5.3}{\ignorespaces Des images de MNIST}}{65}{figure.5.3}%
+\contentsline {figure}{\numberline {5.4}{\ignorespaces Architecture du modèle MNIST}}{65}{figure.5.4}%
+\contentsline {figure}{\numberline {5.5}{\ignorespaces Des images de MNIST}}{69}{figure.5.5}%
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {6.1}{\ignorespaces Knowledge Discovery in Databases Methodology}}{71}{figure.6.1}%
+\contentsline {figure}{\numberline {6.2}{\ignorespaces Selection stage}}{72}{figure.6.2}%
+\contentsline {figure}{\numberline {6.3}{\ignorespaces Data integration}}{73}{figure.6.3}%
+\contentsline {figure}{\numberline {6.4}{\ignorespaces Linear regression on ideapad machine}}{75}{figure.6.4}%
+\contentsline {figure}{\numberline {6.5}{\ignorespaces Linear regression on legion5 machine}}{75}{figure.6.5}%
+\contentsline {figure}{\numberline {6.6}{\ignorespaces Final Model}}{78}{figure.6.6}%

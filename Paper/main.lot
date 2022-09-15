@@ -1,0 +1,23 @@
+\babel@toc {english}{}
+\addvspace {10\p@ }
+\contentsline {table}{\numberline {1.1}{\ignorespaces Coût des modèles de IA.}}{11}{table.1.1}%
+\addvspace {10\p@ }
+\contentsline {table}{\numberline {2.1}{\ignorespaces Terminologie des jeux de données}}{16}{table.2.1}%
+\contentsline {table}{\numberline {2.2}{\ignorespaces Terminologie de la division en Lots}}{16}{table.2.2}%
+\contentsline {table}{\numberline {2.3}{\ignorespaces Different machines characteristics}}{17}{table.2.3}%
+\addvspace {10\p@ }
+\contentsline {table}{\numberline {3.1}{\ignorespaces Le tableau d'avancement des BNNs}}{27}{table.3.1}%
+\contentsline {table}{\numberline {3.2}{\ignorespaces Approches de Quantification}}{28}{table.3.2}%
+\contentsline {table}{\numberline {3.3}{\ignorespaces Approches de Quantification}}{28}{table.3.3}%
+\addvspace {10\p@ }
+\contentsline {table}{\numberline {4.1}{\ignorespaces Terminologie de la division en Lots}}{51}{table.4.1}%
+\contentsline {table}{\numberline {4.2}{\ignorespaces Les Les estimations de gradient présentes}}{58}{table.4.2}%
+\addvspace {10\p@ }
+\contentsline {table}{\numberline {5.1}{\ignorespaces Comparaison entre les modèles en utilisant Float32 }}{67}{table.5.1}%
+\contentsline {table}{\numberline {5.2}{\ignorespaces Comparaison entre les modèles en utilisant Float8 }}{67}{table.5.2}%
+\contentsline {table}{\numberline {5.3}{\ignorespaces Comparaison entre les modèles en utilisant Float8 }}{67}{table.5.3}%
+\addvspace {10\p@ }
+\contentsline {table}{\numberline {6.1}{\ignorespaces Using train test split validation on memory models}}{77}{table.6.1}%
+\contentsline {table}{\numberline {6.2}{\ignorespaces Using train test split validation on time models}}{77}{table.6.2}%
+\contentsline {table}{\numberline {6.3}{\ignorespaces Using 10-fold cross validation on memory models}}{78}{table.6.3}%
+\contentsline {table}{\numberline {6.4}{\ignorespaces Using 10-fold cross validation on time models}}{78}{table.6.4}%

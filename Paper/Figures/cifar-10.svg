@@ -1,0 +1,2238 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   id="export"
+   class="canvas"
+   preserveAspectRatio="xMidYMid"
+   width="1681.5198"
+   height="453.45929"
+   version="1.1"
+   sodipodi:docname="cifar-10.svg"
+   inkscape:version="1.2.1 (9c6d41e410, 2022-07-14)"
+   inkscape:export-filename="cifar-10.png"
+   inkscape:export-xdpi="96"
+   inkscape:export-ydpi="96"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <defs
+     id="defs1742">
+    <defs
+       id="defs962">
+      <marker
+         id="arrowhead-vee"
+         viewBox="0 0 10 10"
+         refX="9"
+         refY="5"
+         markerUnits="strokeWidth"
+         markerWidth="8"
+         markerHeight="6"
+         orient="auto"
+         style="fill:#000000">
+        <path
+           d="M 0,0 10,5 0,10 4,5 Z"
+           style="stroke-width:1"
+           id="path956" />
+      </marker>
+      <marker
+         id="arrowhead-vee-select"
+         viewBox="0 0 10 10"
+         refX="9"
+         refY="5"
+         markerUnits="strokeWidth"
+         markerWidth="8"
+         markerHeight="6"
+         orient="auto"
+         style="fill:#ee0000">
+        <path
+           d="M 0,0 10,5 0,10 4,5 Z"
+           style="stroke-width:1"
+           id="path959" />
+      </marker>
+    </defs>
+    <marker
+       id="arrowhead-vee-2"
+       viewBox="0 0 10 10"
+       refX="9"
+       refY="5"
+       markerUnits="strokeWidth"
+       markerWidth="8"
+       markerHeight="6"
+       orient="auto"
+       style="fill:#000000">
+      <path
+         d="M 0,0 10,5 0,10 4,5 Z"
+         style="stroke-width:1"
+         id="path956-6" />
+    </marker>
+    <marker
+       id="arrowhead-vee-8"
+       viewBox="0 0 10 10"
+       refX="9"
+       refY="5"
+       markerUnits="strokeWidth"
+       markerWidth="8"
+       markerHeight="6"
+       orient="auto"
+       style="fill:#000000">
+      <path
+         d="M 0,0 10,5 0,10 4,5 Z"
+         style="stroke-width:1"
+         id="path956-7" />
+    </marker>
+    <marker
+       id="arrowhead-vee-8-2"
+       viewBox="0 0 10 10"
+       refX="9"
+       refY="5"
+       markerUnits="strokeWidth"
+       markerWidth="8"
+       markerHeight="6"
+       orient="auto"
+       style="fill:#000000">
+      <path
+         d="M 0,0 10,5 0,10 4,5 Z"
+         style="stroke-width:1"
+         id="path956-7-0" />
+    </marker>
+    <marker
+       id="arrowhead-vee-8-3"
+       viewBox="0 0 10 10"
+       refX="9"
+       refY="5"
+       markerUnits="strokeWidth"
+       markerWidth="8"
+       markerHeight="6"
+       orient="auto"
+       style="fill:#000000">
+      <path
+         d="M 0,0 10,5 0,10 4,5 Z"
+         style="stroke-width:1"
+         id="path956-7-7" />
+    </marker>
+    <marker
+       id="arrowhead-vee-8-3-9"
+       viewBox="0 0 10 10"
+       refX="9"
+       refY="5"
+       markerUnits="strokeWidth"
+       markerWidth="8"
+       markerHeight="6"
+       orient="auto"
+       style="fill:#000000">
+      <path
+         d="M 0,0 10,5 0,10 4,5 Z"
+         style="stroke-width:1"
+         id="path956-7-7-2" />
+    </marker>
+    <marker
+       id="arrowhead-vee-8-3-8"
+       viewBox="0 0 10 10"
+       refX="9"
+       refY="5"
+       markerUnits="strokeWidth"
+       markerWidth="8"
+       markerHeight="6"
+       orient="auto"
+       style="fill:#000000">
+      <path
+         d="M 0,0 10,5 0,10 4,5 Z"
+         style="stroke-width:1"
+         id="path956-7-7-9" />
+    </marker>
+    <marker
+       id="arrowhead-vee-8-2-3"
+       viewBox="0 0 10 10"
+       refX="9"
+       refY="5"
+       markerUnits="strokeWidth"
+       markerWidth="8"
+       markerHeight="6"
+       orient="auto"
+       style="fill:#000000">
+      <path
+         d="M 0,0 10,5 0,10 4,5 Z"
+         style="stroke-width:1"
+         id="path956-7-0-6" />
+    </marker>
+    <marker
+       id="arrowhead-vee-8-2-3-2"
+       viewBox="0 0 10 10"
+       refX="9"
+       refY="5"
+       markerUnits="strokeWidth"
+       markerWidth="8"
+       markerHeight="6"
+       orient="auto"
+       style="fill:#000000">
+      <path
+         d="M 0,0 10,5 0,10 4,5 Z"
+         style="stroke-width:1"
+         id="path956-7-0-6-9" />
+    </marker>
+    <marker
+       id="arrowhead-vee-8-2-3-2-1"
+       viewBox="0 0 10 10"
+       refX="9"
+       refY="5"
+       markerUnits="strokeWidth"
+       markerWidth="8"
+       markerHeight="6"
+       orient="auto"
+       style="fill:#000000">
+      <path
+         d="M 0,0 10,5 0,10 4,5 Z"
+         style="stroke-width:1"
+         id="path956-7-0-6-9-9" />
+    </marker>
+    <marker
+       id="arrowhead-vee-8-2-3-2-1-7"
+       viewBox="0 0 10 10"
+       refX="9"
+       refY="5"
+       markerUnits="strokeWidth"
+       markerWidth="8"
+       markerHeight="6"
+       orient="auto"
+       style="fill:#000000">
+      <path
+         d="M 0,0 10,5 0,10 4,5 Z"
+         style="stroke-width:1"
+         id="path956-7-0-6-9-9-8" />
+    </marker>
+    <marker
+       id="arrowhead-vee-8-2-3-2-1-7-5"
+       viewBox="0 0 10 10"
+       refX="9"
+       refY="5"
+       markerUnits="strokeWidth"
+       markerWidth="8"
+       markerHeight="6"
+       orient="auto"
+       style="fill:#000000">
+      <path
+         d="M 0,0 10,5 0,10 4,5 Z"
+         style="stroke-width:1"
+         id="path956-7-0-6-9-9-8-0" />
+    </marker>
+    <marker
+       id="arrowhead-vee-8-2-3-2-1-7-5-6"
+       viewBox="0 0 10 10"
+       refX="9"
+       refY="5"
+       markerUnits="strokeWidth"
+       markerWidth="8"
+       markerHeight="6"
+       orient="auto"
+       style="fill:#000000">
+      <path
+         d="M 0,0 10,5 0,10 4,5 Z"
+         style="stroke-width:1"
+         id="path956-7-0-6-9-9-8-0-1" />
+    </marker>
+    <marker
+       id="arrowhead-vee-8-2-3-2-1-7-1"
+       viewBox="0 0 10 10"
+       refX="9"
+       refY="5"
+       markerUnits="strokeWidth"
+       markerWidth="8"
+       markerHeight="6"
+       orient="auto"
+       style="fill:#000000">
+      <path
+         d="M 0,0 10,5 0,10 4,5 Z"
+         style="stroke-width:1"
+         id="path956-7-0-6-9-9-8-5" />
+    </marker>
+    <marker
+       id="arrowhead-vee-6"
+       viewBox="0 0 10 10"
+       refX="9"
+       refY="5"
+       markerUnits="strokeWidth"
+       markerWidth="8"
+       markerHeight="6"
+       orient="auto"
+       style="fill:#000000">
+      <path
+         d="M 0,0 10,5 0,10 4,5 Z"
+         style="stroke-width:1"
+         id="path956-64" />
+    </marker>
+  </defs>
+  <sodipodi:namedview
+     id="namedview1740"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     showgrid="false"
+     inkscape:zoom="3.6203867"
+     inkscape:cx="410.17718"
+     inkscape:cy="181.47233"
+     inkscape:window-width="1920"
+     inkscape:window-height="1011"
+     inkscape:window-x="0"
+     inkscape:window-y="32"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="g7073">
+    <sodipodi:guide
+       position="-5.5262,485.41693"
+       orientation="0,1500.594"
+       id="guide5782"
+       inkscape:locked="false" />
+    <sodipodi:guide
+       position="1495.0678,485.41693"
+       orientation="1500,0"
+       id="guide5784"
+       inkscape:locked="false" />
+    <sodipodi:guide
+       position="1495.0678,-1014.5831"
+       orientation="0,-1500.594"
+       id="guide5786"
+       inkscape:locked="false" />
+    <sodipodi:guide
+       position="-5.5262,-1014.5831"
+       orientation="-1500,0"
+       id="guide5788"
+       inkscape:locked="false" />
+    <sodipodi:guide
+       position="-5.5262,485.41693"
+       orientation="0,1500.594"
+       id="guide5790"
+       inkscape:locked="false" />
+    <sodipodi:guide
+       position="1495.8326,208.48917"
+       orientation="1500,0"
+       id="guide5792"
+       inkscape:locked="false" />
+    <sodipodi:guide
+       position="1495.0678,-1014.5831"
+       orientation="0,-1500.594"
+       id="guide5794"
+       inkscape:locked="false" />
+    <sodipodi:guide
+       position="-5.5262,-1014.5831"
+       orientation="-1500,0"
+       id="guide5796"
+       inkscape:locked="false" />
+  </sodipodi:namedview>
+  <g
+     id="g2005"
+     inkscape:groupmode="layer"
+     transform="translate(-1775.7173,-199.03202)" />
+  <g
+     id="clusters"
+     class="clusters"
+     transform="translate(0.5,-28.784825)" />
+  <g
+     id="g21373"
+     transform="translate(-5.5262,14.042355)">
+    <path
+       id="edge-input"
+       class="edge-path"
+       d="m 47.371175,215.29141 h 1.6666 12.3607 30.1367 17.794145"
+       style="fill:none;stroke:#000000;stroke-width:1px;marker-end:url(#arrowhead-vee)"
+       sodipodi:nodetypes="ccccc" />
+    <g
+       id="edge-labels"
+       class="edge-labels"
+       transform="translate(-10.131022,177.82095)">
+      <text
+         class="edge-label"
+         id="edge-label-edge-input"
+         transform="translate(60.24707,41.5)"
+         style="font-size:10px;font-family:'-apple-system', BlinkMacSystemFont, 'Segoe WPC', 'Segoe UI', Ubuntu, 'Droid Sans', sans-serif, 'PingFang SC';opacity:1"><tspan
+           xml:space="preserve"
+           dy="1em"
+           x="1"
+           id="tspan993">?×32×32×3</tspan></text>
+    </g>
+    <g
+       id="g21282">
+      <g
+         id="input-name-input"
+         class="node graph-input"
+         transform="translate(6.0262,204.17282)">
+        <g
+           class="node-item graph-item-input"
+           id="g1003">
+          <path
+             d="m 5,0 h 30.24707 a 5,5 0 0 1 5,5 v 11 a 5,5 0 0 1 -5,5 H 5 A 5,5 0 0 1 0,16 V 5 A 5,5 0 0 1 5,0 Z"
+             style="fill:#eeeeee;stroke:#000000;stroke-width:0"
+             id="path997" />
+          <text
+             x="6"
+             y="14"
+             style="font-size:11px;font-family:'-apple-system', BlinkMacSystemFont, 'Segoe WPC', 'Segoe UI', Ubuntu, 'Droid Sans', sans-serif, 'PingFang SC'"
+             id="text999">input</text>
+          <title
+             id="title1001">float32[?,32,32,3]</title>
+        </g>
+        <path
+           class="node border"
+           d="m 5,0 h 30.24707 a 5,5 0 0 1 5,5 v 11 a 5,5 0 0 1 -5,5 H 5 A 5,5 0 0 1 0,16 V 5 A 5,5 0 0 1 5,0 Z"
+           style="fill:none;stroke:#333333;stroke-width:1px"
+           id="path1005" />
+      </g>
+    </g>
+    <g
+       id="edge-labels-5"
+       class="edge-labels"
+       transform="translate(1504.3171,180.73329)" />
+  </g>
+  <g
+     id="g21889"
+     transform="translate(-5.5262,-31.957645)">
+    <text
+       class="edge-label"
+       id="edge-label-edge-input-0"
+       style="font-size:10px;font-family:'-apple-system', BlinkMacSystemFont, 'Segoe WPC', 'Segoe UI', Ubuntu, 'Droid Sans', sans-serif, 'PingFang SC';opacity:1"
+       x="70.029724"
+       y="37.5"
+       transform="translate(1504.3171,226.73329)"><tspan
+         xml:space="preserve"
+         dy="10"
+         x="71.029724"
+         id="tspan993-4">?×10</tspan></text>
+    <g
+       class="node"
+       transform="translate(1613.9522,249.65601)"
+       id="g1735">
+      <g
+         class="node-item graph-item-output"
+         id="g1731">
+        <path
+           d="m 5,0 h 62.59375 a 5,5 0 0 1 5,5 v 11 a 5,5 0 0 1 -5,5 H 5 A 5,5 0 0 1 0,16 V 5 A 5,5 0 0 1 5,0 Z"
+           style="fill:#eeeeee;stroke:#000000;stroke-width:0"
+           id="path1727" />
+        <text
+           x="6"
+           y="14"
+           style="font-size:11px;font-family:'-apple-system', BlinkMacSystemFont, 'Segoe WPC', 'Segoe UI', Ubuntu, 'Droid Sans', sans-serif, 'PingFang SC'"
+           id="text1729">Probabilities</text>
+      </g>
+      <path
+         class="node border"
+         d="m 5,0 h 62.59375 a 5,5 0 0 1 5,5 v 11 a 5,5 0 0 1 -5,5 H 5 A 5,5 0 0 1 0,16 V 5 A 5,5 0 0 1 5,0 Z"
+         style="fill:none;stroke:#333333;stroke-width:1px"
+         id="path1733" />
+    </g>
+    <path
+       id="edge-input-9"
+       class="edge-path"
+       d="m 1552.0769,260.2623 h 1.6666 12.3607 30.1367 17.7941"
+       style="fill:none;stroke:#000000;stroke-width:1px;marker-end:url(#arrowhead-vee-6)"
+       sodipodi:nodetypes="ccccc" />
+  </g>
+  <g
+     id="g12931"
+     transform="translate(-13.5262,-33.957645)">
+    <g
+       id="g7073"
+       transform="translate(-1764.3721,-92.215411)">
+      <path
+         id="edge-max_pooling2d_21"
+         class="edge-path"
+         d="m 2332.2107,233.88064 v 1.6667 c 0,1.6666 0,5 0,8.3333 0,3.3333 0,6.6667 0,8.3333 v 1.6667"
+         style="fill:none;stroke:#000000;stroke-width:1px;marker-end:url(#arrowhead-vee)"
+         inkscape:transform-center-x="36.697054"
+         inkscape:transform-center-y="6.575515" />
+      <path
+         id="edge-max_pooling2d_21-9"
+         class="edge-path"
+         d="m 2330.8045,385.48564 v 1.6667 c 0,1.6666 0,5 0,8.3333 0,3.3333 0,6.6667 0,8.3333 v 1.6667"
+         style="fill:none;stroke:#000000;stroke-width:1px;marker-end:url(#arrowhead-vee-8)"
+         inkscape:transform-center-x="36.697054"
+         inkscape:transform-center-y="6.575515" />
+      <path
+         id="edge-max_pooling2d_21-9-2"
+         class="edge-path"
+         d="m 2331.9862,456.86309 v 1.6667 c 0,1.6666 0,5 0,8.3333 0,3.3333 0,6.6667 0,8.3333 v 1.6667"
+         style="fill:none;stroke:#000000;stroke-width:1px;marker-end:url(#arrowhead-vee-8-2)"
+         inkscape:transform-center-x="36.697054"
+         inkscape:transform-center-y="6.575515" />
+      <path
+         id="edge-max_pooling2d_21-1"
+         class="edge-path"
+         d="m 2331.4284,303.44414 v 1.6667 c 0,1.6666 0,5 0,8.3333 0,3.3333 0,6.6667 0,8.3333 v 1.6667"
+         style="fill:none;stroke:#000000;stroke-width:1px;marker-end:url(#arrowhead-vee-2)"
+         inkscape:transform-center-x="36.697054"
+         inkscape:transform-center-y="6.575515" />
+      <g
+         id="node-name-batch_normalization_52"
+         class="node graph-node"
+         transform="translate(2278.5151,174.94325)">
+        <g
+           class="node-item node-item-type node-item-type-normalization"
+           id="g1160">
+          <path
+             d="m 5,0 h 107.85938 a 5,5 0 0 1 5,5 V 21 H 0 V 5 A 5,5 0 0 1 5,0 Z"
+             style="fill:#335544;stroke:#000000;stroke-width:0"
+             id="path1154" />
+          <text
+             x="6"
+             y="14"
+             style="font-size:11px;font-family:'-apple-system', BlinkMacSystemFont, 'Segoe WPC', 'Segoe UI', Ubuntu, 'Droid Sans', sans-serif, 'PingFang SC';fill:#ffffff"
+             id="text1156">BatchNormalization</text>
+          <title
+             id="title1158">batch_normalization_52</title>
+        </g>
+        <g
+           class="node-attribute"
+           transform="translate(0,21)"
+           id="g1187">
+          <path
+             d="m 0,0 h 117.85938 v 37 a 5,5 0 0 1 -5,5 H 5 A 5,5 0 0 1 0,37 Z"
+             style="fill:#ffffff;stroke:#000000;stroke-width:0"
+             id="path1162" />
+          <text
+             id="initializer-batch_normalization_52/beta:0"
+             xml:space="preserve"
+             x="6"
+             y="12"
+             style="font-weight:normal;font-size:9px;font-family:'-apple-system', BlinkMacSystemFont, 'Segoe WPC', 'Segoe UI', Ubuntu, 'Droid Sans', sans-serif, 'PingFang SC'"><title
+               id="title1164">float32[128]</title><tspan
+               style="font-weight:bold"
+               id="tspan1166">beta</tspan><tspan
+               id="tspan1168">〈128〉</tspan></text>
+          <text
+             id="initializer-batch_normalization_52/moving_mean:0"
+             xml:space="preserve"
+             x="6"
+             y="24"
+             style="font-weight:normal;font-size:9px;font-family:'-apple-system', BlinkMacSystemFont, 'Segoe WPC', 'Segoe UI', Ubuntu, 'Droid Sans', sans-serif, 'PingFang SC'"><title
+               id="title1171">float32[128]</title><tspan
+               style="font-weight:bold"
+               id="tspan1173">moving_mean</tspan><tspan
+               id="tspan1175">〈128〉</tspan></text>
+          <text
+             id="initializer-batch_normalization_52/moving_variance:0"
+             xml:space="preserve"
+             x="6"
+             y="36"
+             style="font-weight:normal;font-size:9px;font-family:'-apple-system', BlinkMacSystemFont, 'Segoe WPC', 'Segoe UI', Ubuntu, 'Droid Sans', sans-serif, 'PingFang SC'"><title
+               id="title1178">float32[128]</title><tspan
+               style="font-weight:bold"
+               id="tspan1180">moving_variance</tspan><tspan
+               id="tspan1182">〈128〉</tspan></text>
+          <line
+             class="node"
+             x1="0"
+             x2="117.85938"
+             y1="0"
+             y2="0"
+             style="fill:none;stroke:#333333;stroke-width:1px"
+             id="line1185" />
+        </g>
+        <path
+           class="node border"
+           d="m 5,0 h 107.85938 a 5,5 0 0 1 5,5 v 53 a 5,5 0 0 1 -5,5 H 5 A 5,5 0 0 1 0,58 V 5 A 5,5 0 0 1 5,0 Z"
+           style="fill:none;stroke:#333333;stroke-width:1px"
+           id="path1189" />
+      </g>
+      <g
+         id="node-name-scaled_quant_conv2d_44"
+         class="node graph-node"
+         transform="translate(2277.9463,255.52535)">
+        <g
+           class="node-item node-item-type"
+           id="g1198">
+          <path
+             d="m 5,0 h 104.82813 a 5,5 0 0 1 5,5 V 21 H 0 V 5 A 5,5 0 0 1 5,0 Z"
+             style="fill:#000000;stroke:#000000;stroke-width:0"
+             id="path1192" />
+          <text
+             x="6"
+             y="14"
+             style="font-size:11px;font-family:'-apple-system', BlinkMacSystemFont, 'Segoe WPC', 'Segoe UI', Ubuntu, 'Droid Sans', sans-serif, 'PingFang SC';fill:#ffffff"
+             id="text1194">ScaledQuantConv2D</text>
+          <title
+             id="title1196">scaled_quant_conv2d_44</title>
+        </g>
+        <g
+           class="node-attribute"
+           transform="translate(0,21)"
+           id="g1218">
+          <path
+             d="m 0,0 h 114.82813 v 25 a 5,5 0 0 1 -5,5 H 5 A 5,5 0 0 1 0,25 Z"
+             style="fill:#ffffff;stroke:#000000;stroke-width:0"
+             id="path1200" />
+          <text
+             id="initializer-scaled_quant_conv2d_44/kernel:0"
+             xml:space="preserve"
+             x="6"
+             y="12"
+             style="font-weight:normal;font-size:9px;font-family:'-apple-system', BlinkMacSystemFont, 'Segoe WPC', 'Segoe UI', Ubuntu, 'Droid Sans', sans-serif, 'PingFang SC'"><title
+               id="title1202">float32[3,3,128,256]</title><tspan
+               style="font-weight:bold"
+               id="tspan1204">kernel</tspan><tspan
+               id="tspan1206">〈3×3×128×256〉</tspan></text>
+          <text
+             id="initializer-scaled_quant_conv2d_44/Variable:0"
+             xml:space="preserve"
+             x="6"
+             y="24"
+             style="font-weight:normal;font-size:9px;font-family:'-apple-system', BlinkMacSystemFont, 'Segoe WPC', 'Segoe UI', Ubuntu, 'Droid Sans', sans-serif, 'PingFang SC'"><title
+               id="title1209">float32[256]</title><tspan
+               style="font-weight:bold"
+               id="tspan1211">Variable</tspan><tspan
+               id="tspan1213">〈256〉</tspan></text>
+          <line
+             class="node"
+             x1="0"
+             x2="114.82812"
+             y1="0"
+             y2="0"
+             style="fill:none;stroke:#333333;stroke-width:1px"
+             id="line1216" />
+        </g>
+        <path
+           class="node border"
+           d="m 5,0 h 104.82813 a 5,5 0 0 1 5,5 v 41 a 5,5 0 0 1 -5,5 H 5 A 5,5 0 0 1 0,46 V 5 A 5,5 0 0 1 5,0 Z"
+           style="fill:none;stroke:#333333;stroke-width:1px"
+           id="path1220" />
+      </g>
+      <g
+         id="node-name-batch_normalization_53"
+         class="node graph-node"
+         transform="translate(2275.8727,324.09705)">
+        <g
+           class="node-item node-item-type node-item-type-normalization"
+           id="g1229">
+          <path
+             d="m 5,0 h 107.85938 a 5,5 0 0 1 5,5 V 21 H 0 V 5 A 5,5 0 0 1 5,0 Z"
+             style="fill:#335544;stroke:#000000;stroke-width:0"
+             id="path1223" />
+          <text
+             x="6"
+             y="14"
+             style="font-size:11px;font-family:'-apple-system', BlinkMacSystemFont, 'Segoe WPC', 'Segoe UI', Ubuntu, 'Droid Sans', sans-serif, 'PingFang SC';fill:#ffffff"
+             id="text1225">BatchNormalization</text>
+          <title
+             id="title1227">batch_normalization_53</title>
+        </g>
+        <g
+           class="node-attribute"
+           transform="translate(0,21)"
+           id="g1256">
+          <path
+             d="m 0,0 h 117.85938 v 37 a 5,5 0 0 1 -5,5 H 5 A 5,5 0 0 1 0,37 Z"
+             style="fill:#ffffff;stroke:#000000;stroke-width:0"
+             id="path1231" />
+          <text
+             id="initializer-batch_normalization_53/beta:0"
+             xml:space="preserve"
+             x="6"
+             y="12"
+             style="font-weight:normal;font-size:9px;font-family:'-apple-system', BlinkMacSystemFont, 'Segoe WPC', 'Segoe UI', Ubuntu, 'Droid Sans', sans-serif, 'PingFang SC'"><title
+               id="title1233">float32[256]</title><tspan
+               style="font-weight:bold"
+               id="tspan1235">beta</tspan><tspan
+               id="tspan1237">〈256〉</tspan></text>
+          <text
+             id="initializer-batch_normalization_53/moving_mean:0"
+             xml:space="preserve"
+             x="6"
+             y="24"
+             style="font-weight:normal;font-size:9px;font-family:'-apple-system', BlinkMacSystemFont, 'Segoe WPC', 'Segoe UI', Ubuntu, 'Droid Sans', sans-serif, 'PingFang SC'"><title
+               id="title1240">float32[256]</title><tspan
+               style="font-weight:bold"
+               id="tspan1242">moving_mean</tspan><tspan
+               id="tspan1244">〈256〉</tspan></text>
+          <text
+             id="initializer-batch_normalization_53/moving_variance:0"
+             xml:space="preserve"
+             x="6"
+             y="36"
+             style="font-weight:normal;font-size:9px;font-family:'-apple-system', BlinkMacSystemFont, 'Segoe WPC', 'Segoe UI', Ubuntu, 'Droid Sans', sans-serif, 'PingFang SC'"><title
+               id="title1247">float32[256]</title><tspan
+               style="font-weight:bold"
+               id="tspan1249">moving_variance</tspan><tspan
+               id="tspan1251">〈256〉</tspan></text>
+          <line
+             class="node"
+             x1="0"
+             x2="117.85938"
+             y1="0"
+             y2="0"
+             style="fill:none;stroke:#333333;stroke-width:1px"
+             id="line1254" />
+        </g>
+        <path
+           class="node border"
+           d="m 5,0 h 107.85938 a 5,5 0 0 1 5,5 v 53 a 5,5 0 0 1 -5,5 H 5 A 5,5 0 0 1 0,58 V 5 A 5,5 0 0 1 5,0 Z"
+           style="fill:none;stroke:#333333;stroke-width:1px"
+           id="path1258" />
+      </g>
+      <g
+         id="node-name-scaled_quant_conv2d_45"
+         class="node graph-node"
+         transform="translate(2274.944,404.84469)">
+        <g
+           class="node-item node-item-type"
+           id="g1267">
+          <path
+             d="m 5,0 h 104.82813 a 5,5 0 0 1 5,5 V 21 H 0 V 5 A 5,5 0 0 1 5,0 Z"
+             style="fill:#000000;stroke:#000000;stroke-width:0"
+             id="path1261" />
+          <text
+             x="6"
+             y="14"
+             style="font-size:11px;font-family:'-apple-system', BlinkMacSystemFont, 'Segoe WPC', 'Segoe UI', Ubuntu, 'Droid Sans', sans-serif, 'PingFang SC';fill:#ffffff"
+             id="text1263">ScaledQuantConv2D</text>
+          <title
+             id="title1265">scaled_quant_conv2d_45</title>
+        </g>
+        <g
+           class="node-attribute"
+           transform="translate(0,21)"
+           id="g1287">
+          <path
+             d="m 0,0 h 114.82813 v 25 a 5,5 0 0 1 -5,5 H 5 A 5,5 0 0 1 0,25 Z"
+             style="fill:#ffffff;stroke:#000000;stroke-width:0"
+             id="path1269" />
+          <text
+             id="initializer-scaled_quant_conv2d_45/kernel:0"
+             xml:space="preserve"
+             x="6"
+             y="12"
+             style="font-weight:normal;font-size:9px;font-family:'-apple-system', BlinkMacSystemFont, 'Segoe WPC', 'Segoe UI', Ubuntu, 'Droid Sans', sans-serif, 'PingFang SC'"><title
+               id="title1271">float32[3,3,256,256]</title><tspan
+               style="font-weight:bold"
+               id="tspan1273">kernel</tspan><tspan
+               id="tspan1275">〈3×3×256×256〉</tspan></text>
+          <text
+             id="initializer-scaled_quant_conv2d_45/Variable:0"
+             xml:space="preserve"
+             x="6"
+             y="24"
+             style="font-weight:normal;font-size:9px;font-family:'-apple-system', BlinkMacSystemFont, 'Segoe WPC', 'Segoe UI', Ubuntu, 'Droid Sans', sans-serif, 'PingFang SC'"><title
+               id="title1278">float32[256]</title><tspan
+               style="font-weight:bold"
+               id="tspan1280">Variable</tspan><tspan
+               id="tspan1282">〈256〉</tspan></text>
+          <line
+             class="node"
+             x1="0"
+             x2="114.82812"
+             y1="0"
+             y2="0"
+             style="fill:none;stroke:#333333;stroke-width:1px"
+             id="line1285" />
+        </g>
+        <path
+           class="node border"
+           d="m 5,0 h 104.82813 a 5,5 0 0 1 5,5 v 41 a 5,5 0 0 1 -5,5 H 5 A 5,5 0 0 1 0,46 V 5 A 5,5 0 0 1 5,0 Z"
+           style="fill:none;stroke:#333333;stroke-width:1px"
+           id="path1289" />
+      </g>
+      <g
+         id="node-name-max_pooling2d_22"
+         class="node graph-node"
+         transform="translate(2289.1981,477.66463)">
+        <g
+           class="node-item node-item-type node-item-type-pool"
+           id="g1298">
+          <path
+             d="m 5,0 h 75.40625 a 5,5 0 0 1 5,5 v 11 a 5,5 0 0 1 -5,5 H 5 A 5,5 0 0 1 0,16 V 5 A 5,5 0 0 1 5,0 Z"
+             style="fill:#335533;stroke:#000000;stroke-width:0"
+             id="path1292" />
+          <text
+             x="6"
+             y="14"
+             style="font-size:11px;font-family:'-apple-system', BlinkMacSystemFont, 'Segoe WPC', 'Segoe UI', Ubuntu, 'Droid Sans', sans-serif, 'PingFang SC';fill:#ffffff"
+             id="text1294">MaxPooling2D</text>
+          <title
+             id="title1296">max_pooling2d_22</title>
+        </g>
+        <path
+           class="node border"
+           d="m 5,0 h 75.40625 a 5,5 0 0 1 5,5 v 11 a 5,5 0 0 1 -5,5 H 5 A 5,5 0 0 1 0,16 V 5 A 5,5 0 0 1 5,0 Z"
+           style="fill:none;stroke:#333333;stroke-width:1px"
+           id="path1300" />
+      </g>
+    </g>
+    <rect
+       style="fill:none;stroke:#808080;stroke-width:2.04068;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:5;stroke-dasharray:8.16271, 6.12203, 2.04068, 6.12203;stroke-dashoffset:0;stroke-opacity:0.94017"
+       id="rect8775"
+       width="171.26395"
+       height="448.81"
+       x="484.51697"
+       y="36.430805"
+       rx="0.98728156"
+       ry="1.8225465" />
+  </g>
+  <g
+     id="g14089"
+     transform="translate(-37.5262,-36.789106)">
+    <g
+       id="g12621"
+       transform="translate(4,30)">
+      <path
+         id="edge-max_pooling2d_21-9-5"
+         class="edge-path"
+         d="m 771.9461,264.10866 v 1.6667 c 0,1.6666 0,5 0,8.3333 0,3.3333 0,6.6667 0,8.3333 v 1.6667"
+         style="fill:none;stroke:#000000;stroke-width:1px;marker-end:url(#arrowhead-vee-8-3)"
+         inkscape:transform-center-x="36.697054"
+         inkscape:transform-center-y="6.575515" />
+      <path
+         id="edge-max_pooling2d_21-9-5-2"
+         class="edge-path"
+         d="m 771.105,183.44415 v 1.6667 c 0,1.6666 0,5 0,8.3333 0,3.3333 0,6.6667 0,8.3333 v 1.6667"
+         style="fill:none;stroke:#000000;stroke-width:1px;marker-end:url(#arrowhead-vee-8-3-9)"
+         inkscape:transform-center-x="36.697054"
+         inkscape:transform-center-y="6.575515" />
+      <path
+         id="edge-max_pooling2d_21-9-2-1"
+         class="edge-path"
+         d="m 773.0466,335.03772 v 1.6667 c 0,1.6666 0,5 0,8.3333 0,3.3333 0,6.6667 0,8.3333 v 1.6667"
+         style="fill:none;stroke:#000000;stroke-width:1px;marker-end:url(#arrowhead-vee-8-2-3)"
+         inkscape:transform-center-x="36.697054"
+         inkscape:transform-center-y="6.575515" />
+      <g
+         class="node-item node-item-type node-item-type-normalization"
+         id="g1309"
+         transform="translate(714.3236,55.89538)">
+        <path
+           d="m 5,0 h 107.85938 a 5,5 0 0 1 5,5 V 21 H 0 V 5 A 5,5 0 0 1 5,0 Z"
+           style="fill:#335544;stroke:#000000;stroke-width:0"
+           id="path1303" />
+        <text
+           x="6"
+           y="14"
+           style="font-size:11px;font-family:'-apple-system', BlinkMacSystemFont, 'Segoe WPC', 'Segoe UI', Ubuntu, 'Droid Sans', sans-serif, 'PingFang SC';fill:#ffffff"
+           id="text1305">BatchNormalization</text>
+        <title
+           id="title1307">batch_normalization_54</title>
+      </g>
+      <g
+         class="node-attribute"
+         transform="translate(714.3236,76.89538)"
+         id="g1336">
+        <path
+           d="m 0,0 h 117.85938 v 37 a 5,5 0 0 1 -5,5 H 5 A 5,5 0 0 1 0,37 Z"
+           style="fill:#ffffff;stroke:#000000;stroke-width:0"
+           id="path1311" />
+        <text
+           id="initializer-batch_normalization_54/beta:0"
+           xml:space="preserve"
+           x="6"
+           y="12"
+           style="font-weight:normal;font-size:9px;font-family:'-apple-system', BlinkMacSystemFont, 'Segoe WPC', 'Segoe UI', Ubuntu, 'Droid Sans', sans-serif, 'PingFang SC'"><title
+             id="title1313">float32[256]</title><tspan
+             style="font-weight:bold"
+             id="tspan1315">beta</tspan><tspan
+             id="tspan1317">〈256〉</tspan></text>
+        <text
+           id="initializer-batch_normalization_54/moving_mean:0"
+           xml:space="preserve"
+           x="6"
+           y="24"
+           style="font-weight:normal;font-size:9px;font-family:'-apple-system', BlinkMacSystemFont, 'Segoe WPC', 'Segoe UI', Ubuntu, 'Droid Sans', sans-serif, 'PingFang SC'"><title
+             id="title1320">float32[256]</title><tspan
+             style="font-weight:bold"
+             id="tspan1322">moving_mean</tspan><tspan
+             id="tspan1324">〈256〉</tspan></text>
+        <text
+           id="initializer-batch_normalization_54/moving_variance:0"
+           xml:space="preserve"
+           x="6"
+           y="36"
+           style="font-weight:normal;font-size:9px;font-family:'-apple-system', BlinkMacSystemFont, 'Segoe WPC', 'Segoe UI', Ubuntu, 'Droid Sans', sans-serif, 'PingFang SC'"><title
+             id="title1327">float32[256]</title><tspan
+             style="font-weight:bold"
+             id="tspan1329">moving_variance</tspan><tspan
+             id="tspan1331">〈256〉</tspan></text>
+        <line
+           class="node"
+           x1="0"
+           x2="117.85938"
+           y1="0"
+           y2="0"
+           style="fill:none;stroke:#333333;stroke-width:1px"
+           id="line1334" />
+      </g>
+      <path
+         class="node border"
+         d="M 719.3236,55.89538 H 827.183 a 5,5 0 0 1 5,5 v 53 a 5,5 0 0 1 -5,5 H 719.3236 a 5,5 0 0 1 -5,-5 v -53 a 5,5 0 0 1 5,-5 z"
+         style="fill:none;stroke:#333333;stroke-width:1px"
+         id="path1338" />
+      <g
+         class="node-item node-item-type"
+         id="g1347"
+         transform="translate(715.3536,133.79798)">
+        <path
+           d="m 5,0 h 104.82813 a 5,5 0 0 1 5,5 V 21 H 0 V 5 A 5,5 0 0 1 5,0 Z"
+           style="fill:#000000;stroke:#000000;stroke-width:0"
+           id="path1341" />
+        <text
+           x="6"
+           y="14"
+           style="font-size:11px;font-family:'-apple-system', BlinkMacSystemFont, 'Segoe WPC', 'Segoe UI', Ubuntu, 'Droid Sans', sans-serif, 'PingFang SC';fill:#ffffff"
+           id="text1343">ScaledQuantConv2D</text>
+        <title
+           id="title1345">scaled_quant_conv2d_46</title>
+      </g>
+      <g
+         class="node-attribute"
+         transform="translate(715.3536,154.79798)"
+         id="g1367">
+        <path
+           d="m 0,0 h 114.82813 v 25 a 5,5 0 0 1 -5,5 H 5 A 5,5 0 0 1 0,25 Z"
+           style="fill:#ffffff;stroke:#000000;stroke-width:0"
+           id="path1349" />
+        <text
+           id="initializer-scaled_quant_conv2d_46/kernel:0"
+           xml:space="preserve"
+           x="6"
+           y="12"
+           style="font-weight:normal;font-size:9px;font-family:'-apple-system', BlinkMacSystemFont, 'Segoe WPC', 'Segoe UI', Ubuntu, 'Droid Sans', sans-serif, 'PingFang SC'"><title
+             id="title1351">float32[3,3,256,512]</title><tspan
+             style="font-weight:bold"
+             id="tspan1353">kernel</tspan><tspan
+             id="tspan1355">〈3×3×256×512〉</tspan></text>
+        <text
+           id="initializer-scaled_quant_conv2d_46/Variable:0"
+           xml:space="preserve"
+           x="6"
+           y="24"
+           style="font-weight:normal;font-size:9px;font-family:'-apple-system', BlinkMacSystemFont, 'Segoe WPC', 'Segoe UI', Ubuntu, 'Droid Sans', sans-serif, 'PingFang SC'"><title
+             id="title1358">float32[512]</title><tspan
+             style="font-weight:bold"
+             id="tspan1360">Variable</tspan><tspan
+             id="tspan1362">〈512〉</tspan></text>
+        <line
+           class="node"
+           x1="0"
+           x2="114.82812"
+           y1="0"
+           y2="0"
+           style="fill:none;stroke:#333333;stroke-width:1px"
+           id="line1365" />
+      </g>
+      <path
+         class="node border"
+         d="m 720.3536,133.79798 h 104.8281 a 5,5 0 0 1 5,5 v 41 a 5,5 0 0 1 -5,5 H 720.3536 a 5,5 0 0 1 -5,-5 v -41 a 5,5 0 0 1 5,-5 z"
+         style="fill:none;stroke:#333333;stroke-width:1px"
+         id="path1369" />
+      <g
+         class="node-item node-item-type node-item-type-normalization"
+         id="g1378"
+         transform="translate(715.0032,203.63132)">
+        <path
+           d="m 5,0 h 107.85938 a 5,5 0 0 1 5,5 V 21 H 0 V 5 A 5,5 0 0 1 5,0 Z"
+           style="fill:#335544;stroke:#000000;stroke-width:0"
+           id="path1372" />
+        <text
+           x="6"
+           y="14"
+           style="font-size:11px;font-family:'-apple-system', BlinkMacSystemFont, 'Segoe WPC', 'Segoe UI', Ubuntu, 'Droid Sans', sans-serif, 'PingFang SC';fill:#ffffff"
+           id="text1374">BatchNormalization</text>
+        <title
+           id="title1376">batch_normalization_55</title>
+      </g>
+      <g
+         class="node-attribute"
+         transform="translate(715.0032,224.63132)"
+         id="g1405">
+        <path
+           d="m 0,0 h 117.85938 v 37 a 5,5 0 0 1 -5,5 H 5 A 5,5 0 0 1 0,37 Z"
+           style="fill:#ffffff;stroke:#000000;stroke-width:0"
+           id="path1380" />
+        <text
+           id="initializer-batch_normalization_55/beta:0"
+           xml:space="preserve"
+           x="6"
+           y="12"
+           style="font-weight:normal;font-size:9px;font-family:'-apple-system', BlinkMacSystemFont, 'Segoe WPC', 'Segoe UI', Ubuntu, 'Droid Sans', sans-serif, 'PingFang SC'"><title
+             id="title1382">float32[512]</title><tspan
+             style="font-weight:bold"
+             id="tspan1384">beta</tspan><tspan
+             id="tspan1386">〈512〉</tspan></text>
+        <text
+           id="initializer-batch_normalization_55/moving_mean:0"
+           xml:space="preserve"
+           x="6"
+           y="24"
+           style="font-weight:normal;font-size:9px;font-family:'-apple-system', BlinkMacSystemFont, 'Segoe WPC', 'Segoe UI', Ubuntu, 'Droid Sans', sans-serif, 'PingFang SC'"><title
+             id="title1389">float32[512]</title><tspan
+             style="font-weight:bold"
+             id="tspan1391">moving_mean</tspan><tspan
+             id="tspan1393">〈512〉</tspan></text>
+        <text
+           id="initializer-batch_normalization_55/moving_variance:0"
+           xml:space="preserve"
+           x="6"
+           y="36"
+           style="font-weight:normal;font-size:9px;font-family:'-apple-system', BlinkMacSystemFont, 'Segoe WPC', 'Segoe UI', Ubuntu, 'Droid Sans', sans-serif, 'PingFang SC'"><title
+             id="title1396">float32[512]</title><tspan
+             style="font-weight:bold"
+             id="tspan1398">moving_variance</tspan><tspan
+             id="tspan1400">〈512〉</tspan></text>
+        <line
+           class="node"
+           x1="0"
+           x2="117.85938"
+           y1="0"
+           y2="0"
+           style="fill:none;stroke:#333333;stroke-width:1px"
+           id="line1403" />
+      </g>
+      <path
+         class="node border"
+         d="m 720.0032,203.63132 h 107.8594 a 5,5 0 0 1 5,5 v 53 a 5,5 0 0 1 -5,5 H 720.0032 a 5,5 0 0 1 -5,-5 v -53 a 5,5 0 0 1 5,-5 z"
+         style="fill:none;stroke:#333333;stroke-width:1px"
+         id="path1407" />
+      <g
+         class="node-item node-item-type"
+         id="g1416"
+         transform="translate(716.879,284.79648)">
+        <path
+           d="m 5,0 h 104.82813 a 5,5 0 0 1 5,5 V 21 H 0 V 5 A 5,5 0 0 1 5,0 Z"
+           style="fill:#000000;stroke:#000000;stroke-width:0"
+           id="path1410" />
+        <text
+           x="6"
+           y="14"
+           style="font-size:11px;font-family:'-apple-system', BlinkMacSystemFont, 'Segoe WPC', 'Segoe UI', Ubuntu, 'Droid Sans', sans-serif, 'PingFang SC';fill:#ffffff"
+           id="text1412">ScaledQuantConv2D</text>
+        <title
+           id="title1414">scaled_quant_conv2d_47</title>
+      </g>
+      <g
+         class="node-attribute"
+         transform="translate(716.879,305.79648)"
+         id="g1436">
+        <path
+           d="m 0,0 h 114.82813 v 25 a 5,5 0 0 1 -5,5 H 5 A 5,5 0 0 1 0,25 Z"
+           style="fill:#ffffff;stroke:#000000;stroke-width:0"
+           id="path1418" />
+        <text
+           id="initializer-scaled_quant_conv2d_47/kernel:0"
+           xml:space="preserve"
+           x="6"
+           y="12"
+           style="font-weight:normal;font-size:9px;font-family:'-apple-system', BlinkMacSystemFont, 'Segoe WPC', 'Segoe UI', Ubuntu, 'Droid Sans', sans-serif, 'PingFang SC'"><title
+             id="title1420">float32[3,3,512,512]</title><tspan
+             style="font-weight:bold"
+             id="tspan1422">kernel</tspan><tspan
+             id="tspan1424">〈3×3×512×512〉</tspan></text>
+        <text
+           id="initializer-scaled_quant_conv2d_47/Variable:0"
+           xml:space="preserve"
+           x="6"
+           y="24"
+           style="font-weight:normal;font-size:9px;font-family:'-apple-system', BlinkMacSystemFont, 'Segoe WPC', 'Segoe UI', Ubuntu, 'Droid Sans', sans-serif, 'PingFang SC'"><title
+             id="title1427">float32[512]</title><tspan
+             style="font-weight:bold"
+             id="tspan1429">Variable</tspan><tspan
+             id="tspan1431">〈512〉</tspan></text>
+        <line
+           class="node"
+           x1="0"
+           x2="114.82812"
+           y1="0"
+           y2="0"
+           style="fill:none;stroke:#333333;stroke-width:1px"
+           id="line1434" />
+      </g>
+      <path
+         class="node border"
+         d="m 721.879,284.79648 h 104.8281 a 5,5 0 0 1 5,5 v 41 a 5,5 0 0 1 -5,5 H 721.879 a 5,5 0 0 1 -5,-5 v -41 a 5,5 0 0 1 5,-5 z"
+         style="fill:none;stroke:#333333;stroke-width:1px"
+         id="path1438" />
+      <g
+         class="node-item node-item-type node-item-type-pool"
+         id="g1447"
+         transform="translate(731.4645,356.75742)">
+        <path
+           d="m 5,0 h 75.40625 a 5,5 0 0 1 5,5 v 11 a 5,5 0 0 1 -5,5 H 5 A 5,5 0 0 1 0,16 V 5 A 5,5 0 0 1 5,0 Z"
+           style="fill:#335533;stroke:#000000;stroke-width:0"
+           id="path1441" />
+        <text
+           x="6"
+           y="14"
+           style="font-size:11px;font-family:'-apple-system', BlinkMacSystemFont, 'Segoe WPC', 'Segoe UI', Ubuntu, 'Droid Sans', sans-serif, 'PingFang SC';fill:#ffffff"
+           id="text1443">MaxPooling2D</text>
+        <title
+           id="title1445">max_pooling2d_23</title>
+      </g>
+      <path
+         class="node border"
+         d="m 736.4645,356.75742 h 75.4063 a 5,5 0 0 1 5,5 v 11 a 5,5 0 0 1 -5,5 h -75.4063 a 5,5 0 0 1 -5,-5 v -11 a 5,5 0 0 1 5,-5 z"
+         style="fill:none;stroke:#333333;stroke-width:1px"
+         id="path1449" />
+      <path
+         id="edge-max_pooling2d_21-9-5-7"
+         class="edge-path"
+         d="m 769.109,119.07039 c 0.1635,3.91262 0.132,7.59696 0.132,11.51194 v 1.6667"
+         style="fill:none;stroke:#000000;stroke-width:1px;marker-end:url(#arrowhead-vee-8-3-8)"
+         inkscape:transform-center-x="36.697054"
+         inkscape:transform-center-y="6.575515"
+         sodipodi:nodetypes="ccc" />
+    </g>
+    <g
+       id="g13012">
+      <rect
+         style="fill:none;stroke:#808080;stroke-width:2.04068;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:5;stroke-dasharray:8.16271, 6.12203, 2.04068, 6.12203;stroke-dashoffset:0;stroke-opacity:0.94017"
+         id="rect8775-7"
+         width="171.26395"
+         height="448.81"
+         x="690.90784"
+         y="37.912205"
+         rx="0.98728156"
+         ry="1.8225465" />
+    </g>
+  </g>
+  <g
+     id="g13310"
+     transform="translate(-51.5262,-35.957645)">
+    <g
+       id="g7198"
+       transform="translate(-1762.4225,-91.95277)">
+      <path
+         id="edge-max_pooling2d_21-9-2-1-3"
+         class="edge-path"
+         d="m 2733.0165,313.48936 v 1.6667 c 0,1.6666 0,5 0,8.3333 0,3.3333 0,6.6667 0,8.3333 v 1.6667"
+         style="fill:none;stroke:#000000;stroke-width:1px;marker-end:url(#arrowhead-vee-8-2-3-2)"
+         inkscape:transform-center-x="36.697054"
+         inkscape:transform-center-y="6.575515" />
+      <path
+         id="edge-max_pooling2d_21-9-2-1-3-4"
+         class="edge-path"
+         d="m 2733.4371,355.58251 v 1.6667 c 0,1.6666 0,5 0,8.3333 0,3.3333 0,6.6667 0,8.3333 v 1.6667"
+         style="fill:none;stroke:#000000;stroke-width:1px;marker-end:url(#arrowhead-vee-8-2-3-2-1)"
+         inkscape:transform-center-x="36.697054"
+         inkscape:transform-center-y="6.575515" />
+      <g
+         id="node-name-batch_normalization_56"
+         class="node graph-node"
+         transform="translate(2677.3711,249.69059)">
+        <g
+           class="node-item node-item-type node-item-type-normalization"
+           id="g1458">
+          <path
+             d="m 5,0 h 107.85938 a 5,5 0 0 1 5,5 V 21 H 0 V 5 A 5,5 0 0 1 5,0 Z"
+             style="fill:#335544;stroke:#000000;stroke-width:0"
+             id="path1452" />
+          <text
+             x="6"
+             y="14"
+             style="font-size:11px;font-family:'-apple-system', BlinkMacSystemFont, 'Segoe WPC', 'Segoe UI', Ubuntu, 'Droid Sans', sans-serif, 'PingFang SC';fill:#ffffff"
+             id="text1454">BatchNormalization</text>
+          <title
+             id="title1456">batch_normalization_56</title>
+        </g>
+        <g
+           class="node-attribute"
+           transform="translate(0,21)"
+           id="g1485">
+          <path
+             d="m 0,0 h 117.85938 v 37 a 5,5 0 0 1 -5,5 H 5 A 5,5 0 0 1 0,37 Z"
+             style="fill:#ffffff;stroke:#000000;stroke-width:0"
+             id="path1460" />
+          <text
+             id="initializer-batch_normalization_56/beta:0"
+             xml:space="preserve"
+             x="6"
+             y="12"
+             style="font-weight:normal;font-size:9px;font-family:'-apple-system', BlinkMacSystemFont, 'Segoe WPC', 'Segoe UI', Ubuntu, 'Droid Sans', sans-serif, 'PingFang SC'"><title
+               id="title1462">float32[512]</title><tspan
+               style="font-weight:bold"
+               id="tspan1464">beta</tspan><tspan
+               id="tspan1466">〈512〉</tspan></text>
+          <text
+             id="initializer-batch_normalization_56/moving_mean:0"
+             xml:space="preserve"
+             x="6"
+             y="24"
+             style="font-weight:normal;font-size:9px;font-family:'-apple-system', BlinkMacSystemFont, 'Segoe WPC', 'Segoe UI', Ubuntu, 'Droid Sans', sans-serif, 'PingFang SC'"><title
+               id="title1469">float32[512]</title><tspan
+               style="font-weight:bold"
+               id="tspan1471">moving_mean</tspan><tspan
+               id="tspan1473">〈512〉</tspan></text>
+          <text
+             id="initializer-batch_normalization_56/moving_variance:0"
+             xml:space="preserve"
+             x="6"
+             y="36"
+             style="font-weight:normal;font-size:9px;font-family:'-apple-system', BlinkMacSystemFont, 'Segoe WPC', 'Segoe UI', Ubuntu, 'Droid Sans', sans-serif, 'PingFang SC'"><title
+               id="title1476">float32[512]</title><tspan
+               style="font-weight:bold"
+               id="tspan1478">moving_variance</tspan><tspan
+               id="tspan1480">〈512〉</tspan></text>
+          <line
+             class="node"
+             x1="0"
+             x2="117.85938"
+             y1="0"
+             y2="0"
+             style="fill:none;stroke:#333333;stroke-width:1px"
+             id="line1483" />
+        </g>
+        <path
+           class="node border"
+           d="m 5,0 h 107.85938 a 5,5 0 0 1 5,5 v 53 a 5,5 0 0 1 -5,5 H 5 A 5,5 0 0 1 0,58 V 5 A 5,5 0 0 1 5,0 Z"
+           style="fill:none;stroke:#333333;stroke-width:1px"
+           id="path1487" />
+      </g>
+      <g
+         id="node-name-flatten_11"
+         class="node graph-node"
+         transform="translate(2707.8666,334.07602)">
+        <g
+           class="node-item node-item-type node-item-type-shape"
+           id="g1496">
+          <path
+             d="m 5,0 h 38.015625 a 5,5 0 0 1 5,5 v 11 a 5,5 0 0 1 -5,5 H 5 A 5,5 0 0 1 0,16 V 5 A 5,5 0 0 1 5,0 Z"
+             style="fill:#6c4f47;stroke:#000000;stroke-width:0"
+             id="path1490" />
+          <text
+             x="6"
+             y="14"
+             style="font-size:11px;font-family:'-apple-system', BlinkMacSystemFont, 'Segoe WPC', 'Segoe UI', Ubuntu, 'Droid Sans', sans-serif, 'PingFang SC';fill:#ffffff"
+             id="text1492">Flatten</text>
+          <title
+             id="title1494">flatten_11</title>
+        </g>
+        <path
+           class="node border"
+           d="m 5,0 h 38.015625 a 5,5 0 0 1 5,5 v 11 a 5,5 0 0 1 -5,5 H 5 A 5,5 0 0 1 0,16 V 5 A 5,5 0 0 1 5,0 Z"
+           style="fill:none;stroke:#333333;stroke-width:1px"
+           id="path1498" />
+      </g>
+      <g
+         id="node-name-scaled_quant_dense_17"
+         class="node graph-node"
+         transform="translate(2682.911,376.74444)">
+        <g
+           class="node-item node-item-type"
+           id="g1507">
+          <path
+             d="m 5,0 h 97.35547 a 5,5 0 0 1 5,5 V 21 H 0 V 5 A 5,5 0 0 1 5,0 Z"
+             style="fill:#000000;stroke:#000000;stroke-width:0"
+             id="path1501" />
+          <text
+             x="6"
+             y="14"
+             style="font-size:11px;font-family:'-apple-system', BlinkMacSystemFont, 'Segoe WPC', 'Segoe UI', Ubuntu, 'Droid Sans', sans-serif, 'PingFang SC';fill:#ffffff"
+             id="text1503">ScaledQuantDense</text>
+          <title
+             id="title1505">scaled_quant_dense_17</title>
+        </g>
+        <g
+           class="node-attribute"
+           transform="translate(0,21)"
+           id="g1527">
+          <path
+             d="m 0,0 h 107.35547 v 25 a 5,5 0 0 1 -5,5 H 5 A 5,5 0 0 1 0,25 Z"
+             style="fill:#ffffff;stroke:#000000;stroke-width:0"
+             id="path1509" />
+          <text
+             id="initializer-scaled_quant_dense_17/kernel:0"
+             xml:space="preserve"
+             x="6"
+             y="12"
+             style="font-weight:normal;font-size:9px;font-family:'-apple-system', BlinkMacSystemFont, 'Segoe WPC', 'Segoe UI', Ubuntu, 'Droid Sans', sans-serif, 'PingFang SC'"><title
+               id="title1511">float32[4608,1024]</title><tspan
+               style="font-weight:bold"
+               id="tspan1513">kernel</tspan><tspan
+               id="tspan1515">〈4608×1024〉</tspan></text>
+          <text
+             id="initializer-scaled_quant_dense_17/Variable:0"
+             xml:space="preserve"
+             x="6"
+             y="24"
+             style="font-weight:normal;font-size:9px;font-family:'-apple-system', BlinkMacSystemFont, 'Segoe WPC', 'Segoe UI', Ubuntu, 'Droid Sans', sans-serif, 'PingFang SC'"><title
+               id="title1518">float32[1024]</title><tspan
+               style="font-weight:bold"
+               id="tspan1520">Variable</tspan><tspan
+               id="tspan1522">〈1024〉</tspan></text>
+          <line
+             class="node"
+             x1="0"
+             x2="107.35547"
+             y1="0"
+             y2="0"
+             style="fill:none;stroke:#333333;stroke-width:1px"
+             id="line1525" />
+        </g>
+        <path
+           class="node border"
+           d="m 5,0 h 97.35547 a 5,5 0 0 1 5,5 v 41 a 5,5 0 0 1 -5,5 H 5 A 5,5 0 0 1 0,46 V 5 A 5,5 0 0 1 5,0 Z"
+           style="fill:none;stroke:#333333;stroke-width:1px"
+           id="path1529" />
+      </g>
+    </g>
+    <rect
+       style="fill:none;stroke:#808080;stroke-width:2.04068;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:5;stroke-dasharray:8.16271, 6.12203, 2.04068, 6.12203;stroke-dashoffset:0;stroke-opacity:0.94017"
+       id="rect8775-7-6"
+       width="171.26395"
+       height="448.81"
+       x="885.67395"
+       y="37.153553"
+       rx="0.98728156"
+       ry="1.8225465" />
+  </g>
+  <g
+     id="g13432"
+     transform="translate(-95.5262,-35.957645)">
+    <g
+       id="g8047"
+       transform="translate(-1766.4225,-89.95277)">
+      <g
+         id="g7239">
+        <path
+           id="edge-max_pooling2d_21-9-2-1-3-4-4"
+           class="edge-path"
+           d="m 2962.8953,311.3284 v 1.6667 8.3333 8.3333 43.37894"
+           style="fill:none;stroke:#000000;stroke-width:1px;marker-end:url(#arrowhead-vee-8-2-3-2-1-7)"
+           inkscape:transform-center-x="36.697054"
+           inkscape:transform-center-y="6.575515"
+           sodipodi:nodetypes="ccccc" />
+        <g
+           id="node-name-batch_normalization_57"
+           class="node graph-node"
+           transform="translate(2901.4287,249.26698)">
+          <g
+             class="node-item node-item-type node-item-type-normalization"
+             id="g1538">
+            <path
+               d="m 5,0 h 112.8125 a 5,5 0 0 1 5,5 V 21 H 0 V 5 A 5,5 0 0 1 5,0 Z"
+               style="fill:#335544;stroke:#000000;stroke-width:0"
+               id="path1532" />
+            <text
+               x="6"
+               y="14"
+               style="font-size:11px;font-family:'-apple-system', BlinkMacSystemFont, 'Segoe WPC', 'Segoe UI', Ubuntu, 'Droid Sans', sans-serif, 'PingFang SC';fill:#ffffff"
+               id="text1534">BatchNormalization</text>
+            <title
+               id="title1536">batch_normalization_57</title>
+          </g>
+          <g
+             class="node-attribute"
+             transform="translate(0,21)"
+             id="g1565">
+            <path
+               d="m 0,0 h 122.8125 v 37 a 5,5 0 0 1 -5,5 H 5 A 5,5 0 0 1 0,37 Z"
+               style="fill:#ffffff;stroke:#000000;stroke-width:0"
+               id="path1540" />
+            <text
+               id="initializer-batch_normalization_57/beta:0"
+               xml:space="preserve"
+               x="6"
+               y="12"
+               style="font-weight:normal;font-size:9px;font-family:'-apple-system', BlinkMacSystemFont, 'Segoe WPC', 'Segoe UI', Ubuntu, 'Droid Sans', sans-serif, 'PingFang SC'"><title
+                 id="title1542">float32[1024]</title><tspan
+                 style="font-weight:bold"
+                 id="tspan1544">beta</tspan><tspan
+                 id="tspan1546">〈1024〉</tspan></text>
+            <text
+               id="initializer-batch_normalization_57/moving_mean:0"
+               xml:space="preserve"
+               x="6"
+               y="24"
+               style="font-weight:normal;font-size:9px;font-family:'-apple-system', BlinkMacSystemFont, 'Segoe WPC', 'Segoe UI', Ubuntu, 'Droid Sans', sans-serif, 'PingFang SC'"><title
+                 id="title1549">float32[1024]</title><tspan
+                 style="font-weight:bold"
+                 id="tspan1551">moving_mean</tspan><tspan
+                 id="tspan1553">〈1024〉</tspan></text>
+            <text
+               id="initializer-batch_normalization_57/moving_variance:0"
+               xml:space="preserve"
+               x="6"
+               y="36"
+               style="font-weight:normal;font-size:9px;font-family:'-apple-system', BlinkMacSystemFont, 'Segoe WPC', 'Segoe UI', Ubuntu, 'Droid Sans', sans-serif, 'PingFang SC'"><title
+                 id="title1556">float32[1024]</title><tspan
+                 style="font-weight:bold"
+                 id="tspan1558">moving_variance</tspan><tspan
+                 id="tspan1560">〈1024〉</tspan></text>
+            <line
+               class="node"
+               x1="0"
+               x2="122.8125"
+               y1="0"
+               y2="0"
+               style="fill:none;stroke:#333333;stroke-width:1px"
+               id="line1563" />
+          </g>
+          <path
+             class="node border"
+             d="m 5,0 h 112.8125 a 5,5 0 0 1 5,5 v 53 a 5,5 0 0 1 -5,5 H 5 A 5,5 0 0 1 0,58 V 5 A 5,5 0 0 1 5,0 Z"
+             style="fill:none;stroke:#333333;stroke-width:1px"
+             id="path1567" />
+        </g>
+        <g
+           id="node-name-scaled_quant_dense_18"
+           class="node graph-node"
+           transform="translate(2910.0863,373.76495)">
+          <g
+             class="node-item node-item-type"
+             id="g1576">
+            <path
+               d="m 5,0 h 97.35547 a 5,5 0 0 1 5,5 V 21 H 0 V 5 A 5,5 0 0 1 5,0 Z"
+               style="fill:#000000;stroke:#000000;stroke-width:0"
+               id="path1570" />
+            <text
+               x="6"
+               y="14"
+               style="font-size:11px;font-family:'-apple-system', BlinkMacSystemFont, 'Segoe WPC', 'Segoe UI', Ubuntu, 'Droid Sans', sans-serif, 'PingFang SC';fill:#ffffff"
+               id="text1572">ScaledQuantDense</text>
+            <title
+               id="title1574">scaled_quant_dense_18</title>
+          </g>
+          <g
+             class="node-attribute"
+             transform="translate(0,21)"
+             id="g1596">
+            <path
+               d="m 0,0 h 107.35547 v 25 a 5,5 0 0 1 -5,5 H 5 A 5,5 0 0 1 0,25 Z"
+               style="fill:#ffffff;stroke:#000000;stroke-width:0"
+               id="path1578" />
+            <text
+               id="initializer-scaled_quant_dense_18/kernel:0"
+               xml:space="preserve"
+               x="6"
+               y="12"
+               style="font-weight:normal;font-size:9px;font-family:'-apple-system', BlinkMacSystemFont, 'Segoe WPC', 'Segoe UI', Ubuntu, 'Droid Sans', sans-serif, 'PingFang SC'"><title
+                 id="title1580">float32[1024,1024]</title><tspan
+                 style="font-weight:bold"
+                 id="tspan1582">kernel</tspan><tspan
+                 id="tspan1584">〈1024×1024〉</tspan></text>
+            <text
+               id="initializer-scaled_quant_dense_18/Variable:0"
+               xml:space="preserve"
+               x="6"
+               y="24"
+               style="font-weight:normal;font-size:9px;font-family:'-apple-system', BlinkMacSystemFont, 'Segoe WPC', 'Segoe UI', Ubuntu, 'Droid Sans', sans-serif, 'PingFang SC'"><title
+                 id="title1587">float32[1024]</title><tspan
+                 style="font-weight:bold"
+                 id="tspan1589">Variable</tspan><tspan
+                 id="tspan1591">〈1024〉</tspan></text>
+            <line
+               class="node"
+               x1="0"
+               x2="107.35547"
+               y1="0"
+               y2="0"
+               style="fill:none;stroke:#333333;stroke-width:1px"
+               id="line1594" />
+          </g>
+          <path
+             class="node border"
+             d="m 5,0 h 97.35547 a 5,5 0 0 1 5,5 v 41 a 5,5 0 0 1 -5,5 H 5 A 5,5 0 0 1 0,46 V 5 A 5,5 0 0 1 5,0 Z"
+             style="fill:none;stroke:#333333;stroke-width:1px"
+             id="path1598" />
+        </g>
+      </g>
+    </g>
+    <rect
+       style="fill:none;stroke:#808080;stroke-width:2.04068;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:5;stroke-dasharray:8.16271, 6.12203, 2.04068, 6.12203;stroke-dashoffset:0;stroke-opacity:0.94017"
+       id="rect8775-7-5"
+       width="171.26395"
+       height="448.81"
+       x="1110.278"
+       y="36.977985"
+       rx="0.98728156"
+       ry="1.8225465" />
+  </g>
+  <g
+     id="g13811"
+     transform="translate(-145.5262,-35.957645)">
+    <g
+       id="g8087"
+       transform="translate(-1768.4225,-85.95277)">
+      <g
+         id="g8005"
+         transform="translate(1.6516676,-1.2192156)">
+        <g
+           class="node-item node-item-type node-item-type-normalization"
+           id="g1607"
+           transform="translate(3132.1377,249.42986)">
+          <path
+             d="m 5,0 h 112.8125 a 5,5 0 0 1 5,5 V 21 H 0 V 5 A 5,5 0 0 1 5,0 Z"
+             style="fill:#335544;stroke:#000000;stroke-width:0"
+             id="path1601" />
+          <text
+             x="6"
+             y="14"
+             style="font-size:11px;font-family:'-apple-system', BlinkMacSystemFont, 'Segoe WPC', 'Segoe UI', Ubuntu, 'Droid Sans', sans-serif, 'PingFang SC';fill:#ffffff"
+             id="text1603">BatchNormalization</text>
+          <title
+             id="title1605">batch_normalization_58</title>
+        </g>
+        <g
+           class="node-attribute"
+           transform="translate(3132.1377,270.42986)"
+           id="g1634">
+          <path
+             d="m 0,0 h 122.8125 v 37 a 5,5 0 0 1 -5,5 H 5 A 5,5 0 0 1 0,37 Z"
+             style="fill:#ffffff;stroke:#000000;stroke-width:0"
+             id="path1609" />
+          <text
+             id="initializer-batch_normalization_58/beta:0"
+             xml:space="preserve"
+             x="6"
+             y="12"
+             style="font-weight:normal;font-size:9px;font-family:'-apple-system', BlinkMacSystemFont, 'Segoe WPC', 'Segoe UI', Ubuntu, 'Droid Sans', sans-serif, 'PingFang SC'"><title
+               id="title1611">float32[1024]</title><tspan
+               style="font-weight:bold"
+               id="tspan1613">beta</tspan><tspan
+               id="tspan1615">〈1024〉</tspan></text>
+          <text
+             id="initializer-batch_normalization_58/moving_mean:0"
+             xml:space="preserve"
+             x="6"
+             y="24"
+             style="font-weight:normal;font-size:9px;font-family:'-apple-system', BlinkMacSystemFont, 'Segoe WPC', 'Segoe UI', Ubuntu, 'Droid Sans', sans-serif, 'PingFang SC'"><title
+               id="title1618">float32[1024]</title><tspan
+               style="font-weight:bold"
+               id="tspan1620">moving_mean</tspan><tspan
+               id="tspan1622">〈1024〉</tspan></text>
+          <text
+             id="initializer-batch_normalization_58/moving_variance:0"
+             xml:space="preserve"
+             x="6"
+             y="36"
+             style="font-weight:normal;font-size:9px;font-family:'-apple-system', BlinkMacSystemFont, 'Segoe WPC', 'Segoe UI', Ubuntu, 'Droid Sans', sans-serif, 'PingFang SC'"><title
+               id="title1625">float32[1024]</title><tspan
+               style="font-weight:bold"
+               id="tspan1627">moving_variance</tspan><tspan
+               id="tspan1629">〈1024〉</tspan></text>
+          <line
+             class="node"
+             x1="0"
+             x2="122.8125"
+             y1="0"
+             y2="0"
+             style="fill:none;stroke:#333333;stroke-width:1px"
+             id="line1632" />
+        </g>
+        <path
+           class="node border"
+           d="m 3137.1377,249.42986 h 112.8125 a 5,5 0 0 1 5,5 v 53 a 5,5 0 0 1 -5,5 h -112.8125 a 5,5 0 0 1 -5,-5 v -53 a 5,5 0 0 1 5,-5 z"
+           style="fill:none;stroke:#333333;stroke-width:1px"
+           id="path1636" />
+      </g>
+      <g
+         class="node-item node-item-type"
+         id="g1645"
+         transform="translate(3141.8595,373.44978)">
+        <path
+           d="m 5,0 h 97.35547 a 5,5 0 0 1 5,5 V 21 H 0 V 5 A 5,5 0 0 1 5,0 Z"
+           style="fill:#000000;stroke:#000000;stroke-width:0"
+           id="path1639" />
+        <text
+           x="6"
+           y="14"
+           style="font-size:11px;font-family:'-apple-system', BlinkMacSystemFont, 'Segoe WPC', 'Segoe UI', Ubuntu, 'Droid Sans', sans-serif, 'PingFang SC';fill:#ffffff"
+           id="text1641">ScaledQuantDense</text>
+        <title
+           id="title1643">scaled_quant_dense_19</title>
+      </g>
+      <g
+         class="node-attribute"
+         transform="translate(3141.8595,394.44978)"
+         id="g1665">
+        <path
+           d="m 0,0 h 107.35547 v 25 a 5,5 0 0 1 -5,5 H 5 A 5,5 0 0 1 0,25 Z"
+           style="fill:#ffffff;stroke:#000000;stroke-width:0"
+           id="path1647" />
+        <text
+           id="initializer-scaled_quant_dense_19/kernel:0"
+           xml:space="preserve"
+           x="6"
+           y="12"
+           style="font-weight:normal;font-size:9px;font-family:'-apple-system', BlinkMacSystemFont, 'Segoe WPC', 'Segoe UI', Ubuntu, 'Droid Sans', sans-serif, 'PingFang SC'"><title
+             id="title1649">float32[1024,10]</title><tspan
+             style="font-weight:bold"
+             id="tspan1651">kernel</tspan><tspan
+             id="tspan1653">〈1024×10〉</tspan></text>
+        <text
+           id="initializer-scaled_quant_dense_19/Variable:0"
+           xml:space="preserve"
+           x="6"
+           y="24"
+           style="font-weight:normal;font-size:9px;font-family:'-apple-system', BlinkMacSystemFont, 'Segoe WPC', 'Segoe UI', Ubuntu, 'Droid Sans', sans-serif, 'PingFang SC'"><title
+             id="title1656">float32[10]</title><tspan
+             style="font-weight:bold"
+             id="tspan1658">Variable</tspan><tspan
+             id="tspan1660">〈10〉</tspan></text>
+        <line
+           class="node"
+           x1="0"
+           x2="107.35547"
+           y1="0"
+           y2="0"
+           style="fill:none;stroke:#333333;stroke-width:1px"
+           id="line1663" />
+      </g>
+      <path
+         class="node border"
+         d="m 3146.8595,373.44978 h 97.3555 a 5,5 0 0 1 5,5 v 41 a 5,5 0 0 1 -5,5 h -97.3555 a 5,5 0 0 1 -5,-5 v -41 a 5,5 0 0 1 5,-5 z"
+         style="fill:none;stroke:#333333;stroke-width:1px"
+         id="path1667" />
+      <path
+         id="edge-max_pooling2d_21-9-2-1-3-4-4-5"
+         class="edge-path"
+         d="m 3196.5751,311.76876 v 1.6667 8.3333 8.3333 42.58531"
+         style="fill:none;stroke:#000000;stroke-width:1px;marker-end:url(#arrowhead-vee-8-2-3-2-1-7-1)"
+         inkscape:transform-center-x="36.697054"
+         inkscape:transform-center-y="6.575515"
+         sodipodi:nodetypes="ccccc" />
+    </g>
+    <rect
+       style="fill:none;stroke:#808080;stroke-width:2.04068;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:5;stroke-dasharray:8.16271, 6.12203, 2.04068, 6.12203;stroke-dashoffset:0;stroke-opacity:0.94017"
+       id="rect8775-7-69"
+       width="171.26395"
+       height="448.81"
+       x="1340.1993"
+       y="37.839222"
+       rx="0.98728156"
+       ry="1.8225465" />
+  </g>
+  <g
+     id="g13925"
+     transform="translate(-161.5262,-35.957645)">
+    <g
+       id="g7314"
+       transform="translate(-1749.8143,-90.36447)">
+      <path
+         id="edge-max_pooling2d_21-9-2-1-3-4-4-3-0"
+         class="edge-path"
+         d="m 3370.8993,311.94266 v 1.6667 8.3333 8.3333 54.59095"
+         style="fill:none;stroke:#000000;stroke-width:1px;marker-end:url(#arrowhead-vee-8-2-3-2-1-7-5-6)"
+         inkscape:transform-center-x="36.697054"
+         inkscape:transform-center-y="6.575515"
+         sodipodi:nodetypes="ccccc" />
+      <g
+         id="node-name-batch_normalization_59"
+         class="node graph-node"
+         transform="translate(3314.8484,247.83765)">
+        <g
+           class="node-item node-item-type node-item-type-normalization"
+           id="g1676">
+          <path
+             d="m 5,0 h 102.90625 a 5,5 0 0 1 5,5 V 21 H 0 V 5 A 5,5 0 0 1 5,0 Z"
+             style="fill:#335544;stroke:#000000;stroke-width:0"
+             id="path1670" />
+          <text
+             x="6"
+             y="14"
+             style="font-size:11px;font-family:'-apple-system', BlinkMacSystemFont, 'Segoe WPC', 'Segoe UI', Ubuntu, 'Droid Sans', sans-serif, 'PingFang SC';fill:#ffffff"
+             id="text1672">BatchNormalization</text>
+          <title
+             id="title1674">batch_normalization_59</title>
+        </g>
+        <g
+           class="node-attribute"
+           transform="translate(0,21)"
+           id="g1703">
+          <path
+             d="m 0,0 h 112.90625 v 37 a 5,5 0 0 1 -5,5 H 5 A 5,5 0 0 1 0,37 Z"
+             style="fill:#ffffff;stroke:#000000;stroke-width:0"
+             id="path1678" />
+          <text
+             id="initializer-batch_normalization_59/beta:0"
+             xml:space="preserve"
+             x="6"
+             y="12"
+             style="font-weight:normal;font-size:9px;font-family:'-apple-system', BlinkMacSystemFont, 'Segoe WPC', 'Segoe UI', Ubuntu, 'Droid Sans', sans-serif, 'PingFang SC'"><title
+               id="title1680">float32[10]</title><tspan
+               style="font-weight:bold"
+               id="tspan1682">beta</tspan><tspan
+               id="tspan1684">〈10〉</tspan></text>
+          <text
+             id="initializer-batch_normalization_59/moving_mean:0"
+             xml:space="preserve"
+             x="6"
+             y="24"
+             style="font-weight:normal;font-size:9px;font-family:'-apple-system', BlinkMacSystemFont, 'Segoe WPC', 'Segoe UI', Ubuntu, 'Droid Sans', sans-serif, 'PingFang SC'"><title
+               id="title1687">float32[10]</title><tspan
+               style="font-weight:bold"
+               id="tspan1689">moving_mean</tspan><tspan
+               id="tspan1691">〈10〉</tspan></text>
+          <text
+             id="initializer-batch_normalization_59/moving_variance:0"
+             xml:space="preserve"
+             x="6"
+             y="36"
+             style="font-weight:normal;font-size:9px;font-family:'-apple-system', BlinkMacSystemFont, 'Segoe WPC', 'Segoe UI', Ubuntu, 'Droid Sans', sans-serif, 'PingFang SC'"><title
+               id="title1694">float32[10]</title><tspan
+               style="font-weight:bold"
+               id="tspan1696">moving_variance</tspan><tspan
+               id="tspan1698">〈10〉</tspan></text>
+          <line
+             class="node"
+             x1="0"
+             x2="112.90625"
+             y1="0"
+             y2="0"
+             style="fill:none;stroke:#333333;stroke-width:1px"
+             id="line1701" />
+        </g>
+        <path
+           class="node border"
+           d="m 5,0 h 102.90625 a 5,5 0 0 1 5,5 v 53 a 5,5 0 0 1 -5,5 H 5 A 5,5 0 0 1 0,58 V 5 A 5,5 0 0 1 5,0 Z"
+           style="fill:none;stroke:#333333;stroke-width:1px"
+           id="path1705" />
+      </g>
+      <g
+         id="node-name-activation_3"
+         class="node graph-node"
+         transform="translate(3339.5848,385.76172)">
+        <g
+           class="node-item node-item-type"
+           id="g1714">
+          <path
+             d="m 5,0 h 52.875 a 5,5 0 0 1 5,5 V 21 H 0 V 5 A 5,5 0 0 1 5,0 Z"
+             style="fill:#000000;stroke:#000000;stroke-width:0"
+             id="path1708" />
+          <text
+             x="6"
+             y="14"
+             style="font-size:11px;font-family:'-apple-system', BlinkMacSystemFont, 'Segoe WPC', 'Segoe UI', Ubuntu, 'Droid Sans', sans-serif, 'PingFang SC';fill:#ffffff"
+             id="text1710">Activation</text>
+          <title
+             id="title1712">activation_3</title>
+        </g>
+        <g
+           class="node-item node-item-type node-item-type-activation"
+           transform="translate(0,21)"
+           id="g1720">
+          <path
+             d="m 0,0 h 62.875 v 16 a 5,5 0 0 1 -5,5 H 5 A 5,5 0 0 1 0,16 Z"
+             style="fill:#702921;stroke:#000000;stroke-width:0"
+             id="path1716" />
+          <text
+             x="6"
+             y="14"
+             style="font-size:11px;font-family:'-apple-system', BlinkMacSystemFont, 'Segoe WPC', 'Segoe UI', Ubuntu, 'Droid Sans', sans-serif, 'PingFang SC';fill:#ffffff"
+             id="text1718">Softmax</text>
+        </g>
+        <line
+           class="node"
+           x1="0"
+           x2="62.875"
+           y1="21"
+           y2="21"
+           style="fill:none;stroke:#333333;stroke-width:1px"
+           id="line1722" />
+        <path
+           class="node border"
+           d="m 5,0 h 52.875 a 5,5 0 0 1 5,5 v 32 a 5,5 0 0 1 -5,5 H 5 A 5,5 0 0 1 0,37 V 5 A 5,5 0 0 1 5,0 Z"
+           style="fill:none;stroke:#333333;stroke-width:1px"
+           id="path1724" />
+      </g>
+    </g>
+    <rect
+       style="fill:none;stroke:#808080;stroke-width:2.04068;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:5;stroke-dasharray:8.16271, 6.12203, 2.04068, 6.12203;stroke-dashoffset:0;stroke-opacity:0.94017"
+       id="rect8775-7-3"
+       width="171.26395"
+       height="448.81"
+       x="1535.9647"
+       y="37.441608"
+       rx="0.98728156"
+       ry="1.8225465" />
+  </g>
+  <g
+     id="g12763"
+     transform="translate(-5.5262,-31.957645)">
+    <g
+       id="g2803"
+       transform="translate(2.7909587,74.67002)">
+      <path
+         id="edge-3"
+         class="edge-path"
+         d="m 372.498,99.022897 v 1.224033 3.0601 3.06009 6.12019 1.22404"
+         style="fill:none;stroke:#000000;stroke-width:0.856985px;marker-end:url(#arrowhead-vee)"
+         sodipodi:nodetypes="cccccc" />
+      <path
+         id="edge-quant_conv2d_3"
+         class="edge-path"
+         d="m 373.20319,176.10705 v 1.30766 c 0,1.30765 0,3.92297 0,6.53828 0,2.61532 0,5.23062 0,6.53828 v 1.30765"
+         style="fill:none;stroke:#000000;stroke-width:0.885772px;marker-end:url(#arrowhead-vee)" />
+      <path
+         id="edge-batch_normalization_51"
+         class="edge-path"
+         d="m 375.21456,237.23184 v 1.66666 c 0,1.66667 0,5 0,8.33334 0,3.33333 0,6.66666 0,8.33333 v 1.66667"
+         style="fill:none;stroke:#000000;stroke-width:1px;marker-end:url(#arrowhead-vee)" />
+      <g
+         id="node-name-quant_conv2d_3"
+         class="node graph-node"
+         transform="translate(585.27526,61.998578)">
+        <g
+           class="node-item node-item-type"
+           id="g1056"
+           transform="translate(-265.38755,-1.2241981)">
+          <path
+             d="m 5,0 h 92.703125 a 5,5 0 0 1 5.000005,5 V 21 H 0 V 5 A 5,5 0 0 1 5,0 Z"
+             style="fill:#000000;stroke:#000000;stroke-width:0"
+             id="path1050" />
+          <text
+             x="6"
+             y="14"
+             style="font-size:11px;font-family:'-apple-system', BlinkMacSystemFont, 'Segoe WPC', 'Segoe UI', Ubuntu, 'Droid Sans', sans-serif, 'PingFang SC';fill:#ffffff"
+             id="text1052">QuantConv2D</text>
+          <title
+             id="title1054">quant_conv2d_3</title>
+        </g>
+        <g
+           class="node-attribute"
+           transform="translate(-265.38755,19.775802)"
+           id="g1069">
+          <path
+             d="m 0,0 h 102.70313 v 13 a 5,5 0 0 1 -5.000005,5 H 5 A 5,5 0 0 1 0,13 Z"
+             style="fill:#ffffff;stroke:#000000;stroke-width:0"
+             id="path1058" />
+          <text
+             id="initializer-quant_conv2d_3/kernel:0"
+             xml:space="preserve"
+             x="6"
+             y="12"
+             style="font-weight:normal;font-size:9px;font-family:'-apple-system', BlinkMacSystemFont, 'Segoe WPC', 'Segoe UI', Ubuntu, 'Droid Sans', sans-serif, 'PingFang SC'"><title
+               id="title1060">float32[3,3,3,128]</title><tspan
+               style="font-weight:bold"
+               id="tspan1062">kernel</tspan><tspan
+               id="tspan1064">〈3×3×3×128〉</tspan></text>
+          <line
+             class="node"
+             x1="0"
+             x2="102.70312"
+             y1="0"
+             y2="0"
+             style="fill:none;stroke:#333333;stroke-width:1px"
+             id="line1067" />
+        </g>
+        <path
+           class="node border"
+           d="m -260.38755,-1.2241981 h 92.70312 a 5,5 0 0 1 5.00001,5 V 32.775802 a 5,5 0 0 1 -5.00001,5 h -92.70312 a 5,5 0 0 1 -5,-5 V 3.7758019 a 5,5 0 0 1 5,-5 z"
+           style="fill:none;stroke:#333333;stroke-width:1px"
+           id="path1071" />
+      </g>
+      <g
+         id="node-name-batch_normalization_51"
+         class="node graph-node"
+         transform="translate(314.52474,114.73041)">
+        <g
+           class="node-item node-item-type node-item-type-normalization"
+           id="g1080">
+          <path
+             d="m 5,0 h 107.85938 a 5,5 0 0 1 5,5 V 21 H 0 V 5 A 5,5 0 0 1 5,0 Z"
+             style="fill:#335544;stroke:#000000;stroke-width:0"
+             id="path1074" />
+          <text
+             x="6"
+             y="14"
+             style="font-size:11px;font-family:'-apple-system', BlinkMacSystemFont, 'Segoe WPC', 'Segoe UI', Ubuntu, 'Droid Sans', sans-serif, 'PingFang SC';fill:#ffffff"
+             id="text1076">BatchNormalization</text>
+          <title
+             id="title1078">batch_normalization_51</title>
+        </g>
+        <g
+           class="node-attribute"
+           transform="translate(0,21)"
+           id="g1107">
+          <path
+             d="m 0,0 h 117.85938 v 37 a 5,5 0 0 1 -5,5 H 5 A 5,5 0 0 1 0,37 Z"
+             style="fill:#ffffff;stroke:#000000;stroke-width:0"
+             id="path1082" />
+          <text
+             id="initializer-batch_normalization_51/beta:0"
+             xml:space="preserve"
+             x="6"
+             y="12"
+             style="font-weight:normal;font-size:9px;font-family:'-apple-system', BlinkMacSystemFont, 'Segoe WPC', 'Segoe UI', Ubuntu, 'Droid Sans', sans-serif, 'PingFang SC'"><title
+               id="title1084">float32[128]</title><tspan
+               style="font-weight:bold"
+               id="tspan1086">beta</tspan><tspan
+               id="tspan1088">〈128〉</tspan></text>
+          <text
+             id="initializer-batch_normalization_51/moving_mean:0"
+             xml:space="preserve"
+             x="6"
+             y="24"
+             style="font-weight:normal;font-size:9px;font-family:'-apple-system', BlinkMacSystemFont, 'Segoe WPC', 'Segoe UI', Ubuntu, 'Droid Sans', sans-serif, 'PingFang SC'"><title
+               id="title1091">float32[128]</title><tspan
+               style="font-weight:bold"
+               id="tspan1093">moving_mean</tspan><tspan
+               id="tspan1095">〈128〉</tspan></text>
+          <text
+             id="initializer-batch_normalization_51/moving_variance:0"
+             xml:space="preserve"
+             x="6"
+             y="36"
+             style="font-weight:normal;font-size:9px;font-family:'-apple-system', BlinkMacSystemFont, 'Segoe WPC', 'Segoe UI', Ubuntu, 'Droid Sans', sans-serif, 'PingFang SC'"><title
+               id="title1098">float32[128]</title><tspan
+               style="font-weight:bold"
+               id="tspan1100">moving_variance</tspan><tspan
+               id="tspan1102">〈128〉</tspan></text>
+          <line
+             class="node"
+             x1="0"
+             x2="117.85938"
+             y1="0"
+             y2="0"
+             style="fill:none;stroke:#333333;stroke-width:1px"
+             id="line1105" />
+        </g>
+        <path
+           class="node border"
+           d="m 5,0 h 107.85938 a 5,5 0 0 1 5,5 v 53 a 5,5 0 0 1 -5,5 H 5 A 5,5 0 0 1 0,58 V 5 A 5,5 0 0 1 5,0 Z"
+           style="fill:none;stroke:#333333;stroke-width:1px"
+           id="path1109" />
+      </g>
+      <g
+         id="node-name-scaled_quant_conv2d_43"
+         class="node graph-node"
+         transform="translate(316.16956,192.64709)">
+        <g
+           class="node-item node-item-type"
+           id="g1118">
+          <path
+             d="m 5,0 h 104.82813 a 5,5 0 0 1 5,5 V 21 H 0 V 5 A 5,5 0 0 1 5,0 Z"
+             style="fill:#000000;stroke:#000000;stroke-width:0"
+             id="path1112" />
+          <text
+             x="6"
+             y="14"
+             style="font-size:11px;font-family:'-apple-system', BlinkMacSystemFont, 'Segoe WPC', 'Segoe UI', Ubuntu, 'Droid Sans', sans-serif, 'PingFang SC';fill:#ffffff"
+             id="text1114">ScaledQuantConv2D</text>
+          <title
+             id="title1116">scaled_quant_conv2d_43</title>
+        </g>
+        <g
+           class="node-attribute"
+           transform="translate(0,21)"
+           id="g1138">
+          <path
+             d="m 0,0 h 114.82813 v 25 a 5,5 0 0 1 -5,5 H 5 A 5,5 0 0 1 0,25 Z"
+             style="fill:#ffffff;stroke:#000000;stroke-width:0"
+             id="path1120" />
+          <text
+             id="initializer-scaled_quant_conv2d_43/kernel:0"
+             xml:space="preserve"
+             x="6"
+             y="12"
+             style="font-weight:normal;font-size:9px;font-family:'-apple-system', BlinkMacSystemFont, 'Segoe WPC', 'Segoe UI', Ubuntu, 'Droid Sans', sans-serif, 'PingFang SC'"><title
+               id="title1122">float32[3,3,128,128]</title><tspan
+               style="font-weight:bold"
+               id="tspan1124">kernel</tspan><tspan
+               id="tspan1126">〈3×3×128×128〉</tspan></text>
+          <text
+             id="initializer-scaled_quant_conv2d_43/Variable:0"
+             xml:space="preserve"
+             x="6"
+             y="24"
+             style="font-weight:normal;font-size:9px;font-family:'-apple-system', BlinkMacSystemFont, 'Segoe WPC', 'Segoe UI', Ubuntu, 'Droid Sans', sans-serif, 'PingFang SC'"><title
+               id="title1129">float32[128]</title><tspan
+               style="font-weight:bold"
+               id="tspan1131">Variable</tspan><tspan
+               id="tspan1133">〈128〉</tspan></text>
+          <line
+             class="node"
+             x1="0"
+             x2="114.82812"
+             y1="0"
+             y2="0"
+             style="fill:none;stroke:#333333;stroke-width:1px"
+             id="line1136" />
+        </g>
+        <path
+           class="node border"
+           d="m 5,0 h 104.82813 a 5,5 0 0 1 5,5 v 41 a 5,5 0 0 1 -5,5 H 5 A 5,5 0 0 1 0,46 V 5 A 5,5 0 0 1 5,0 Z"
+           style="fill:none;stroke:#333333;stroke-width:1px"
+           id="path1140" />
+      </g>
+      <g
+         id="node-name-max_pooling2d_21"
+         class="node graph-node"
+         transform="translate(332.83754,258.55276)">
+        <g
+           class="node-item node-item-type node-item-type-pool"
+           id="g1149">
+          <path
+             d="m 5,0 h 75.40625 a 5,5 0 0 1 5,5 v 11 a 5,5 0 0 1 -5,5 H 5 A 5,5 0 0 1 0,16 V 5 A 5,5 0 0 1 5,0 Z"
+             style="fill:#335533;stroke:#000000;stroke-width:0"
+             id="path1143" />
+          <text
+             x="6"
+             y="14"
+             style="font-size:11px;font-family:'-apple-system', BlinkMacSystemFont, 'Segoe WPC', 'Segoe UI', Ubuntu, 'Droid Sans', sans-serif, 'PingFang SC';fill:#ffffff"
+             id="text1145">MaxPooling2D</text>
+          <title
+             id="title1147">max_pooling2d_21</title>
+        </g>
+        <path
+           class="node border"
+           d="m 5,0 h 75.40625 a 5,5 0 0 1 5,5 v 11 a 5,5 0 0 1 -5,5 H 5 A 5,5 0 0 1 0,16 V 5 A 5,5 0 0 1 5,0 Z"
+           style="fill:none;stroke:#333333;stroke-width:1px"
+           id="path1151" />
+      </g>
+    </g>
+    <rect
+       style="fill:none;stroke:#808080;stroke-width:2.04068;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:5;stroke-dasharray:8.16271, 6.12203, 2.04068, 6.12203;stroke-dashoffset:0;stroke-opacity:0.94017"
+       id="rect8775-7-4"
+       width="171.26395"
+       height="448.81"
+       x="292.66815"
+       y="34.527206"
+       rx="0.98728156"
+       ry="1.8225465" />
+  </g>
+  <g
+     id="g12460"
+     transform="translate(-17.5262,-29.957645)">
+    <g
+       id="g2602"
+       transform="translate(41.450463,154.83045)">
+      <path
+         id="edge-random_crop_7_input"
+         class="edge-path"
+         d="m 161.60814,42.841085 0.037,1.666248 c 0.0371,1.666258 0.11118,4.998764 0.18529,8.33128 0.0741,3.332506 0.14823,6.665012 0.18528,8.33127 l 0.0371,1.666258"
+         style="fill:none;stroke:#000000;stroke-width:1px;marker-end:url(#arrowhead-vee)" />
+      <path
+         id="edge-random_crop_7"
+         class="edge-path"
+         d="m 162.54859,84.566245 v 1.66666 c 0,1.66667 0,5 0,8.33334 0,3.33333 0,6.666665 0,8.333335 v 1.66667"
+         style="fill:none;stroke:#000000;stroke-width:1px;marker-end:url(#arrowhead-vee)" />
+      <path
+         id="edge-gaussian_noise_7"
+         class="edge-path"
+         d="m 163.56339,125.16675 v 1.66666 c 0,1.66667 0,5 0,8.33334 0,3.33333 0,6.66666 0,8.33333 v 1.66667"
+         style="fill:none;stroke:#000000;stroke-width:1px;marker-end:url(#arrowhead-vee)"
+         inkscape:transform-center-x="-207.55058"
+         inkscape:transform-center-y="-77.921752" />
+      <g
+         id="node-name-random_crop_7_input"
+         class="node graph-node"
+         transform="translate(128.5752,21)">
+        <g
+           class="node-item node-item-type node-item-type-data"
+           id="g1014">
+          <path
+             d="m 5,0 h 58.360352 a 5,5 0 0 1 5,5 v 11 a 5,5 0 0 1 -5,5 H 5 A 5,5 0 0 1 0,16 V 5 A 5,5 0 0 1 5,0 Z"
+             style="fill:#555555;stroke:#000000;stroke-width:0"
+             id="path1008" />
+          <text
+             x="6"
+             y="14"
+             style="font-size:11px;font-family:'-apple-system', BlinkMacSystemFont, 'Segoe WPC', 'Segoe UI', Ubuntu, 'Droid Sans', sans-serif, 'PingFang SC';fill:#ffffff"
+             id="text1010">InputLayer</text>
+          <title
+             id="title1012">random_crop_7_input</title>
+        </g>
+        <path
+           class="node border"
+           d="m 5,0 h 58.360352 a 5,5 0 0 1 5,5 v 11 a 5,5 0 0 1 -5,5 H 5 A 5,5 0 0 1 0,16 V 5 A 5,5 0 0 1 5,0 Z"
+           style="fill:none;stroke:#333333;stroke-width:1px"
+           id="path1016" />
+      </g>
+      <g
+         id="node-name-random_crop_7"
+         class="node graph-node"
+         transform="translate(125.1578,63.572474)">
+        <g
+           class="node-item node-item-type"
+           id="g1025">
+          <path
+             d="m 5,0 h 69.28125 a 5,5 0 0 1 5,5 v 11 a 5,5 0 0 1 -5,5 H 5 A 5,5 0 0 1 0,16 V 5 A 5,5 0 0 1 5,0 Z"
+             style="fill:#000000;stroke:#000000;stroke-width:0"
+             id="path1019" />
+          <text
+             x="6"
+             y="14"
+             style="font-size:11px;font-family:'-apple-system', BlinkMacSystemFont, 'Segoe WPC', 'Segoe UI', Ubuntu, 'Droid Sans', sans-serif, 'PingFang SC';fill:#ffffff"
+             id="text1021">RandomCrop</text>
+          <title
+             id="title1023">random_crop_7</title>
+        </g>
+        <path
+           class="node border"
+           d="m 5,0 h 69.28125 a 5,5 0 0 1 5,5 v 11 a 5,5 0 0 1 -5,5 H 5 A 5,5 0 0 1 0,16 V 5 A 5,5 0 0 1 5,0 Z"
+           style="fill:none;stroke:#333333;stroke-width:1px"
+           id="path1027" />
+      </g>
+      <g
+         id="node-name-gaussian_noise_7"
+         class="node graph-node"
+         transform="translate(122.6375,104.42688)">
+        <g
+           class="node-item node-item-type"
+           id="g1036">
+          <path
+             d="m 5,0 h 77.170898 a 5,5 0 0 1 5,5 v 11 a 5,5 0 0 1 -5,5 H 5 A 5,5 0 0 1 0,16 V 5 A 5,5 0 0 1 5,0 Z"
+             style="fill:#000000;stroke:#000000;stroke-width:0"
+             id="path1030" />
+          <text
+             x="6"
+             y="14"
+             style="font-size:11px;font-family:'-apple-system', BlinkMacSystemFont, 'Segoe WPC', 'Segoe UI', Ubuntu, 'Droid Sans', sans-serif, 'PingFang SC';fill:#ffffff"
+             id="text1032">GaussianNoise</text>
+          <title
+             id="title1034">gaussian_noise_7</title>
+        </g>
+        <path
+           class="node border"
+           d="m 5,0 h 77.170898 a 5,5 0 0 1 5,5 v 11 a 5,5 0 0 1 -5,5 H 5 A 5,5 0 0 1 0,16 V 5 A 5,5 0 0 1 5,0 Z"
+           style="fill:none;stroke:#333333;stroke-width:1px"
+           id="path1038" />
+      </g>
+      <g
+         id="node-id-7"
+         class="node graph-node"
+         transform="translate(96.449527,146.25924)">
+        <g
+           class="node-item node-item-type"
+           id="g1045">
+          <path
+             d="m 5,0 h 132.85742 a 5,5 0 0 1 5,5 v 11 a 5,5 0 0 1 -5,5 H 5 A 5,5 0 0 1 0,16 V 5 A 5,5 0 0 1 5,0 Z"
+             style="fill:#000000;stroke:#000000;stroke-width:0"
+             id="path1041" />
+          <text
+             x="6"
+             y="14"
+             style="font-size:11px;font-family:'-apple-system', BlinkMacSystemFont, 'Segoe WPC', 'Segoe UI', Ubuntu, 'Droid Sans', sans-serif, 'PingFang SC';fill:#ffffff"
+             id="text1043">ImageNormalisationLayer</text>
+        </g>
+        <path
+           class="node border"
+           d="m 5,0 h 132.85742 a 5,5 0 0 1 5,5 v 11 a 5,5 0 0 1 -5,5 H 5 A 5,5 0 0 1 0,16 V 5 A 5,5 0 0 1 5,0 Z"
+           style="fill:none;stroke:#333333;stroke-width:1px"
+           id="path1047" />
+      </g>
+    </g>
+    <rect
+       style="fill:none;stroke:#808080;stroke-width:2.04068;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:5;stroke-dasharray:8.16271, 6.12203, 2.04068, 6.12203;stroke-dashoffset:0;stroke-opacity:0.94017"
+       id="rect8775-7-52"
+       width="171.26395"
+       height="448.81"
+       x="121.52119"
+       y="33.586601"
+       rx="0.98728156"
+       ry="1.8225465" />
+  </g>
+  <text
+     xml:space="preserve"
+     style="font-size:16px;line-height:1.25;font-family:sans-serif"
+     x="194.30659"
+     y="366.94174"
+     id="text14171"><tspan
+       sodipodi:role="line"
+       id="tspan14169"
+       x="194.30659"
+       y="366.94174"
+       style="text-align:center;text-anchor:middle">Normalisation </tspan><tspan
+       sodipodi:role="line"
+       x="194.30659"
+       y="386.94174"
+       id="tspan14251"
+       style="text-align:center;text-anchor:middle">&amp; </tspan><tspan
+       sodipodi:role="line"
+       x="194.30659"
+       y="406.94174"
+       id="tspan14253"
+       style="text-align:center;text-anchor:middle">Regularisation </tspan><tspan
+       sodipodi:role="line"
+       x="194.30659"
+       y="426.94174"
+       id="tspan14255"
+       style="text-align:center;text-anchor:middle">Block</tspan></text>
+  <text
+     xml:space="preserve"
+     style="font-size:16px;line-height:1.25;font-family:sans-serif"
+     x="372.24911"
+     y="404.09412"
+     id="text14171-5"><tspan
+       sodipodi:role="line"
+       x="372.24911"
+       y="404.09412"
+       id="tspan14255-4"
+       style="text-align:center;text-anchor:middle">Convolutional</tspan><tspan
+       sodipodi:role="line"
+       x="372.24911"
+       y="424.09412"
+       style="text-align:center;text-anchor:middle"
+       id="tspan14473">Block</tspan></text>
+  <text
+     xml:space="preserve"
+     style="font-size:16px;line-height:1.25;font-family:sans-serif"
+     x="559.36389"
+     y="403.15952"
+     id="text14171-5-3"><tspan
+       sodipodi:role="line"
+       x="559.36389"
+       y="403.15952"
+       id="tspan14255-4-0"
+       style="text-align:center;text-anchor:middle">Convolutional</tspan><tspan
+       sodipodi:role="line"
+       x="559.36389"
+       y="423.15952"
+       style="text-align:center;text-anchor:middle"
+       id="tspan14473-7">Block</tspan></text>
+  <text
+     xml:space="preserve"
+     style="font-size:16px;line-height:1.25;font-family:sans-serif"
+     x="742.17645"
+     y="400.25012"
+     id="text14171-5-3-8"><tspan
+       sodipodi:role="line"
+       x="742.17645"
+       y="400.25012"
+       id="tspan14255-4-0-6"
+       style="text-align:center;text-anchor:middle">Convolutional</tspan><tspan
+       sodipodi:role="line"
+       x="742.17645"
+       y="420.25012"
+       style="text-align:center;text-anchor:middle"
+       id="tspan14473-7-8">Block</tspan></text>
+  <text
+     xml:space="preserve"
+     style="font-size:16px;line-height:1.25;font-family:sans-serif"
+     x="925.39899"
+     y="406.03815"
+     id="text14171-5-3-8-8"><tspan
+       sodipodi:role="line"
+       x="925.39899"
+       y="406.03815"
+       style="text-align:center;text-anchor:middle"
+       id="tspan14473-7-8-3">Dense Block</tspan></text>
+  <text
+     xml:space="preserve"
+     style="font-size:16px;line-height:1.25;font-family:sans-serif"
+     x="1100.072"
+     y="404.12427"
+     id="text14171-5-3-8-8-2"><tspan
+       sodipodi:role="line"
+       x="1100.072"
+       y="404.12427"
+       style="text-align:center;text-anchor:middle"
+       id="tspan14473-7-8-3-0">Dense Block</tspan></text>
+  <text
+     xml:space="preserve"
+     style="font-size:16px;line-height:1.25;font-family:sans-serif"
+     x="1279.3435"
+     y="401.12534"
+     id="text14171-5-3-8-8-2-6"><tspan
+       sodipodi:role="line"
+       x="1279.3435"
+       y="401.12534"
+       style="text-align:center;text-anchor:middle"
+       id="tspan14473-7-8-3-0-8">Dense Block</tspan></text>
+  <text
+     xml:space="preserve"
+     style="font-size:16px;line-height:1.25;font-family:sans-serif"
+     x="1458.7753"
+     y="398.01947"
+     id="text14171-5-3-8-8-2-6-9"><tspan
+       sodipodi:role="line"
+       x="1458.7753"
+       y="398.01947"
+       style="text-align:center;text-anchor:middle"
+       id="tspan14473-7-8-3-0-8-2">Prediction Block</tspan></text>
+</svg>

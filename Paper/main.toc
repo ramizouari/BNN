@@ -1,0 +1,220 @@
+\babel@toc {english}{}
+\contentsline {chapter}{List of Figures}{5}{chapter*.2}%
+\contentsline {chapter}{List of Tables}{6}{chapter*.3}%
+\contentsline {chapter}{Introduction}{7}{chapter*.4}%
+\contentsline {chapter}{\numberline {1}Problématique}{8}{chapter.1}%
+\contentsline {section}{\numberline {1.1}Introduction}{8}{section.1.1}%
+\contentsline {section}{\numberline {1.2}Contexte}{9}{section.1.2}%
+\contentsline {subsection}{\numberline {1.2.1}Histoire de l'apprentissage approfondie}{9}{subsection.1.2.1}%
+\contentsline {subsubsection}{Réseaux de Neurones}{9}{subsubsection*.5}%
+\contentsline {subsubsection}{Propfagation en Arrière}{9}{subsubsection*.6}%
+\contentsline {subsubsection}{L'hiver de l'IA}{9}{subsubsection*.7}%
+\contentsline {subsubsection}{Réapparition grâce aux GPUs}{9}{subsubsection*.8}%
+\contentsline {subsubsection}{Explosion de l'apprentissage approfondie}{9}{subsubsection*.9}%
+\contentsline {subsubsection}{Un niveau surhumain}{9}{subsubsection*.10}%
+\contentsline {subsection}{\numberline {1.2.2}Le coût de l'IA}{10}{subsection.1.2.2}%
+\contentsline {subsubsection}{Le coût économique}{10}{subsubsection*.11}%
+\contentsline {subsubsection}{Le coût énergitique}{11}{subsubsection*.12}%
+\contentsline {subsubsection}{Le coût environmental}{11}{subsubsection*.13}%
+\contentsline {subsection}{\numberline {1.2.3}Les limites des systèmes embarqués}{11}{subsection.1.2.3}%
+\contentsline {section}{\numberline {1.3}Le Binary Neural Network}{12}{section.1.3}%
+\contentsline {subsection}{\numberline {1.3.1}Introduction}{12}{subsection.1.3.1}%
+\contentsline {subsection}{\numberline {1.3.2}La signification de "Binary"}{12}{subsection.1.3.2}%
+\contentsline {section}{\numberline {1.4}BinaryFlow}{13}{section.1.4}%
+\contentsline {subsection}{\numberline {1.4.1}Introduction}{13}{subsection.1.4.1}%
+\contentsline {subsection}{\numberline {1.4.2}Raison d'exister}{13}{subsection.1.4.2}%
+\contentsline {subsection}{\numberline {1.4.3}Signification du nom}{13}{subsection.1.4.3}%
+\contentsline {subsection}{\numberline {1.4.4}Solutions offertes par BinaryFlow}{13}{subsection.1.4.4}%
+\contentsline {subsubsection}{Couches}{13}{subsubsection*.14}%
+\contentsline {subsubsection}{Binarisations}{13}{subsubsection*.15}%
+\contentsline {subsubsection}{Optimiseurs}{14}{subsubsection*.16}%
+\contentsline {subsubsection}{Déploiement}{14}{subsubsection*.17}%
+\contentsline {chapter}{\numberline {2}Approche Théorique}{15}{chapter.2}%
+\contentsline {section}{\numberline {2.1}Introduction}{15}{section.2.1}%
+\contentsline {section}{\numberline {2.2}Formalisation}{15}{section.2.2}%
+\contentsline {subsection}{\numberline {2.2.1}Notations}{15}{subsection.2.2.1}%
+\contentsline {subsubsection}{Observations}{16}{subsubsection*.18}%
+\contentsline {subsubsection}{Division en Lots}{16}{subsubsection*.19}%
+\contentsline {subsubsection}{MLP et CNN}{17}{subsubsection*.20}%
+\contentsline {subsection}{\numberline {2.2.2}Définition d'un BNN}{17}{subsection.2.2.2}%
+\contentsline {subsubsection}{Dans la littérature}{17}{subsubsection*.21}%
+\contentsline {subsubsection}{Notre définition}{18}{subsubsection*.22}%
+\contentsline {subsection}{\numberline {2.2.3}Objectif}{18}{subsection.2.2.3}%
+\contentsline {subsubsection}{Notations}{18}{subsubsection*.23}%
+\contentsline {subsubsection}{Problème d'optimisation}{18}{subsubsection*.24}%
+\contentsline {section}{\numberline {2.3}Entraînement}{19}{section.2.3}%
+\contentsline {subsection}{\numberline {2.3.1}Difficulté du problème discret}{19}{subsection.2.3.1}%
+\contentsline {subsection}{\numberline {2.3.2}Gradient Nul}{19}{subsection.2.3.2}%
+\contentsline {section}{\numberline {2.4}Optimisations}{21}{section.2.4}%
+\contentsline {subsection}{\numberline {2.4.1}Définitions}{21}{subsection.2.4.1}%
+\contentsline {subsection}{\numberline {2.4.2}Codage sur $1\text {bit}$}{21}{subsection.2.4.2}%
+\contentsline {subsection}{\numberline {2.4.3}Utilisation de $\mathtt {XNOR}$}{21}{subsection.2.4.3}%
+\contentsline {subsubsection}{Transformation de $\times $ en $\mathtt {XNOR}$}{21}{subsubsection*.25}%
+\contentsline {subsubsection}{Avantages}{22}{subsubsection*.26}%
+\contentsline {subsection}{\numberline {2.4.4}Utilisation de $\mathtt {POPCOUNT}$}{23}{subsection.2.4.4}%
+\contentsline {subsubsection}{Définition de $\mathtt {POPCOUNT}$}{23}{subsubsection*.27}%
+\contentsline {subsubsection}{Produit scalaire de deux vecteurs binarisés}{23}{subsubsection*.28}%
+\contentsline {subsubsection}{Estimation de coût}{24}{subsubsection*.29}%
+\contentsline {subsection}{\numberline {2.4.5}Gain Temps \& Mémoire}{25}{subsection.2.4.5}%
+\contentsline {subsubsection}{Gain Mémoire}{25}{subsubsection*.30}%
+\contentsline {subsubsection}{Gain Temps}{25}{subsubsection*.31}%
+\contentsline {chapter}{\numberline {3}Modélisation}{26}{chapter.3}%
+\contentsline {section}{\numberline {3.1}Introduction}{26}{section.3.1}%
+\contentsline {subsection}{\numberline {3.1.1}Importance de ce chapitre}{26}{subsection.3.1.1}%
+\contentsline {subsubsection}{Rigueur}{26}{subsubsection*.32}%
+\contentsline {subsubsection}{Flexibilité}{26}{subsubsection*.33}%
+\contentsline {subsection}{\numberline {3.1.2}Convention Utilisée}{26}{subsection.3.1.2}%
+\contentsline {section}{\numberline {3.2}Histoire}{27}{section.3.2}%
+\contentsline {section}{\numberline {3.3}Comparaison}{28}{section.3.3}%
+\contentsline {subsection}{\numberline {3.3.1}Par quantification}{28}{subsection.3.3.1}%
+\contentsline {subsection}{\numberline {3.3.2}Par architecture}{28}{subsection.3.3.2}%
+\contentsline {section}{\numberline {3.4}BinaryNet}{29}{section.3.4}%
+\contentsline {subsection}{\numberline {3.4.1}Conception}{29}{subsection.3.4.1}%
+\contentsline {subsection}{\numberline {3.4.2}Topologie}{29}{subsection.3.4.2}%
+\contentsline {subsection}{\numberline {3.4.3}Utilisation d'Estimateur Direct de gradient}{29}{subsection.3.4.3}%
+\contentsline {subsubsection}{Problématique}{29}{subsubsection*.34}%
+\contentsline {subsubsection}{Principe}{29}{subsubsection*.35}%
+\contentsline {subsubsection}{Estimation du gradient}{31}{subsubsection*.36}%
+\contentsline {subsubsection}{Justification Théorique}{31}{subsubsection*.37}%
+\contentsline {subsection}{\numberline {3.4.4}Optimisations possible}{31}{subsection.3.4.4}%
+\contentsline {section}{\numberline {3.5}XNOR-NET}{32}{section.3.5}%
+\contentsline {subsection}{\numberline {3.5.1}Conception}{32}{subsection.3.5.1}%
+\contentsline {subsection}{\numberline {3.5.2}Topologie}{32}{subsection.3.5.2}%
+\contentsline {subsection}{\numberline {3.5.3}Réduction de l'erreur de quantification}{32}{subsection.3.5.3}%
+\contentsline {subsection}{\numberline {3.5.4}Quantification optimale d'un vecteur}{32}{subsection.3.5.4}%
+\contentsline {subsubsection}{Notations}{32}{subsubsection*.38}%
+\contentsline {subsubsection}{Objectif}{33}{subsubsection*.39}%
+\contentsline {subsubsection}{Résolution du problème}{33}{subsubsection*.40}%
+\contentsline {subsubsection}{Quantification de $\boldsymbol {W}^{(l)}$}{33}{subsubsection*.41}%
+\contentsline {subsubsection}{Quantification de $a^{(l)}$}{34}{subsubsection*.42}%
+\contentsline {subsection}{\numberline {3.5.5}Quantification d'un produit scalaire de deux vecteurs}{34}{subsection.3.5.5}%
+\contentsline {subsubsection}{Objectif}{34}{subsubsection*.43}%
+\contentsline {subsubsection}{Une Borne supérieure de l'erreur}{34}{subsubsection*.44}%
+\contentsline {subsubsection}{Minimisation de $\lVert w - \alpha \beta \tilde u \odot \tilde v \rVert _2^2$}{35}{subsubsection*.45}%
+\contentsline {subsubsection}{Valeur de $\alpha ,\beta ,\tilde {u}$ et $\tilde {v}$}{35}{subsubsection*.46}%
+\contentsline {subsection}{\numberline {3.5.6}Quantification d'une couche dense par produits scalaires}{36}{subsection.3.5.6}%
+\contentsline {subsection}{\numberline {3.5.7}Quantification d'une couche convolutionnelle par produits scalaires }{36}{subsection.3.5.7}%
+\contentsline {subsubsection}{Cas d'un seul canal de sortie: $C_{\text {out}}=1$}{37}{subsubsection*.49}%
+\contentsline {subsubsection}{Cas général}{37}{subsubsection*.50}%
+\contentsline {subsection}{\numberline {3.5.8}Quantification d'une opération bilinéaire quelconque}{38}{subsection.3.5.8}%
+\contentsline {subsubsection}{Hypothèses}{38}{subsubsection*.51}%
+\contentsline {subsubsection}{Décomposition de $\star $ en formes bilinéaires}{38}{subsubsection*.52}%
+\contentsline {subsubsection}{Décomposition en valeurs singulières}{39}{subsubsection*.53}%
+\contentsline {subsubsection}{Quantification optimale de $A U w$ }{39}{subsubsection*.56}%
+\contentsline {subsubsection}{Quantification optimale de $A_i U_i \boldsymbol {W}^{(l)}$ }{40}{subsubsection*.57}%
+\contentsline {subsubsection}{Quantification optimale de $B_i V_i a^{(l-1)}$ }{40}{subsubsection*.58}%
+\contentsline {subsubsection}{Quantification de l'opérateur bilinéaire}{40}{subsubsection*.59}%
+\contentsline {section}{\numberline {3.6}ABCNet}{41}{section.3.6}%
+\contentsline {subsection}{\numberline {3.6.1}Conception}{41}{subsection.3.6.1}%
+\contentsline {subsection}{\numberline {3.6.2}Toplogie}{41}{subsection.3.6.2}%
+\contentsline {subsection}{\numberline {3.6.3}Objectif}{41}{subsection.3.6.3}%
+\contentsline {subsubsection}{Notations}{41}{subsubsection*.60}%
+\contentsline {subsubsection}{Approximation par combinaisons linéaires}{41}{subsubsection*.61}%
+\contentsline {subsection}{\numberline {3.6.4}Choix de binarisations de $\boldsymbol {W}^{(l)}$}{42}{subsection.3.6.4}%
+\contentsline {subsubsection}{Base orthogonale de Hadamard}{42}{subsubsection*.62}%
+\contentsline {subsubsection}{Famille de fonctions $\sign $ décalées }{42}{subsubsection*.63}%
+\contentsline {subsubsection}{Approximation par distribution}{42}{subsubsection*.64}%
+\contentsline {subsection}{\numberline {3.6.5}Choix de binarisations de $a^{(l)}$}{43}{subsection.3.6.5}%
+\contentsline {subsubsection}{Famille de fonctions $\sign $ décalées}{43}{subsubsection*.65}%
+\contentsline {subsubsection}{Approximation par distribution}{43}{subsubsection*.66}%
+\contentsline {subsection}{\numberline {3.6.6}Quantification par tenseur binaire}{43}{subsection.3.6.6}%
+\contentsline {subsection}{\numberline {3.6.7}Quantification par produit scalaire}{43}{subsection.3.6.7}%
+\contentsline {subsubsection}{Couche Dense}{44}{subsubsection*.67}%
+\contentsline {subsubsection}{Couche convolutionnelle}{44}{subsubsection*.70}%
+\contentsline {subsubsection}{Opérateur bilinéaire quelconque}{44}{subsubsection*.71}%
+\contentsline {section}{\numberline {3.7}BiRealNet}{45}{section.3.7}%
+\contentsline {subsection}{\numberline {3.7.1}Conception}{45}{subsection.3.7.1}%
+\contentsline {subsection}{\numberline {3.7.2}Topologie}{45}{subsection.3.7.2}%
+\contentsline {subsection}{\numberline {3.7.3}Block BiRealNet}{45}{subsection.3.7.3}%
+\contentsline {subsection}{\numberline {3.7.4}Liaison résiduale}{46}{subsection.3.7.4}%
+\contentsline {subsubsection}{Notation}{46}{subsubsection*.72}%
+\contentsline {subsubsection}{Contraintes sur $\mathcal {R}(l)$}{46}{subsubsection*.73}%
+\contentsline {subsubsection}{Equation}{46}{subsubsection*.74}%
+\contentsline {subsection}{\numberline {3.7.5}Choix de la quantification}{46}{subsection.3.7.5}%
+\contentsline {chapter}{\numberline {4}Implémentation}{47}{chapter.4}%
+\contentsline {section}{\numberline {4.1}Introduction}{47}{section.4.1}%
+\contentsline {paragraph}{Définition des types}{47}{paragraph*.75}%
+\contentsline {section}{\numberline {4.2}Paradigmes}{48}{section.4.2}%
+\contentsline {subsection}{\numberline {4.2.1}Dans l'implémentation de BinaryFlow}{48}{subsection.4.2.1}%
+\contentsline {subsubsection}{Programmation orientée objet}{48}{subsubsection*.76}%
+\contentsline {subsubsection}{Programmation générique}{48}{subsubsection*.77}%
+\contentsline {subsection}{\numberline {4.2.2}Dans l'utilisation de BinaryFlow}{48}{subsection.4.2.2}%
+\contentsline {subsubsection}{Interface séquentielle}{48}{subsubsection*.78}%
+\contentsline {subsubsection}{Interface fonctionnelle}{48}{subsubsection*.79}%
+\contentsline {subsubsection}{Interface orientée objet}{49}{subsubsection*.80}%
+\contentsline {subsubsection}{Interface bas niveaux}{49}{subsubsection*.81}%
+\contentsline {subsection}{\numberline {4.2.3}Dans l'extension de BinaryFlow}{49}{subsection.4.2.3}%
+\contentsline {section}{\numberline {4.3}Conception}{49}{section.4.3}%
+\contentsline {section}{\numberline {4.4}Couches}{50}{section.4.4}%
+\contentsline {subsection}{\numberline {4.4.1}BinaryNet}{51}{subsection.4.4.1}%
+\contentsline {subsubsection}{API commun}{51}{subsubsection*.82}%
+\contentsline {subsubsection}{Dense}{51}{subsubsection*.83}%
+\contentsline {subsubsection}{ConvND}{51}{subsubsection*.84}%
+\contentsline {subsection}{\numberline {4.4.2}XnorNet}{53}{subsection.4.4.2}%
+\contentsline {subsubsection}{Attributs Ajouté}{53}{subsubsection*.85}%
+\contentsline {subsubsection}{Initialisaiton de $\alpha $}{53}{subsubsection*.86}%
+\contentsline {subsection}{\numberline {4.4.3}ABCNet}{54}{subsection.4.4.3}%
+\contentsline {section}{\numberline {4.5}Block}{55}{section.4.5}%
+\contentsline {section}{\numberline {4.6}Binarisations}{56}{section.4.6}%
+\contentsline {subsection}{\numberline {4.6.1}Propagation en Avant}{56}{subsection.4.6.1}%
+\contentsline {subsubsection}{Fonction signe}{56}{subsubsection*.87}%
+\contentsline {subsubsection}{Fonction heavyside}{56}{subsubsection*.88}%
+\contentsline {subsubsection}{Binarisation décalée}{57}{subsubsection*.89}%
+\contentsline {subsubsection}{Binarisation stochastique}{57}{subsubsection*.90}%
+\contentsline {subsection}{\numberline {4.6.2}Propagation en arrière}{58}{subsection.4.6.2}%
+\contentsline {subsection}{\numberline {4.6.3}Implémentation}{58}{subsection.4.6.3}%
+\contentsline {section}{\numberline {4.7}Régularisations}{59}{section.4.7}%
+\contentsline {subsection}{\numberline {4.7.1}Erreur de quantification des noeuds}{59}{subsection.4.7.1}%
+\contentsline {subsection}{\numberline {4.7.2}Erreur de quantification des poids}{59}{subsection.4.7.2}%
+\contentsline {subsection}{\numberline {4.7.3}Erreur de quantification de l'opération bilinéaire}{59}{subsection.4.7.3}%
+\contentsline {chapter}{\numberline {5}Analyse}{60}{chapter.5}%
+\contentsline {section}{\numberline {5.1}Introduction}{60}{section.5.1}%
+\contentsline {section}{\numberline {5.2}Méthodologie adoptée}{61}{section.5.2}%
+\contentsline {subsection}{\numberline {5.2.1}CRISP-DM}{61}{subsection.5.2.1}%
+\contentsline {subsubsection}{Cycle CRISP-DM}{61}{subsubsection*.91}%
+\contentsline {section}{\numberline {5.3}Régression de $f:x\rightarrow 2x^2+3x+2$ sur $[-4,4]$}{62}{section.5.3}%
+\contentsline {subsection}{\numberline {5.3.1}Importance}{62}{subsection.5.3.1}%
+\contentsline {subsection}{\numberline {5.3.2}Jeux de données}{62}{subsection.5.3.2}%
+\contentsline {subsection}{\numberline {5.3.3}Modèle}{62}{subsection.5.3.3}%
+\contentsline {subsection}{\numberline {5.3.4}Hypothèses}{62}{subsection.5.3.4}%
+\contentsline {subsection}{\numberline {5.3.5}Problème Formel}{62}{subsection.5.3.5}%
+\contentsline {subsection}{\numberline {5.3.6}Entraînement}{62}{subsection.5.3.6}%
+\contentsline {subsection}{\numberline {5.3.7}Performances de prédiction}{63}{subsection.5.3.7}%
+\contentsline {subsubsection}{Distance $\mathscr {L}^\infty $}{63}{subsubsection*.92}%
+\contentsline {subsubsection}{Distance $\mathscr {L}^1$}{63}{subsubsection*.93}%
+\contentsline {subsubsection}{Distance $\mathscr {L}^2$}{64}{subsubsection*.94}%
+\contentsline {section}{\numberline {5.4}Classification MNIST}{65}{section.5.4}%
+\contentsline {subsection}{\numberline {5.4.1}Introduction}{65}{subsection.5.4.1}%
+\contentsline {subsection}{\numberline {5.4.2}Topologie}{65}{subsection.5.4.2}%
+\contentsline {subsection}{\numberline {5.4.3}Modèle}{66}{subsection.5.4.3}%
+\contentsline {subsection}{\numberline {5.4.4}Performances de prédictions}{66}{subsection.5.4.4}%
+\contentsline {subsection}{\numberline {5.4.5}Performance mémoire}{66}{subsection.5.4.5}%
+\contentsline {subsubsection}{Comparaison Float 32}{66}{subsubsection*.95}%
+\contentsline {subsubsection}{Comparaison Float 8}{67}{subsubsection*.96}%
+\contentsline {subsubsection}{Quantification de Float 32 à Float 8}{67}{subsubsection*.97}%
+\contentsline {subsection}{\numberline {5.4.6}Performance temps}{67}{subsection.5.4.6}%
+\contentsline {section}{\numberline {5.5}Classification Free Spoken Digits}{69}{section.5.5}%
+\contentsline {subsection}{\numberline {5.5.1}Importance}{69}{subsection.5.5.1}%
+\contentsline {subsection}{\numberline {5.5.2}Introduction}{69}{subsection.5.5.2}%
+\contentsline {subsection}{\numberline {5.5.3}Structure}{70}{subsection.5.5.3}%
+\contentsline {subsection}{\numberline {5.5.4}Analyse}{70}{subsection.5.5.4}%
+\contentsline {chapter}{\numberline {6}Déploiement}{71}{chapter.6}%
+\contentsline {section}{\numberline {6.1}Methodology}{71}{section.6.1}%
+\contentsline {subsection}{\numberline {6.1.1}Selection}{72}{subsection.6.1.1}%
+\contentsline {subsection}{\numberline {6.1.2}Preprocessing and feature selection}{72}{subsection.6.1.2}%
+\contentsline {subsubsection}{Data integration}{72}{subsubsection*.98}%
+\contentsline {subsubsection}{Naming conventions}{73}{subsubsection*.99}%
+\contentsline {subsubsection}{Dividing features based on complexity}{73}{subsubsection*.100}%
+\contentsline {subsubsection}{Imputing memory missing values}{74}{subsubsection*.101}%
+\contentsline {subsection}{\numberline {6.1.3}Transformation}{75}{subsection.6.1.3}%
+\contentsline {subsection}{\numberline {6.1.4}Data Mining}{75}{subsection.6.1.4}%
+\contentsline {subsubsection}{Data Mining Memory and time}{75}{subsubsection*.102}%
+\contentsline {subsubsection}{Predicting number of threads that maximizes memory usage}{76}{subsubsection*.103}%
+\contentsline {subsection}{\numberline {6.1.5}Model Selection}{76}{subsection.6.1.5}%
+\contentsline {section}{\numberline {6.2}Results}{77}{section.6.2}%
+\contentsline {subsection}{\numberline {6.2.1}Train test split}{77}{subsection.6.2.1}%
+\contentsline {subsection}{\numberline {6.2.2}Cross Validation}{77}{subsection.6.2.2}%
+\contentsline {section}{\numberline {6.3}Final Model}{78}{section.6.3}%
+\contentsline {section}{\numberline {6.4}Conclusion}{79}{section.6.4}%
+\contentsline {chapter}{Conclusion}{80}{chapter*.104}%
+\contentsline {chapter}{Bibliography}{83}{chapter*.105}%

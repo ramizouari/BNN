@@ -1,0 +1,1073 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 3.2 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated as
+% required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+\datalist[entry]{nty/global//global/global}
+  \entry{LeeSedolVsAlphaGo}{misc}{}
+  \endentry
+
+  \entry{10}{misc}{}
+    \name{author}{1}{}{%
+      {{hash=AS}{%
+         family={Acharya},
+         familyi={A\bibinitperiod},
+         given={Shwetha},
+         giveni={S\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{AS1}
+    \strng{fullhash}{AS1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{A}
+    \field{sortinithash}{A}
+  \field{howpublished}{\url{https://towardsdatascience.com/what-are-rmse-and-mae-e405ce230383}}
+    \field{title}{{What are RMSE and MAE?}}
+    \field{year}{2022}
+  \endentry
+
+  \entry{STEPaper}{article}{}
+    \name{author}{3}{}{%
+      {{hash=BY}{%
+         family={Bengio},
+         familyi={B\bibinitperiod},
+         given={Yoshua},
+         giveni={Y\bibinitperiod},
+      }}%
+      {{hash=LN}{%
+         family={L{\'{e}}onard},
+         familyi={L\bibinitperiod},
+         given={Nicholas},
+         giveni={N\bibinitperiod},
+      }}%
+      {{hash=CAC}{%
+         family={Courville},
+         familyi={C\bibinitperiod},
+         given={Aaron\bibnamedelima C.},
+         giveni={A\bibinitperiod\bibinitdelim C\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{BYLNCAC1}
+    \strng{fullhash}{BYLNCAC1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{B}
+    \field{sortinithash}{B}
+    \verb{eprint}
+    \verb 1308.3432
+    \endverb
+    \field{title}{Estimating or Propagating Gradients Through Stochastic
+  Neurons for Conditional Computation}
+    \verb{url}
+    \verb http://arxiv.org/abs/1308.3432
+    \endverb
+    \field{volume}{abs/1308.3432}
+    \field{journaltitle}{CoRR}
+    \field{eprinttype}{arXiv}
+    \field{year}{2013}
+  \endentry
+
+  \entry{OriginalSVM}{article}{}
+    \name{author}{2}{}{%
+      {{hash=CC}{%
+         family={Cortes},
+         familyi={C\bibinitperiod},
+         given={Corinna},
+         giveni={C\bibinitperiod},
+      }}%
+      {{hash=VV}{%
+         family={Vapnik},
+         familyi={V\bibinitperiod},
+         given={Vladimir},
+         giveni={V\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Springer}%
+    }
+    \strng{namehash}{CCVV1}
+    \strng{fullhash}{CCVV1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{C}
+    \field{sortinithash}{C}
+    \field{number}{3}
+    \field{pages}{273\bibrangedash 297}
+    \field{title}{Support-vector networks}
+    \field{volume}{20}
+    \field{journaltitle}{Machine learning}
+    \field{year}{1995}
+  \endentry
+
+  \entry{BinaryNetPaper}{article}{}
+    \name{author}{2}{}{%
+      {{hash=CM}{%
+         family={Courbariaux},
+         familyi={C\bibinitperiod},
+         given={Matthieu},
+         giveni={M\bibinitperiod},
+      }}%
+      {{hash=BY}{%
+         family={Bengio},
+         familyi={B\bibinitperiod},
+         given={Yoshua},
+         giveni={Y\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{CMBY1}
+    \strng{fullhash}{CMBY1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{C}
+    \field{sortinithash}{C}
+    \verb{eprint}
+    \verb 1602.02830
+    \endverb
+    \field{title}{BinaryNet: Training Deep Neural Networks with Weights and
+  Activations Constrained to +1 or -1}
+    \verb{url}
+    \verb http://arxiv.org/abs/1602.02830
+    \endverb
+    \field{volume}{abs/1602.02830}
+    \field{journaltitle}{CoRR}
+    \field{eprinttype}{arXiv}
+    \field{year}{2016}
+  \endentry
+
+  \entry{BinaryConnectPaper}{article}{}
+    \name{author}{3}{}{%
+      {{hash=CM}{%
+         family={Courbariaux},
+         familyi={C\bibinitperiod},
+         given={Matthieu},
+         giveni={M\bibinitperiod},
+      }}%
+      {{hash=BY}{%
+         family={Bengio},
+         familyi={B\bibinitperiod},
+         given={Yoshua},
+         giveni={Y\bibinitperiod},
+      }}%
+      {{hash=DJ}{%
+         family={David},
+         familyi={D\bibinitperiod},
+         given={Jean{-}Pierre},
+         giveni={J\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{CMBYDJ1}
+    \strng{fullhash}{CMBYDJ1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{C}
+    \field{sortinithash}{C}
+    \verb{eprint}
+    \verb 1511.00363
+    \endverb
+    \field{title}{BinaryConnect: Training Deep Neural Networks with binary
+  weights during propagations}
+    \verb{url}
+    \verb http://arxiv.org/abs/1511.00363
+    \endverb
+    \field{volume}{abs/1511.00363}
+    \field{journaltitle}{CoRR}
+    \field{eprinttype}{arXiv}
+    \field{year}{2015}
+  \endentry
+
+  \entry{AlphaGoZeroCost}{article}{}
+    \name{author}{1}{}{%
+      {{hash=GE}{%
+         family={Gibney},
+         familyi={G\bibinitperiod},
+         given={Elizabeth},
+         giveni={E\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{GE1}
+    \strng{fullhash}{GE1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{G}
+    \field{sortinithash}{G}
+    \verb{doi}
+    \verb 10.1038/nature.2017.22858
+    \endverb
+    \field{title}{Self-taught AI is best yet at strategy game Go}
+    \field{journaltitle}{Nature}
+    \field{month}{10}
+    \field{year}{2017}
+  \endentry
+
+  \entry{HouseCarbonFootprint}{misc}{}
+    \name{author}{1}{}{%
+      {{hash=GC}{%
+         family={Group},
+         familyi={G\bibinitperiod},
+         given={Citu},
+         giveni={C\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{GC1}
+    \strng{fullhash}{GC1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{G}
+    \field{sortinithash}{G}
+    \field{title}{{What is the carbon footprint of a house?}}
+    \verb{url}
+    \verb https://citu.co.uk/citu-live/what-is-the-carbon-footprint-of-a-house
+    \endverb
+  \endentry
+
+  \entry{BopOptimizer}{article}{}
+    \name{author}{6}{}{%
+      {{hash=HK}{%
+         family={Helwegen},
+         familyi={H\bibinitperiod},
+         given={Koen},
+         giveni={K\bibinitperiod},
+      }}%
+      {{hash=WJ}{%
+         family={Widdicombe},
+         familyi={W\bibinitperiod},
+         given={James},
+         giveni={J\bibinitperiod},
+      }}%
+      {{hash=GL}{%
+         family={Geiger},
+         familyi={G\bibinitperiod},
+         given={Lukas},
+         giveni={L\bibinitperiod},
+      }}%
+      {{hash=LZ}{%
+         family={Liu},
+         familyi={L\bibinitperiod},
+         given={Zechun},
+         giveni={Z\bibinitperiod},
+      }}%
+      {{hash=CK}{%
+         family={Cheng},
+         familyi={C\bibinitperiod},
+         given={Kwang{-}Ting},
+         giveni={K\bibinitperiod},
+      }}%
+      {{hash=NR}{%
+         family={Nusselder},
+         familyi={N\bibinitperiod},
+         given={Roeland},
+         giveni={R\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{HK+1}
+    \strng{fullhash}{HKWJGLLZCKNR1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{H}
+    \field{sortinithash}{H}
+    \verb{eprint}
+    \verb 1906.02107
+    \endverb
+    \field{title}{Latent Weights Do Not Exist: Rethinking Binarized Neural
+  Network Optimization}
+    \verb{url}
+    \verb http://arxiv.org/abs/1906.02107
+    \endverb
+    \field{volume}{abs/1906.02107}
+    \field{journaltitle}{CoRR}
+    \field{eprinttype}{arXiv}
+    \field{year}{2019}
+  \endentry
+
+  \entry{LSTMPaper}{article}{}
+    \name{author}{2}{}{%
+      {{hash=HS}{%
+         family={Hochreiter},
+         familyi={H\bibinitperiod},
+         given={Sepp},
+         giveni={S\bibinitperiod},
+      }}%
+      {{hash=SJ}{%
+         family={Schmidhuber},
+         familyi={S\bibinitperiod},
+         given={J{\"u}rgen},
+         giveni={J\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {MIT Press}%
+    }
+    \strng{namehash}{HSSJ1}
+    \strng{fullhash}{HSSJ1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{H}
+    \field{sortinithash}{H}
+    \field{number}{8}
+    \field{pages}{1735\bibrangedash 1780}
+    \field{title}{Long short-term memory}
+    \field{volume}{9}
+    \field{journaltitle}{Neural computation}
+    \field{year}{1997}
+  \endentry
+
+  \entry{11}{misc}{}
+    \name{author}{1}{}{%
+      {{hash=I}{%
+         family={IBM},
+         familyi={I\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{I1}
+    \strng{fullhash}{I1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{I}
+    \field{sortinithash}{I}
+  \field{howpublished}{\url{https://www.ibm.com/docs/fr/spss-modeler/saas?topic=dm-crisp-help-overview}}
+    \field{title}{{Présentation générale de CRISP-DM}}
+    \field{year}{2017}
+  \endentry
+
+  \entry{FirstDeepNN}{book}{}
+    \name{author}{4}{}{%
+      {{hash=IA}{%
+         family={Ivakhnenko},
+         familyi={I\bibinitperiod},
+         given={A.G.},
+         giveni={A\bibinitperiod},
+      }}%
+      {{hash=LV}{%
+         family={Lapa},
+         familyi={L\bibinitperiod},
+         given={V.G.},
+         giveni={V\bibinitperiod},
+      }}%
+      {{hash=LV}{%
+         family={Lapa},
+         familyi={L\bibinitperiod},
+         given={V.G.},
+         giveni={V\bibinitperiod},
+      }}%
+      {{hash=MR}{%
+         family={McDonough},
+         familyi={M\bibinitperiod},
+         given={R.N.},
+         giveni={R\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {American Elsevier Publishing Company}%
+    }
+    \strng{namehash}{IA+1}
+    \strng{fullhash}{IALVLVMR1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{I}
+    \field{sortinithash}{I}
+    \field{isbn}{9780444000200}
+    \field{series}{Modern analytic and computational methods in science and
+  mathematics}
+    \field{title}{Cybernetics and Forecasting Techniques}
+    \verb{url}
+    \verb https://books.google.tn/books?id=rGFgAAAAMAAJ
+    \endverb
+    \field{year}{1967}
+  \endentry
+
+  \entry{13}{misc}{}
+    \name{author}{1}{}{%
+      {{hash=JZ}{%
+         family={Jackson},
+         familyi={J\bibinitperiod},
+         given={Zohar},
+         giveni={Z\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{JZ1}
+    \strng{fullhash}{JZ1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{J}
+    \field{sortinithash}{J}
+  \field{howpublished}{\url{https://github.com/Jakobovski/free-spoken-digit-dataset}}
+    \field{title}{{Free Spoken Digits Dataset}}
+    \field{year}{2019}
+  \endentry
+
+  \entry{4}{book}{}
+    \name{author}{1}{}{%
+      {{hash=J}{%
+         family={{Jonathan L. Gross, Jay Yellen, Ping Zhang}},
+         familyi={J\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{J1}
+    \strng{fullhash}{J1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{J}
+    \field{sortinithash}{J}
+    \field{title}{{Handbook of Graph Theory}}
+    \field{year}{17 Dec. 2013}
+  \endentry
+
+  \entry{AdamOptimizer}{article}{}
+    \name{author}{2}{}{%
+      {{hash=KDP}{%
+         family={Kingma},
+         familyi={K\bibinitperiod},
+         given={Diederik\bibnamedelima P.},
+         giveni={D\bibinitperiod\bibinitdelim P\bibinitperiod},
+      }}%
+      {{hash=BJ}{%
+         family={Ba},
+         familyi={B\bibinitperiod},
+         given={Jimmy},
+         giveni={J\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{KDPBJ1}
+    \strng{fullhash}{KDPBJ1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{K}
+    \field{sortinithash}{K}
+    \field{title}{Adam: A Method for Stochastic Optimization}
+    \field{volume}{abs/1412.6980}
+    \field{journaltitle}{CoRR}
+    \field{year}{2015}
+  \endentry
+
+  \entry{NIPS2012_c399862d}{inproceedings}{}
+    \name{author}{3}{}{%
+      {{hash=KA}{%
+         family={Krizhevsky},
+         familyi={K\bibinitperiod},
+         given={Alex},
+         giveni={A\bibinitperiod},
+      }}%
+      {{hash=SI}{%
+         family={Sutskever},
+         familyi={S\bibinitperiod},
+         given={Ilya},
+         giveni={I\bibinitperiod},
+      }}%
+      {{hash=HGE}{%
+         family={Hinton},
+         familyi={H\bibinitperiod},
+         given={Geoffrey\bibnamedelima E},
+         giveni={G\bibinitperiod\bibinitdelim E\bibinitperiod},
+      }}%
+    }
+    \name{editor}{4}{}{%
+      {{hash=PF}{%
+         family={Pereira},
+         familyi={P\bibinitperiod},
+         given={F.},
+         giveni={F\bibinitperiod},
+      }}%
+      {{hash=BC}{%
+         family={Burges},
+         familyi={B\bibinitperiod},
+         given={C.J.},
+         giveni={C\bibinitperiod},
+      }}%
+      {{hash=BL}{%
+         family={Bottou},
+         familyi={B\bibinitperiod},
+         given={L.},
+         giveni={L\bibinitperiod},
+      }}%
+      {{hash=WK}{%
+         family={Weinberger},
+         familyi={W\bibinitperiod},
+         given={K.Q.},
+         giveni={K\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Curran Associates, Inc.}%
+    }
+    \strng{namehash}{KASIHGE1}
+    \strng{fullhash}{KASIHGE1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{K}
+    \field{sortinithash}{K}
+    \field{booktitle}{Advances in Neural Information Processing Systems}
+    \field{title}{ImageNet Classification with Deep Convolutional Neural
+  Networks}
+    \verb{url}
+    \verb https://proceedings.neurips.cc/paper/2012/file/c399862d3b9d6b76c8436e
+    \verb 924a68c45b-Paper.pdf
+    \endverb
+    \field{volume}{25}
+    \field{year}{2012}
+  \endentry
+
+  \entry{LeNet}{article}{}
+    \name{author}{4}{}{%
+      {{hash=LY}{%
+         family={Lecun},
+         familyi={L\bibinitperiod},
+         given={Y.},
+         giveni={Y\bibinitperiod},
+      }}%
+      {{hash=BL}{%
+         family={Bottou},
+         familyi={B\bibinitperiod},
+         given={L.},
+         giveni={L\bibinitperiod},
+      }}%
+      {{hash=BY}{%
+         family={Bengio},
+         familyi={B\bibinitperiod},
+         given={Y.},
+         giveni={Y\bibinitperiod},
+      }}%
+      {{hash=HP}{%
+         family={Haffner},
+         familyi={H\bibinitperiod},
+         given={P.},
+         giveni={P\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{LY+1}
+    \strng{fullhash}{LYBLBYHP1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{L}
+    \field{sortinithash}{L}
+    \verb{doi}
+    \verb 10.1109/5.726791
+    \endverb
+    \field{number}{11}
+    \field{pages}{2278\bibrangedash 2324}
+    \field{title}{Gradient-based learning applied to document recognition}
+    \field{volume}{86}
+    \field{journaltitle}{Proceedings of the IEEE}
+    \field{year}{1998}
+  \endentry
+
+  \entry{12}{misc}{}
+    \name{author}{1}{}{%
+      {{hash=LY}{%
+         family={LeCun},
+         familyi={L\bibinitperiod},
+         given={Yann},
+         giveni={Y\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{LY1}
+    \strng{fullhash}{LY1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{L}
+    \field{sortinithash}{L}
+    \field{howpublished}{\url{http://yann.lecun.com/exdb/mnist}}
+    \field{title}{{THE MNIST DATABASE}}
+    \field{year}{1998}
+  \endentry
+
+  \entry{ABCNetPaper}{article}{}
+    \name{author}{3}{}{%
+      {{hash=LX}{%
+         family={Lin},
+         familyi={L\bibinitperiod},
+         given={Xiaofan},
+         giveni={X\bibinitperiod},
+      }}%
+      {{hash=ZC}{%
+         family={Zhao},
+         familyi={Z\bibinitperiod},
+         given={Cong},
+         giveni={C\bibinitperiod},
+      }}%
+      {{hash=PW}{%
+         family={Pan},
+         familyi={P\bibinitperiod},
+         given={Wei},
+         giveni={W\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{LXZCPW1}
+    \strng{fullhash}{LXZCPW1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{L}
+    \field{sortinithash}{L}
+    \verb{eprint}
+    \verb 1711.11294
+    \endverb
+    \field{title}{Towards Accurate Binary Convolutional Neural Network}
+    \verb{url}
+    \verb http://arxiv.org/abs/1711.11294
+    \endverb
+    \field{volume}{abs/1711.11294}
+    \field{journaltitle}{CoRR}
+    \field{eprinttype}{arXiv}
+    \field{year}{2017}
+  \endentry
+
+  \entry{OriginalBackPropagation}{article}{}
+    \name{author}{1}{}{%
+      {{hash=LS}{%
+         family={Linnainmaa},
+         familyi={L\bibinitperiod},
+         given={Seppo},
+         giveni={S\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{2}{%
+      {BIT Computer Science}%
+      {Numerical Mathematics}%
+    }
+    \keyw{Storage Requirement, Local Error, Computational Mathematic, Taylor
+  Expansion, Rounding Error}
+    \strng{namehash}{LS1}
+    \strng{fullhash}{LS1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{L}
+    \field{sortinithash}{L}
+    \field{abstract}{%
+    The article describes analytic and algorithmic methods for determining the
+  coefficients of the Taylor expansion of an accumulated rounding error with
+  respect to the local rounding errors, and hence determining the influence of
+  the local errors on the accumulated error. Second and higher order
+  coefficients are also discussed, and some possible methods of reducing the
+  extensive storage requirements are analyzed.%
+    }
+    \verb{doi}
+    \verb 10.1007/BF01931367
+    \endverb
+    \field{issn}{0006-3835}
+    \field{number}{2}
+    \field{pages}{146–160}
+    \field{title}{Taylor Expansion of the Accumulated Rounding Error}
+    \verb{url}
+    \verb https://doi.org/10.1007/BF01931367
+    \endverb
+    \field{volume}{16}
+    \list{location}{1}{%
+      {USA}%
+    }
+    \field{journaltitle}{BIT}
+    \field{year}{1976}
+    \warn{\item Invalid format of field 'month'}
+  \endentry
+
+  \entry{BiRealNetPaper}{article}{}
+    \name{author}{6}{}{%
+      {{hash=LZ}{%
+         family={Liu},
+         familyi={L\bibinitperiod},
+         given={Zechun},
+         giveni={Z\bibinitperiod},
+      }}%
+      {{hash=WB}{%
+         family={Wu},
+         familyi={W\bibinitperiod},
+         given={Baoyuan},
+         giveni={B\bibinitperiod},
+      }}%
+      {{hash=LW}{%
+         family={Luo},
+         familyi={L\bibinitperiod},
+         given={Wenhan},
+         giveni={W\bibinitperiod},
+      }}%
+      {{hash=YX}{%
+         family={Yang},
+         familyi={Y\bibinitperiod},
+         given={Xin},
+         giveni={X\bibinitperiod},
+      }}%
+      {{hash=LW}{%
+         family={Liu},
+         familyi={L\bibinitperiod},
+         given={Wei},
+         giveni={W\bibinitperiod},
+      }}%
+      {{hash=CK}{%
+         family={Cheng},
+         familyi={C\bibinitperiod},
+         given={Kwang{-}Ting},
+         giveni={K\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{LZ+1}
+    \strng{fullhash}{LZWBLWYXLWCK1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{L}
+    \field{sortinithash}{L}
+    \verb{eprint}
+    \verb 1808.00278
+    \endverb
+    \field{title}{Bi-Real Net: Enhancing the Performance of 1-bit CNNs With
+  Improved Representational Capability and Advanced Training Algorithm}
+    \verb{url}
+    \verb http://arxiv.org/abs/1808.00278
+    \endverb
+    \field{volume}{abs/1808.00278}
+    \field{journaltitle}{CoRR}
+    \field{eprinttype}{arXiv}
+    \field{year}{2018}
+  \endentry
+
+  \entry{ShrinkingDeepLearningCarbon}{misc}{}
+    \name{author}{1}{}{%
+      {{hash=MK}{%
+         family={Martineau},
+         familyi={M\bibinitperiod},
+         given={Kim},
+         giveni={K\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{MK1}
+    \strng{fullhash}{MK1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{M}
+    \field{sortinithash}{M}
+    \field{title}{{Shrinking deep learning’s carbon footprint}}
+    \verb{url}
+    \verb https://news.mit.edu/2020/shrinking-deep-learning-carbon-footprint-08
+    \verb 07
+    \endverb
+    \field{year}{07 Aug 2021}
+  \endentry
+
+  \entry{8}{article}{}
+    \name{author}{1}{}{%
+      {{hash=M}{%
+         family={{Matthieu Latapy}},
+         familyi={M\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{M1}
+    \strng{fullhash}{M1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{M}
+    \field{sortinithash}{M}
+    \field{title}{{Practical algorithms for triangle computations in very large
+  (sparse (power-law)) graphs}}
+    \field{year}{2007}
+  \endentry
+
+  \entry{6}{book}{}
+    \name{author}{1}{}{%
+      {{hash=R}{%
+         family={{Rajkumar Roy}},
+         familyi={R\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{R1}
+    \strng{fullhash}{R1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{R}
+    \field{sortinithash}{R}
+    \field{title}{{ Industrial Knowledge Management }}
+    \field{year}{2001}
+  \endentry
+
+  \entry{XnorNetPaper}{article}{}
+    \name{author}{4}{}{%
+      {{hash=RM}{%
+         family={Rastegari},
+         familyi={R\bibinitperiod},
+         given={Mohammad},
+         giveni={M\bibinitperiod},
+      }}%
+      {{hash=OV}{%
+         family={Ordonez},
+         familyi={O\bibinitperiod},
+         given={Vicente},
+         giveni={V\bibinitperiod},
+      }}%
+      {{hash=RJ}{%
+         family={Redmon},
+         familyi={R\bibinitperiod},
+         given={Joseph},
+         giveni={J\bibinitperiod},
+      }}%
+      {{hash=FA}{%
+         family={Farhadi},
+         familyi={F\bibinitperiod},
+         given={Ali},
+         giveni={A\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{RM+1}
+    \strng{fullhash}{RMOVRJFA1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{R}
+    \field{sortinithash}{R}
+    \verb{eprint}
+    \verb 1603.05279
+    \endverb
+    \field{title}{XNOR-Net: ImageNet Classification Using Binary Convolutional
+  Neural Networks}
+    \verb{url}
+    \verb http://arxiv.org/abs/1603.05279
+    \endverb
+    \field{volume}{abs/1603.05279}
+    \field{journaltitle}{CoRR}
+    \field{eprinttype}{arXiv}
+    \field{year}{2016}
+  \endentry
+
+  \entry{7}{book}{}
+    \name{author}{1}{}{%
+      {{hash=R}{%
+         family={{Robert C. Martins}},
+         familyi={R\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{R2}
+    \strng{fullhash}{R2}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{R}
+    \field{sortinithash}{R}
+    \field{title}{{Clean Code}}
+    \field{year}{2008}
+  \endentry
+
+  \entry{2}{article}{}
+    \name{author}{1}{}{%
+      {{hash=R}{%
+         family={{Robin J. Wilson}},
+         familyi={R\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{R3}
+    \strng{fullhash}{R3}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{R}
+    \field{sortinithash}{R}
+    \field{title}{{Introduction to Graph theory}}
+    \field{year}{1970}
+  \endentry
+
+  \entry{9}{misc}{}
+    \name{author}{1}{}{%
+      {{hash=SP}{%
+         family={Singh},
+         familyi={S\bibinitperiod},
+         given={Prerna},
+         giveni={P\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{SP1}
+    \strng{fullhash}{SP1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{S}
+    \field{sortinithash}{S}
+  \field{howpublished}{\url{https://towardsdatascience.com/data-leakage-in-machine-learning-how-it-can-be-detected-and-minimize-the-risk-8ef4e3a97562}}
+    \field{title}{{Data Leakage in Machine Learning: How it can be detected and
+  minimize the risk}}
+    \field{year}{2022}
+  \endentry
+
+  \entry{CO2Footprint}{article}{}
+    \name{author}{3}{}{%
+      {{hash=SE}{%
+         family={Strubell},
+         familyi={S\bibinitperiod},
+         given={Emma},
+         giveni={E\bibinitperiod},
+      }}%
+      {{hash=GA}{%
+         family={Ganesh},
+         familyi={G\bibinitperiod},
+         given={Ananya},
+         giveni={A\bibinitperiod},
+      }}%
+      {{hash=MA}{%
+         family={McCallum},
+         familyi={M\bibinitperiod},
+         given={Andrew},
+         giveni={A\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{SEGAMA1}
+    \strng{fullhash}{SEGAMA1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{S}
+    \field{sortinithash}{S}
+    \verb{eprint}
+    \verb 1906.02243
+    \endverb
+    \field{title}{Energy and Policy Considerations for Deep Learning in {NLP}}
+    \verb{url}
+    \verb http://arxiv.org/abs/1906.02243
+    \endverb
+    \field{volume}{abs/1906.02243}
+    \field{journaltitle}{CoRR}
+    \field{eprinttype}{arXiv}
+    \field{year}{2019}
+  \endentry
+
+  \entry{5}{misc}{}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{T}
+    \field{sortinithash}{T}
+    \field{howpublished}{\url{https://en.cppreference.com/w/cpp/container}}
+    \field{title}{{The C++ container library}}
+    \field{year}{2011}
+  \endentry
+
+  \entry{DeepLearningHistory}{misc}{}
+    \name{author}{1}{}{%
+      {{hash=T}{%
+         family={{Tim Dettmers}},
+         familyi={T\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{T1}
+    \strng{fullhash}{T1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{T}
+    \field{sortinithash}{T}
+  \field{howpublished}{\url{https://developer.nvidia.com/blog/deep-learning-nutshell-history-training/}}
+    \field{title}{{Deep Learning in a Nutshell: History and Training}}
+    \field{year}{16 Dec. 2015}
+  \endentry
+
+  \entry{3}{article}{}
+    \name{author}{1}{}{%
+      {{hash=V}{%
+         family={{Vegard Flovik}},
+         familyi={V\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{V1}
+    \strng{fullhash}{V1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{V}
+    \field{sortinithash}{V}
+    \field{title}{{What is Graph Theory, and why should you care?}}
+    \field{year}{12 Aug. 2020}
+  \endentry
+
+  \entry{SustainableAI}{article}{}
+    \name{author}{1}{}{%
+      {{hash=WA}{%
+         family={Wynsberghe},
+         familyi={W\bibinitperiod},
+         given={Aimee},
+         giveni={A\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{WA1}
+    \strng{fullhash}{WA1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{W}
+    \field{sortinithash}{W}
+    \verb{doi}
+    \verb 10.1007/s43681-021-00043-6
+    \endverb
+    \field{title}{Sustainable AI: AI for sustainability and the sustainability
+  of AI}
+    \field{volume}{1}
+    \field{journaltitle}{AI and Ethics}
+    \field{month}{02}
+    \field{year}{2021}
+  \endentry
+
+  \entry{BNNDefinition}{article}{}
+    \name{author}{2}{}{%
+      {{hash=YC}{%
+         family={Yuan},
+         familyi={Y\bibinitperiod},
+         given={Chunyu},
+         giveni={C\bibinitperiod},
+      }}%
+      {{hash=ASS}{%
+         family={Agaian},
+         familyi={A\bibinitperiod},
+         given={Sos\bibnamedelima S.},
+         giveni={S\bibinitperiod\bibinitdelim S\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{YCASS1}
+    \strng{fullhash}{YCASS1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{Y}
+    \field{sortinithash}{Y}
+    \verb{eprint}
+    \verb 2110.06804
+    \endverb
+    \field{pages}{3\bibrangedash 4}
+    \field{title}{A comprehensive review of Binary Neural Network}
+    \verb{url}
+    \verb https://arxiv.org/abs/2110.06804
+    \endverb
+    \field{volume}{abs/2110.06804}
+    \field{journaltitle}{CoRR}
+    \field{eprinttype}{arXiv}
+    \field{year}{2021}
+  \endentry
+
+  \entry{BNNReview}{article}{}
+    \name{author}{2}{}{%
+      {{hash=YC}{%
+         family={Yuan},
+         familyi={Y\bibinitperiod},
+         given={Chunyu},
+         giveni={C\bibinitperiod},
+      }}%
+      {{hash=ASS}{%
+         family={Agaian},
+         familyi={A\bibinitperiod},
+         given={Sos\bibnamedelima S.},
+         giveni={S\bibinitperiod\bibinitdelim S\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{YCASS1}
+    \strng{fullhash}{YCASS1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{Y}
+    \field{sortinithash}{Y}
+    \verb{eprint}
+    \verb 2110.06804
+    \endverb
+    \field{title}{A comprehensive review of Binary Neural Network}
+    \verb{url}
+    \verb https://arxiv.org/abs/2110.06804
+    \endverb
+    \field{volume}{abs/2110.06804}
+    \field{journaltitle}{CoRR}
+    \field{eprinttype}{arXiv}
+    \field{year}{2021}
+  \endentry
+\enddatalist
+\endinput
